@@ -29,10 +29,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TNRadioButtonGroup.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0157FE4B302FAA74B126FF37D77778AF</key>
+		<key>255AAA1ACCE08AAAAA6F21A5586ABB52</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,7 +52,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9F165DE83174CD8CD3AD62E57131D3E6</key>
+		<key>A7BA061FD1085748ED10984CD89F289D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B318D7B0293849A2D17BC919867A8373</key>
 		<dict>
 			<key>primary</key>
 			<true/>

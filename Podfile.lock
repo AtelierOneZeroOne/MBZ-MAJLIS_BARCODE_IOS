@@ -17,19 +17,22 @@ PODS:
   - MBProgressHUD (1.0.0)
   - MTBBarcodeScanner (3.1.0)
   - SCLAlertView-Objective-C (1.1.0)
+  - TNRadioButtonGroup (0.4)
 
 DEPENDENCIES:
   - AFNetworking
   - MBProgressHUD (~> 1.0.0)
   - MTBBarcodeScanner
   - SCLAlertView-Objective-C
+  - TNRadioButtonGroup
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MTBBarcodeScanner: 6d397077f1a4a886050df8e66584a59a1dc429e7
   SCLAlertView-Objective-C: 349a894d4e1d1dbf14d443da784c6ca1e92c78d2
+  TNRadioButtonGroup: f5fb9b545d8913bbabe6a72ea1fa6fba4d833bb6
 
-PODFILE CHECKSUM: 5d7bee010075f4193de22ab52a8df93b3d4c5046
+PODFILE CHECKSUM: 6a6b844b32613edaa8d39d2f21e5e2f3eec31da1
 
 COCOAPODS: 1.2.0

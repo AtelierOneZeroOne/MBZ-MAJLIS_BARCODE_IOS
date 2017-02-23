@@ -46,9 +46,24 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZH-hz-cyo">
                                 <rect key="frame" x="20" y="28" width="728" height="169"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILu-ke-nRM">
+                                        <rect key="frame" x="18" y="33" width="692" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="67" id="MH7-2Q-dq0"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="dX0-Wn-dlp"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="XhF-0K-MW8"/>
+                                        </connections>
+                                    </pickerView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="ILu-ke-nRM" firstAttribute="leading" secondItem="LZH-hz-cyo" secondAttribute="leading" constant="18" id="6mN-1b-vkn"/>
+                                    <constraint firstItem="ILu-ke-nRM" firstAttribute="top" secondItem="LZH-hz-cyo" secondAttribute="top" constant="33" id="AX4-aa-elp"/>
                                     <constraint firstAttribute="height" constant="169" id="PyZ-Gz-gUo"/>
+                                    <constraint firstAttribute="trailing" secondItem="ILu-ke-nRM" secondAttribute="trailing" constant="18" id="iXK-XD-fOU"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKl-Xl-ibv">
@@ -116,6 +131,7 @@
                     </view>
                     <connections>
                         <outlet property="barcodeValue" destination="UR6-IL-maY" id="aag-Ks-m1E"/>
+                        <outlet property="pickerView" destination="ILu-ke-nRM" id="XWT-uh-DhH"/>
                         <outlet property="previewView" destination="dit-zn-ZBE" id="ru4-aM-E0z"/>
                         <outlet property="scannedResult" destination="Zg9-V6-X0z" id="Tsk-PX-alU"/>
                         <outlet property="startScan" destination="5bD-y0-rFT" id="UkD-Yn-OrU"/>
