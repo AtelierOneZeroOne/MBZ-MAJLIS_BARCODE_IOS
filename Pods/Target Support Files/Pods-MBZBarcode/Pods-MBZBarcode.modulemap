@@ -1,0 +1,6 @@
+framework module Pods_MBZBarcode {
+  umbrella header "Pods-MBZBarcode-umbrella.h"
+
+  export *
+  module * { export * }
+}

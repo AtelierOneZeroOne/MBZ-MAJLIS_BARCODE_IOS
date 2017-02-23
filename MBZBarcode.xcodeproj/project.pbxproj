@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACA26B78EAE51A28D5CAA6EC /* Pods_MBZBarcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82AE508CCDB8ECC7DACEDC9 /* Pods_MBZBarcode.framework */; };
+		C43259E81E5EEF71005748F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C43259E71E5EEF71005748F2 /* main.m */; };
+		C43259EB1E5EEF71005748F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C43259EA1E5EEF71005748F2 /* AppDelegate.m */; };
+		C43259EE1E5EEF71005748F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C43259ED1E5EEF71005748F2 /* ViewController.m */; };
+		C43259F11E5EEF71005748F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C43259EF1E5EEF71005748F2 /* Main.storyboard */; };
+		C43259F31E5EEF71005748F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C43259F21E5EEF71005748F2 /* Assets.xcassets */; };
+		C43259F61E5EEF71005748F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C43259F41E5EEF71005748F2 /* LaunchScreen.storyboard */; };
+		C4325A011E5EEF71005748F2 /* MBZBarcodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4325A001E5EEF71005748F2 /* MBZBarcodeTests.m */; };
+		C4325A0C1E5EEF71005748F2 /* MBZBarcodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4325A0B1E5EEF71005748F2 /* MBZBarcodeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C43259FD1E5EEF71005748F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C43259DB1E5EEF70005748F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C43259E21E5EEF71005748F2;
+			remoteInfo = MBZBarcode;
+		};
+		C4325A081E5EEF71005748F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C43259DB1E5EEF70005748F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C43259E21E5EEF71005748F2;
+			remoteInfo = MBZBarcode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		849422FEFA0335B2F40F90B4 /* Pods-MBZBarcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBZBarcode.release.xcconfig"; path = "Pods/Target Support Files/Pods-MBZBarcode/Pods-MBZBarcode.release.xcconfig"; sourceTree = "<group>"; };
+		92EC5574F232BCD76890DD8C /* Pods-MBZBarcode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBZBarcode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MBZBarcode/Pods-MBZBarcode.debug.xcconfig"; sourceTree = "<group>"; };
+		B82AE508CCDB8ECC7DACEDC9 /* Pods_MBZBarcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBZBarcode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43259E31E5EEF71005748F2 /* MBZBarcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBZBarcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43259E71E5EEF71005748F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C43259E91E5EEF71005748F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C43259EA1E5EEF71005748F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C43259EC1E5EEF71005748F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C43259ED1E5EEF71005748F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C43259F01E5EEF71005748F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C43259F21E5EEF71005748F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C43259F51E5EEF71005748F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C43259F71E5EEF71005748F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C43259FC1E5EEF71005748F2 /* MBZBarcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBZBarcodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4325A001E5EEF71005748F2 /* MBZBarcodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBZBarcodeTests.m; sourceTree = "<group>"; };
+		C4325A021E5EEF71005748F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4325A071E5EEF71005748F2 /* MBZBarcodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBZBarcodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4325A0B1E5EEF71005748F2 /* MBZBarcodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBZBarcodeUITests.m; sourceTree = "<group>"; };
+		C4325A0D1E5EEF71005748F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C43259E01E5EEF71005748F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA26B78EAE51A28D5CAA6EC /* Pods_MBZBarcode.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C43259F91E5EEF71005748F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4325A041E5EEF71005748F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A3105004C841452E7A67ACA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B82AE508CCDB8ECC7DACEDC9 /* Pods_MBZBarcode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C43259DA1E5EEF70005748F2 = {
+			isa = PBXGroup;
+			children = (
+				C43259E51E5EEF71005748F2 /* MBZBarcode */,
+				C43259FF1E5EEF71005748F2 /* MBZBarcodeTests */,
+				C4325A0A1E5EEF71005748F2 /* MBZBarcodeUITests */,
+				C43259E41E5EEF71005748F2 /* Products */,
+				D9C1F052A3F61FE19ADE42B4 /* Pods */,
+				8A3105004C841452E7A67ACA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C43259E41E5EEF71005748F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C43259E31E5EEF71005748F2 /* MBZBarcode.app */,
+				C43259FC1E5EEF71005748F2 /* MBZBarcodeTests.xctest */,
+				C4325A071E5EEF71005748F2 /* MBZBarcodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C43259E51E5EEF71005748F2 /* MBZBarcode */ = {
+			isa = PBXGroup;
+			children = (
+				C43259E91E5EEF71005748F2 /* AppDelegate.h */,
+				C43259EA1E5EEF71005748F2 /* AppDelegate.m */,
+				C43259EC1E5EEF71005748F2 /* ViewController.h */,
+				C43259ED1E5EEF71005748F2 /* ViewController.m */,
+				C43259EF1E5EEF71005748F2 /* Main.storyboard */,
+				C43259F21E5EEF71005748F2 /* Assets.xcassets */,
+				C43259F41E5EEF71005748F2 /* LaunchScreen.storyboard */,
+				C43259F71E5EEF71005748F2 /* Info.plist */,
+				C43259E61E5EEF71005748F2 /* Supporting Files */,
+			);
+			path = MBZBarcode;
+			sourceTree = "<group>";
+		};
+		C43259E61E5EEF71005748F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C43259E71E5EEF71005748F2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C43259FF1E5EEF71005748F2 /* MBZBarcodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4325A001E5EEF71005748F2 /* MBZBarcodeTests.m */,
+				C4325A021E5EEF71005748F2 /* Info.plist */,
+			);
+			path = MBZBarcodeTests;
+			sourceTree = "<group>";
+		};
+		C4325A0A1E5EEF71005748F2 /* MBZBarcodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4325A0B1E5EEF71005748F2 /* MBZBarcodeUITests.m */,
+				C4325A0D1E5EEF71005748F2 /* Info.plist */,
+			);
+			path = MBZBarcodeUITests;
+			sourceTree = "<group>";
+		};
+		D9C1F052A3F61FE19ADE42B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92EC5574F232BCD76890DD8C /* Pods-MBZBarcode.debug.xcconfig */,
+				849422FEFA0335B2F40F90B4 /* Pods-MBZBarcode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C43259E21E5EEF71005748F2 /* MBZBarcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4325A101E5EEF71005748F2 /* Build configuration list for PBXNativeTarget "MBZBarcode" */;
+			buildPhases = (
+				37E6CAA622C9B8D4D42B63FC /* [CP] Check Pods Manifest.lock */,
+				C43259DF1E5EEF71005748F2 /* Sources */,
+				C43259E01E5EEF71005748F2 /* Frameworks */,
+				C43259E11E5EEF71005748F2 /* Resources */,
+				F46F6333EC9377FAC191B931 /* [CP] Embed Pods Frameworks */,
+				C4286FBEE102DEF540305E30 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBZBarcode;
+			productName = MBZBarcode;
+			productReference = C43259E31E5EEF71005748F2 /* MBZBarcode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C43259FB1E5EEF71005748F2 /* MBZBarcodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4325A131E5EEF71005748F2 /* Build configuration list for PBXNativeTarget "MBZBarcodeTests" */;
+			buildPhases = (
+				C43259F81E5EEF71005748F2 /* Sources */,
+				C43259F91E5EEF71005748F2 /* Frameworks */,
+				C43259FA1E5EEF71005748F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C43259FE1E5EEF71005748F2 /* PBXTargetDependency */,
+			);
+			name = MBZBarcodeTests;
+			productName = MBZBarcodeTests;
+			productReference = C43259FC1E5EEF71005748F2 /* MBZBarcodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4325A061E5EEF71005748F2 /* MBZBarcodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4325A161E5EEF71005748F2 /* Build configuration list for PBXNativeTarget "MBZBarcodeUITests" */;
+			buildPhases = (
+				C4325A031E5EEF71005748F2 /* Sources */,
+				C4325A041E5EEF71005748F2 /* Frameworks */,
+				C4325A051E5EEF71005748F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4325A091E5EEF71005748F2 /* PBXTargetDependency */,
+			);
+			name = MBZBarcodeUITests;
+			productName = MBZBarcodeUITests;
+			productReference = C4325A071E5EEF71005748F2 /* MBZBarcodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C43259DB1E5EEF70005748F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Michael Ugale";
+				TargetAttributes = {
+					C43259E21E5EEF71005748F2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G37DG897U8;
+						ProvisioningStyle = Automatic;
+					};
+					C43259FB1E5EEF71005748F2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C43259E21E5EEF71005748F2;
+					};
+					C4325A061E5EEF71005748F2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C43259E21E5EEF71005748F2;
+					};
+				};
+			};
+			buildConfigurationList = C43259DE1E5EEF70005748F2 /* Build configuration list for PBXProject "MBZBarcode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C43259DA1E5EEF70005748F2;
+			productRefGroup = C43259E41E5EEF71005748F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C43259E21E5EEF71005748F2 /* MBZBarcode */,
+				C43259FB1E5EEF71005748F2 /* MBZBarcodeTests */,
+				C4325A061E5EEF71005748F2 /* MBZBarcodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C43259E11E5EEF71005748F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C43259F61E5EEF71005748F2 /* LaunchScreen.storyboard in Resources */,
+				C43259F31E5EEF71005748F2 /* Assets.xcassets in Resources */,
+				C43259F11E5EEF71005748F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C43259FA1E5EEF71005748F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4325A051E5EEF71005748F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37E6CAA622C9B8D4D42B63FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4286FBEE102DEF540305E30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MBZBarcode/Pods-MBZBarcode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F46F6333EC9377FAC191B931 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MBZBarcode/Pods-MBZBarcode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C43259DF1E5EEF71005748F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C43259EE1E5EEF71005748F2 /* ViewController.m in Sources */,
+				C43259EB1E5EEF71005748F2 /* AppDelegate.m in Sources */,
+				C43259E81E5EEF71005748F2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C43259F81E5EEF71005748F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4325A011E5EEF71005748F2 /* MBZBarcodeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4325A031E5EEF71005748F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4325A0C1E5EEF71005748F2 /* MBZBarcodeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C43259FE1E5EEF71005748F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C43259E21E5EEF71005748F2 /* MBZBarcode */;
+			targetProxy = C43259FD1E5EEF71005748F2 /* PBXContainerItemProxy */;
+		};
+		C4325A091E5EEF71005748F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C43259E21E5EEF71005748F2 /* MBZBarcode */;
+			targetProxy = C4325A081E5EEF71005748F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C43259EF1E5EEF71005748F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C43259F01E5EEF71005748F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C43259F41E5EEF71005748F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C43259F51E5EEF71005748F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4325A0E1E5EEF71005748F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4325A0F1E5EEF71005748F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4325A111E5EEF71005748F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92EC5574F232BCD76890DD8C /* Pods-MBZBarcode.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G37DG897U8;
+				INFOPLIST_FILE = MBZBarcode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mbzmajlis.barcode.www;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		C4325A121E5EEF71005748F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849422FEFA0335B2F40F90B4 /* Pods-MBZBarcode.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G37DG897U8;
+				INFOPLIST_FILE = MBZBarcode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mbzmajlis.barcode.www;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		C4325A141E5EEF71005748F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MBZBarcodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MBZMajlis.www.MBZBarcodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MBZBarcode.app/MBZBarcode";
+			};
+			name = Debug;
+		};
+		C4325A151E5EEF71005748F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MBZBarcodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MBZMajlis.www.MBZBarcodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MBZBarcode.app/MBZBarcode";
+			};
+			name = Release;
+		};
+		C4325A171E5EEF71005748F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MBZBarcodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MBZMajlis.www.MBZBarcodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MBZBarcode;
+			};
+			name = Debug;
+		};
+		C4325A181E5EEF71005748F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MBZBarcodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MBZMajlis.www.MBZBarcodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MBZBarcode;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C43259DE1E5EEF70005748F2 /* Build configuration list for PBXProject "MBZBarcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4325A0E1E5EEF71005748F2 /* Debug */,
+				C4325A0F1E5EEF71005748F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4325A101E5EEF71005748F2 /* Build configuration list for PBXNativeTarget "MBZBarcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4325A111E5EEF71005748F2 /* Debug */,
+				C4325A121E5EEF71005748F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4325A131E5EEF71005748F2 /* Build configuration list for PBXNativeTarget "MBZBarcodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4325A141E5EEF71005748F2 /* Debug */,
+				C4325A151E5EEF71005748F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4325A161E5EEF71005748F2 /* Build configuration list for PBXNativeTarget "MBZBarcodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4325A171E5EEF71005748F2 /* Debug */,
+				C4325A181E5EEF71005748F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C43259DB1E5EEF70005748F2 /* Project object */;
+}

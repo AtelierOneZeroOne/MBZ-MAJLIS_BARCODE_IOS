@@ -1,0 +1,35 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - MBProgressHUD (1.0.0)
+  - MTBBarcodeScanner (3.1.0)
+  - SCLAlertView-Objective-C (1.1.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - MBProgressHUD (~> 1.0.0)
+  - MTBBarcodeScanner
+  - SCLAlertView-Objective-C
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MTBBarcodeScanner: 6d397077f1a4a886050df8e66584a59a1dc429e7
+  SCLAlertView-Objective-C: 349a894d4e1d1dbf14d443da784c6ca1e92c78d2
+
+PODFILE CHECKSUM: 5d7bee010075f4193de22ab52a8df93b3d4c5046
+
+COCOAPODS: 1.2.0
