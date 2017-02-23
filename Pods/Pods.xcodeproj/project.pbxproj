@@ -7,284 +7,333 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00C05031BBA5BA48A00FE41348F41BDA /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1110405C4BC468DD24907D7E25F40CF5 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		029C83DA510A96C2830B579D14E3E9CE /* TNImageRadioButtonData.h in Headers */ = {isa = PBXBuildFile; fileRef = 03FCFD0E9E7B1BB929F2E50FF287738D /* TNImageRadioButtonData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05C22EFF3029E333BD8A343C0E703CEB /* SCLSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C13995603AF5E94CA1C286137A52EB /* SCLSwitchView.m */; };
-		0968524ED4DE8DF7834055C5B6089D72 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6322EA01FA48B11B17494D49F81406C9 /* MBProgressHUD-dummy.m */; };
-		0D1FFD30267C0776FD3E88EFF51E312F /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9CE7CBCBF080DF8A87E1916E867779 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DACFDDA4A3103C1EF4F34634AA0D9C6 /* TNRadioButtonGroup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8DC3F7FD476D2C7DCCDA2FB1E31CFE9 /* TNRadioButtonGroup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00C05031BBA5BA48A00FE41348F41BDA /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E104257C6467A4AB17324388CD8F0169 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01959CCC59B9DE2067DCFC8EF4AE43B2 /* TNRadioButtonGroup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4889547B09165C60DB191C1E88FE8DAA /* TNRadioButtonGroup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03C61A87838B58704425DE8F83D3031E /* SCLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC118B15A1B271896DD961C9C1EEF2F9 /* SCLTextView.m */; };
+		083C476A2B106E7426253BCA6716A190 /* TNRectangularRadioButtonData.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F9708E4CF611129673D5EA6B5032ED8 /* TNRectangularRadioButtonData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		084F3D3F7F8B2BF456E216888FFBA994 /* SCLButton.h in Headers */ = {isa = PBXBuildFile; fileRef = FB2BE3726E1D642ECBF98F1BD2C6E212 /* SCLButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08D6BCEC00D53035A0D84F572175D5D8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A065043688CEED34F941BFA45EA50513 /* AudioToolbox.framework */; };
+		0968524ED4DE8DF7834055C5B6089D72 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7955F206C6390077FD198E1EF37693C7 /* MBProgressHUD-dummy.m */; };
+		0D1FFD30267C0776FD3E88EFF51E312F /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E41194F9A4747F2939A04A6DFF16E71D /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1215629D558162CE728B27386DA02D1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F53349361EF5F1E0AC264C95592AA23 /* Foundation.framework */; };
-		1294EEEB0F2E32EF1D7FB7625356B019 /* TNImageRadioButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E30DC4AD7ECABF6E890DB2117A52F9 /* TNImageRadioButtonData.m */; };
-		140F458AB7312414FC423FEED70A3733 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F94DD5BA5A6F2AA0171B72E1F43BCA0 /* UIActivityIndicatorView+AFNetworking.m */; };
-		18F621CA152EB649FD20E8946164CFD1 /* MTBBarcodeScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = EF9C9CEE25C2896DFB5A6DC4012723B4 /* MTBBarcodeScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B6399525A10D428DF5D79FB26664524 /* TNCircularRadioButtonData.h in Headers */ = {isa = PBXBuildFile; fileRef = 623D11A619FDB49DBF4DBA686C7BABC2 /* TNCircularRadioButtonData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B9F5BFA628C605CBCC657B0C4F9C25D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F53349361EF5F1E0AC264C95592AA23 /* Foundation.framework */; };
-		1E2A6D057E20BE8F5ED3E594F7B8C286 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 832DD7A3CC42D92ADFD8F553D56EA47B /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		140F458AB7312414FC423FEED70A3733 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B6633534941EDDDE7DE6BC3547467976 /* UIActivityIndicatorView+AFNetworking.m */; };
+		142D633B23FC9A5EEA85974B9266ABE2 /* TNCircularRadioButtonData.h in Headers */ = {isa = PBXBuildFile; fileRef = E4174C8759634178EEFC618D75EC5BFD /* TNCircularRadioButtonData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		164A6A80D2E4C887847066A3351B6CCF /* TNImageRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D8D8C59B6B1E64385DF0DE2989243F /* TNImageRadioButton.m */; };
+		18F621CA152EB649FD20E8946164CFD1 /* MTBBarcodeScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 462FC1C2E8555B45FF09C206055DEC4B /* MTBBarcodeScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DFAE4B5924D4527B123183AEC67C3A /* UIAlertController+Blocks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E15B116F7C832063780781322A643DA /* UIAlertController+Blocks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E2A6D057E20BE8F5ED3E594F7B8C286 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 420ABC5F5A7B08461078129B1033A32B /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DC824A9EF3059DB706547E8536229E /* SCLTimerDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F6350F2969A306BB149987A0612F /* SCLTimerDisplay.m */; };
+		22A387C1403AAB8CFAF8846F1F2ADD0B /* TNRadioButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = A926F79D2003ADFACBD9FF6667A846EB /* TNRadioButtonData.m */; };
 		23EFB184AD12FB1014FFC765CE0D710A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F62D60245B49AA876AB1ABB94DE1A3 /* Security.framework */; };
-		26801B548D35E5434E1685A5F89F9353 /* MTBBarcodeScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C8D0719A9704043ED6D8F6AB1ADEE2 /* MTBBarcodeScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28A794912ED1E06B05D96DF5ED0AED19 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 377D71251F1FB70C813696AC6FB0C9BD /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29476636EA86BEFC4CB833D3BB7A52D7 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4A08FEBD967415CA323F714F59DC40 /* AFURLRequestSerialization.m */; };
-		2A5B1202D898FC56341CC094E530A951 /* TNRadioButtonGroupProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C33531D0CC19E21CAA2E7CCFB71BBA7 /* TNRadioButtonGroupProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B0705CC26A4CBEE32A5A60284AED35B /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 38BA2D0DC53FE17E668EC8D47B2A562D /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3051D6FF1A1E4CC641FD76EC50379C18 /* SCLMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A291EEC35BD202524F057658A5AD0C9 /* SCLMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32076D3DD644045CF79DFFEBB6BFF3F2 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D13F41FB3E480FA4AB54236562F7B /* UIButton+AFNetworking.m */; };
-		34C88657FE7ABE9F833623F94952D253 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F663CF805BE6692E26084C1D594F8663 /* UIProgressView+AFNetworking.m */; };
-		35CBB7B255FD8D412AFCECBC4311A847 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA8CBAC2447F8AE4E938C28C6A70920 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37AC4A8E0619780CB03F536973B84A4A /* TNRectangularRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3C45AF3050BCE160E9CF71D99B9F15 /* TNRectangularRadioButton.m */; };
-		39A391192841AB0B45C27F3BD9793CA6 /* Pods-MBZBarcode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C13E3D97F61A0462A1DE27B7B1076347 /* Pods-MBZBarcode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D731EE587001FEB34DDF2C4905C425C /* TNRadioButtonGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = AD1D6B77CE7F7BEC5D4AEE97C15BCF2C /* TNRadioButtonGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40315543F9D1585E0B6F16DB8FCB9C87 /* SCLButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 655DDC28373C785A826F69F51868D519 /* SCLButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4442D8453D210EFC13CFE2CAF862ED1D /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AC0A16763FBB7775A5AB578E4231691 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		453B0C33D2EBC1A3EB2B4E3B2BE50670 /* TNCircularRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 587D93AFB12ABA616C597A289FA49797 /* TNCircularRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45F802D04B3BE0CAEC586C2F3016027B /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BF19ACB73EB6D0C3DD4C94AB1DB1E249 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47F04CBDF6C54B220F6AEECEF15264D5 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 02261881E0B312F052566ABF2358C65C /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A12EAA85E9436B0FF2800C407D5F671 /* TNRadioButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D6D7C5F01A871DF3DEE2277BF62AB0 /* TNRadioButtonData.m */; };
-		4AA29C03870E4618938DB740EB9C4D78 /* TNCircularRadioButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0E78CABA6960CF9FDF7CD681B15701 /* TNCircularRadioButtonData.m */; };
-		4EDE3AF7471ACCD4D87E3AF729C97900 /* TNRectangularRadioButtonData.h in Headers */ = {isa = PBXBuildFile; fileRef = B3E9D0BD2176DF732B28CCE5EE47900C /* TNRectangularRadioButtonData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F3AEECC806F8F8F8892479B83FA32DB /* TNRadioButtonGroup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CB3D03000BB638B906B2A036F047C /* TNRadioButtonGroup-dummy.m */; };
-		500F6404E72BBE00C8259849B6BACEA1 /* TNRectangularRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = EE3CC68CE128864182FB35E608818332 /* TNRectangularRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51047C1945103943F70BEADE83725630 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F27C49D077C1A0D828BE7529465BC7E4 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52FE55C37E07A19D7CB039E667032D1C /* SCLAlertViewStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DF95335A7206AC062733C16F90A16 /* SCLAlertViewStyleKit.m */; };
-		58D052AFB88079E97B8772B8F36E8C7D /* MTBBarcodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5145172CD98FFFB8FE816CB3BC17C /* MTBBarcodeScanner.m */; };
-		5A1D34D104D42B1EE399E23BCD7935A0 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAEBBFB4B844C55159F6329FF69098B /* AFURLResponseSerialization.m */; };
-		5C9D3B7D68EC2BE34D9F34F1D0BB5ACB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F53349361EF5F1E0AC264C95592AA23 /* Foundation.framework */; };
-		649E78B5EA450FABDF5201E31F265FAB /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE274DD2B4DB26DC9CE809A4EFCDB65 /* AFNetworkActivityIndicatorManager.m */; };
-		6573AF9ABA59AC8D1F52B07088197F71 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 00873C2FDBACB2766504CCD1007E7FC8 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CD7C5D08AD57BE78B74AF50835F38BF /* TNRadioButtonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 792192448996F976E1823548A797D652 /* TNRadioButtonGroup.m */; };
-		6DFC5D1FA33B1BF929E586ECF37E59A1 /* SCLTimerDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = F78B9474809FC5162712415DD44EDACF /* SCLTimerDisplay.m */; };
+		24D6F9D765DC3E26715550FD2C354041 /* UIAlertController+Blocks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4A67FBA206E89E796362EB104A680E /* UIAlertController+Blocks-dummy.m */; };
+		26801B548D35E5434E1685A5F89F9353 /* MTBBarcodeScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30A94A594A68A89E6C304638F381B88E /* MTBBarcodeScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28A794912ED1E06B05D96DF5ED0AED19 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9680C1DD0E70273387D2F451B28C821E /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29476636EA86BEFC4CB833D3BB7A52D7 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCDB123FF2A94686C4EABB49D7A632A /* AFURLRequestSerialization.m */; };
+		2B0705CC26A4CBEE32A5A60284AED35B /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E4EFF2F61A69F436943DCFDBABD0FF9 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E34749EB395DCA10CE3F0C0164E8C50 /* WYPopoverController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F5F45B6D930CB3D1ADB63A788C2F20 /* WYPopoverController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32076D3DD644045CF79DFFEBB6BFF3F2 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CF782EF2DF6C4D8A0229E9F4FE0684 /* UIButton+AFNetworking.m */; };
+		34C88657FE7ABE9F833623F94952D253 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = AC30B3899DCF21FA1F95857FCB71C4DA /* UIProgressView+AFNetworking.m */; };
+		35CBB7B255FD8D412AFCECBC4311A847 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DA876F0927E73B642F76C7FA4DF5C63E /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3709A0EF79B3CC9264E1526F441D60EC /* SCLAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = E6CAD713289EEEA9C83CF12C3C9513AA /* SCLAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		404C6CAC58F87A7E3F5DC1D3B7B0E1BD /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 198077CC1854D500281BED81A5AC70CC /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41B244514FDF97608AE7F4488B93DA62 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3315CF1277D06C1F80DCD9B1ACEBDB7 /* WYPopoverController.m */; };
+		4442D8453D210EFC13CFE2CAF862ED1D /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F7876A9063DCA2AEDB860651823B11F6 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45004270F959EA58D09CCBA22AB2ABE7 /* SCLAlertViewResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC3CDEE92CF371A02819F7FD4F6A7C5 /* SCLAlertViewResponder.m */; };
+		45F802D04B3BE0CAEC586C2F3016027B /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F912BAD87F86B47E136329DEAC11D3A7 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47F04CBDF6C54B220F6AEECEF15264D5 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C39AB8B7CAEA5CED17A3846DBC4347 /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EB8D9F5C8EB9DD04E706595D8F6CA86 /* TNRadioButtonDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 993068E5CA7FCB403A6EC163CF376B55 /* TNRadioButtonDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51047C1945103943F70BEADE83725630 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 25A0A372B3B6083BD5F6556509049975 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55DCDFD43169B6C64189E9A938F08EA3 /* SCLSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21704B16A023A81A544313E1AB38A49D /* SCLSwitchView.m */; };
+		56C1900FDC1EF0C25BD63CF546870C36 /* TNCircularRadioButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = C4402F946CE74870AEB2675BA3709D84 /* TNCircularRadioButtonData.m */; };
+		58D052AFB88079E97B8772B8F36E8C7D /* MTBBarcodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0DDB84BA05E9EB702C283828D72F43 /* MTBBarcodeScanner.m */; };
+		5A1D34D104D42B1EE399E23BCD7935A0 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 43292DC5B6469F3379F3DE37D323E916 /* AFURLResponseSerialization.m */; };
+		5A7BBD4125C5893619369BEA428C689A /* SCLMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = EF4294A19E89199A1E4CE095BF54444E /* SCLMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		649E78B5EA450FABDF5201E31F265FAB /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C66AAF1925EC12157DF1D0C65AA78E0 /* AFNetworkActivityIndicatorManager.m */; };
+		6573AF9ABA59AC8D1F52B07088197F71 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = A54284163BCB057486B39364A0507E60 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67B2E19B462CEB2A8DE183B6CE857EF6 /* TNRadioButtonGroupProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F52A828DFD9493EFE699D15F6C6A046 /* TNRadioButtonGroupProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		728F355DF5754C08AE92392DB6F7D6DE /* WYPopoverController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EBDC4373B4C151B46ED18539427D3E6 /* WYPopoverController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72BE65E696A388D4CC0D75BE461FEF1B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA67248728C62F519D04B4D1C05C54 /* MobileCoreServices.framework */; };
-		7342077CEB613C4E2958E663F32097F0 /* SCLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FA6BF4145A8D76B0A638A2CF3DD05F /* SCLTextView.m */; };
-		7A112C0F21A62CB6F1AA8D917A6EEA6C /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F98704FC6AA7BAF2D1CE6090E4FD9F /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7CE16B1BF75DF396768A0A3CFD968DB1 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9021E54148A064F11810DB2976D0D /* UIWebView+AFNetworking.m */; };
+		73640C01152AFF8E32168FAD202492B3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6376BD8058723BC9B0F62A5F6F1974 /* Accelerate.framework */; };
+		75778FAD6ED3195770EE27DE1EE9CD6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25C8ADD448C1AA6B90720B062933B0C /* UIKit.framework */; };
+		76ED235224D9F6300F1AF3A796A8AF76 /* SCLTimerDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 92F189CEDC54CC085F83E275EAE72AE3 /* SCLTimerDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77ED071F8730703440267EDB74C76555 /* TNImageRadioButtonData.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2AB2EF6CA8297C79EA9F2C52BAFB2F /* TNImageRadioButtonData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		786A81D02AB38DD219A82BDD5DD839D8 /* SCLAlertViewStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 536E6184C7F408F8D6C00CE976C1C1BD /* SCLAlertViewStyleKit.m */; };
+		7A112C0F21A62CB6F1AA8D917A6EEA6C /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F46C0DE9C9B976D842DA7C08E7F146 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C9497EE010C1D6AF4A9E882752746DF /* SCLAlertView-Objective-C-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AEEDEF7490330953EB5AE95C3E3C4DE /* SCLAlertView-Objective-C-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CE16B1BF75DF396768A0A3CFD968DB1 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C7EDC7CD974EE2A59D36D31E755AF4 /* UIWebView+AFNetworking.m */; };
 		80166F58EEA3B3C4A5D1FFFBBECA8B16 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237B50D0B4F9163919F92188720A586E /* AVFoundation.framework */; };
+		80A96B0C02F597FF514253F769626C31 /* UIAlertController+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = A46C32F37041EE4877E7ADFBECBB8002 /* UIAlertController+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		863F50B21EFFC75082E6A7C018D29FDE /* Pods-MBZBarcode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C13E3D97F61A0462A1DE27B7B1076347 /* Pods-MBZBarcode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8846CC15504147380E5700E3285EA15D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09A7F4EDC96976BCBF189C091D33CD5 /* QuartzCore.framework */; };
-		897C38C8E3C31950E2E93A4D6937CCC4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF7319EBC1F1FBFE75A661C7E6F1194 /* MBProgressHUD.m */; };
-		8AC330E2D5B21C953E07605A808C3E50 /* TNCircularRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DEADB712F51C2FB9EE2403C94E65C4 /* TNCircularRadioButton.m */; };
-		9264BD69AFA8EE74F0D7F0EBD74F762F /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 627EB78D017122F2955C60869F635527 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93DFC0CC12E763AE770017349EE009D1 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 290993AAF04CE1973C37F1404F5FA61D /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		948458DC0A9308A2D8C018C37FB7BBDD /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ED23FC14F78CE4DF856CECEF78B697A /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95D1AF8C79BDE6BAFE66F90B72E49D7E /* TNRectangularRadioButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA2CC59212356EBF6B11A9D47DDEE35 /* TNRectangularRadioButtonData.m */; };
-		97D43862E70D6372A613C4F572BF7BAB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A065043688CEED34F941BFA45EA50513 /* AudioToolbox.framework */; };
+		897C38C8E3C31950E2E93A4D6937CCC4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E548FCB3FC0691BF76A62DEF6D5B52AA /* MBProgressHUD.m */; };
+		8B44990EC3B0496C361FED13A9BF82F9 /* TNImageRadioButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1995A5E79A3B84B6EF8598E625A77B91 /* TNImageRadioButtonData.m */; };
+		8BE5650F5979828DEEF1EC46D8847FD9 /* SCLSwitchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 70A3F03633468B455873248CFE3F1F1F /* SCLSwitchView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9019DE90B9469C9C71EBA986FD7A2348 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25C8ADD448C1AA6B90720B062933B0C /* UIKit.framework */; };
+		9264BD69AFA8EE74F0D7F0EBD74F762F /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 462EC328A08FE8D1FFB4E93CE1A66B5D /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9308C50EFC8855C1D6738199ED45FCF3 /* UIAlertController+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = D21AAFD51C10121B1601A35186361E5F /* UIAlertController+Blocks.m */; };
+		93DFC0CC12E763AE770017349EE009D1 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D137560F9FF71C536FCD7DFB4B2B181 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		948458DC0A9308A2D8C018C37FB7BBDD /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B740A5B041ECE53780336361D284613 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9627F460E6E0995D96DD57C820BF5E3F /* SCLAlertViewResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 397DEE3A5EE6E0BDA2FF8EA93B87FCDE /* SCLAlertViewResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98014E72EEF7CE5BBEA03561C67ADE5C /* TNRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = FE540331FE9DE292FD23A53AD035D36A /* TNRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98DF470CA8F6DD132AFAC1398FCD579C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226F1E3B94A37EEA4C21F7F674E88566 /* CoreGraphics.framework */; };
-		9EE8C6576FA7C024B762CFE3ECB2D35A /* SCLAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 779562A403C73A224E0FAF4E78F17D8C /* SCLAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A22AA018F146F37B5076EBB0EDAE0238 /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = C15B04A3561D1CF361A4D027604893CE /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2740766ACE4C8540506CC619B29176F /* SCLTimerDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 76D962F8F3B13C7617ED2DB121E1AEB8 /* SCLTimerDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3591DEDA776B48C026E7F9144981E58 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D3E5A992CC73A3ECE40065BFC89A31 /* AFAutoPurgingImageCache.m */; };
-		A398D63C8DED664D99A864D79881A13C /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E561ADDC4C23F768385BBDD5C6C40B /* AFImageDownloader.m */; };
-		A5BF8DBDD8660DBCFE712657F3D82BDA /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = E5AB74D76EB55884B6A562CB86ECAA72 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6FC6007DB7F8EBE816EB1F1AB2D0C9D /* comic-sans.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 933BCB9D31038DEF108AAAA5025C4651 /* comic-sans.ttf */; };
-		A75A0C1E9F1A6A930A9ED17248891544 /* SCLSwitchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 18089161BA6D05E36CF3A5883D29BB6D /* SCLSwitchView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE976B0E8E3DD81E4F49DBEF19D3C0AD /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0076D30AB7A784801E31654DE3C11171 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B16A078FC7FBC172A266A336AEF7F673 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 45494995F7F44B2A17BA07716A15706D /* UIRefreshControl+AFNetworking.m */; };
-		B44F1939EAB12430403EC69D939FD772 /* TNRadioButtonDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B17ED59EB4D09AC015D85ECDD5E253 /* TNRadioButtonDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5F3FBC7A7D77911F1BEB9A2AD4E34CA /* Pods-MBZBarcode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 691ABC5FA604F2FAE095195B2C667CBF /* Pods-MBZBarcode-dummy.m */; };
+		9D898AA8F3D6B505E0D32AA47A585E35 /* WYPopoverController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAA040EADCF2C19EE9E6029F467B63D /* WYPopoverController-dummy.m */; };
+		9FFAD4F1EA9120DF797AB39555733FB3 /* TNRectangularRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF61A40BAB80480BFC656B76A6C2BB55 /* TNRectangularRadioButton.m */; };
+		A0AC2CE2CF6524AFAA5267CD0096BF34 /* comic-sans.ttf in Sources */ = {isa = PBXBuildFile; fileRef = B7AC1906BF615615C255703B1ABED11A /* comic-sans.ttf */; };
+		A185DFD5C8970846E2F6CA3F14F438CA /* SCLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B93766EFE7563C89FD0C951737F09BF /* SCLButton.m */; };
+		A3591DEDA776B48C026E7F9144981E58 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 514E4DF703391763DE5C4F872DF8E6AA /* AFAutoPurgingImageCache.m */; };
+		A398D63C8DED664D99A864D79881A13C /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B800E500A09786DB02510EBAF0916B /* AFImageDownloader.m */; };
+		A3B4773CA140FEFE3BCBCF9F10F24AAF /* SCLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080DA81BB9ECAC2A253926898F6621C /* SCLAlertView.m */; };
+		A3BEA74211B894AFC395B0671993DFCA /* TNCircularRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF8E8DF506558C7E645D5EEF8739B93 /* TNCircularRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A502DC8BA0CF52D1F5AD7F314E993F44 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226F1E3B94A37EEA4C21F7F674E88566 /* CoreGraphics.framework */; };
+		A5BF8DBDD8660DBCFE712657F3D82BDA /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 91EC7BDBF154CBE99D3DEF0486B9D0AB /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADEB93BCA3B622981944B6D6C47A622A /* TNRectangularRadioButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0A4169DA4B7690F2E7F6F6A95A747 /* TNRectangularRadioButtonData.m */; };
+		AE976B0E8E3DD81E4F49DBEF19D3C0AD /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E238989CEC68E957AD4DC47B9A90D805 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B168CA3DFCE08264EDC11735A1CEAF31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F53349361EF5F1E0AC264C95592AA23 /* Foundation.framework */; };
+		B16A078FC7FBC172A266A336AEF7F673 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2FDB64749F62DA1942A7A3A14738F /* UIRefreshControl+AFNetworking.m */; };
+		B3FDF78068BD7BB127B8B4AD5359A017 /* Pods-MBZBarcode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 691ABC5FA604F2FAE095195B2C667CBF /* Pods-MBZBarcode-dummy.m */; };
+		B785C51732258E09C336ABEA05897A27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F53349361EF5F1E0AC264C95592AA23 /* Foundation.framework */; };
 		BA2D29D9265012FAC7A88D9A8CCD9989 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226F1E3B94A37EEA4C21F7F674E88566 /* CoreGraphics.framework */; };
-		BA61FA054BE36AB3B6FB997C867AFED7 /* TNRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C26B00205AE578E80990BE60B9BA78B /* TNRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BACCDAA3876B91C7EEC76D58DA11B128 /* TNRadioButtonData.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E3B4CBD2064DCC8B480E6C19C171192 /* TNRadioButtonData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB9CA17FA6B59940E7417B9C42935FAB /* TNRadioButtonGroup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8579323A15789F8F87AEB62AAA2195 /* TNRadioButtonGroup-dummy.m */; };
 		BC22E83FBE012D2A1B6B72B886832AF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F53349361EF5F1E0AC264C95592AA23 /* Foundation.framework */; };
-		BD36EDFF66045A2286A8EBE71A715CDA /* SCLAlertViewResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 06C204B27FC75D82E8DE4C46EF9C17F1 /* SCLAlertViewResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDA4F2010AF00C2E2F64A5F8422E4C20 /* TNRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B5790399E676FE4780DF793EA52666 /* TNRadioButton.m */; };
-		BF9ABDB083F4470476990D40E10E3C97 /* SCLAlertViewStyleKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EF0341DB855308FC549E79A1EDE10402 /* SCLAlertViewStyleKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB5FA14D3D12AAC2C58DBD113ECDCAD2 /* MTBBarcodeScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB5F60ACC8BDF12FC3B51E51F01EA5 /* MTBBarcodeScanner-dummy.m */; };
-		CC87DEFF84DEA1CBD6CBFB0DAA94099C /* TNImageRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 9307EA907F651541967E96210E2A0C1B /* TNImageRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CCD287FE2F5C723969B38FD579B67A14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226F1E3B94A37EEA4C21F7F674E88566 /* CoreGraphics.framework */; };
-		CDFA574F07547153CFC75F33727D9922 /* SCLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB19B7E75B3FCE9784B5897829ADB167 /* SCLAlertView.m */; };
+		BF1719B71D910A1585C22914CBE81F4F /* TNRadioButtonGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C9D1248EAB42665EEDB4ACB1506F2F /* TNRadioButtonGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C50153129024D9A4F4AFE32F22ACC59A /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B8D05E5349AF9F8FB2C6F3E3C470A9 /* UIImage+ImageEffects.m */; };
+		C8892B0E55B7551E6D7D2031FA849E6D /* TNCircularRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6544F5098C17A3447180D5896DC4C1 /* TNCircularRadioButton.m */; };
+		CB5FA14D3D12AAC2C58DBD113ECDCAD2 /* MTBBarcodeScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B81E551EE6DB5F920D44692F7DC3A5 /* MTBBarcodeScanner-dummy.m */; };
 		CE2EB8CE3176F8A1FAA78CC8786292CC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59051460350B068265BD64BE2537DCB0 /* SystemConfiguration.framework */; };
-		CEB2F0E229EF841D92C780C3FFDF1BEA /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF600CCADEA136B480CBBD7C852AEAE /* AFSecurityPolicy.m */; };
-		CF23300EE76E95A6FD410AC5F9E170E1 /* SCLAlertView-Objective-C-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0FD03B3A5FBD5919BD7CE9E9416D8B /* SCLAlertView-Objective-C-dummy.m */; };
-		CF287829627F26B2EB4382B897D06A0E /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCCD98706D5078354954CFD32BB7CB2 /* AFNetworking-dummy.m */; };
-		D1E28D6587C05AC2EFCDEF918C8EDDC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25C8ADD448C1AA6B90720B062933B0C /* UIKit.framework */; };
-		D4E80BD7EAAB83200183110578A80591 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F34D262200FEF852956F64519A6E883 /* AFURLSessionManager.m */; };
-		D8E80A392019137B82D9949479329EC4 /* SCLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E77FC1F35C3088C5650B07E57BCBF483 /* SCLButton.m */; };
-		D94198ACCD5FE4245524494B3A0831D2 /* TNImageRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EFC72F6415CE25434FD262FF9DF58A1 /* TNImageRadioButton.m */; };
+		CEB2F0E229EF841D92C780C3FFDF1BEA /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CD19D75E02426A97648FB3DA39446D /* AFSecurityPolicy.m */; };
+		CF287829627F26B2EB4382B897D06A0E /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A873EB707773E8033B2DB7A549F0CE46 /* AFNetworking-dummy.m */; };
+		D01994EA0FC3F28C8DBE9E8AB00D9881 /* SCLAlertView-Objective-C-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD795DCE037E598096BE609A60BDE9CA /* SCLAlertView-Objective-C-dummy.m */; };
+		D2BFFB941E32FDC7F243E0872B5C5329 /* TNRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A94078DAA9CE9134F29163B49994C5F /* TNRadioButton.m */; };
+		D4E80BD7EAAB83200183110578A80591 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3398D3E6FCB6A5CB02FD2BB0EA87824 /* AFURLSessionManager.m */; };
+		D819ECBDA1D38FC1EFB867A918DF0E57 /* TNRadioButtonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B1674051568F58D90FBE3AF8DA6B5C39 /* TNRadioButtonGroup.m */; };
 		DA3FBCF3B21EB18151C3BC2645107E0D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09A7F4EDC96976BCBF189C091D33CD5 /* QuartzCore.framework */; };
-		DD887A93A200A87A51B3D00BD1B80D20 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6FCCF5A8C2A40AA4EA2F5957CF48EA /* AFNetworkReachabilityManager.m */; };
-		E23B9A6F533461CB33C0FA6FB59E3AB2 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 23EA5B4C5C3288B6FC8A9657E1A60C7F /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAD395C1A2B958899E668856FA4FE82F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F53349361EF5F1E0AC264C95592AA23 /* Foundation.framework */; };
+		DD516403D7DECBA91F7C77DB48B0C844 /* TNRadioButtonData.h in Headers */ = {isa = PBXBuildFile; fileRef = 5627B97553DF08790A9FE3DAEA559264 /* TNRadioButtonData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD887A93A200A87A51B3D00BD1B80D20 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF215E863A1AEC29FA102BA988394530 /* AFNetworkReachabilityManager.m */; };
+		E23B9A6F533461CB33C0FA6FB59E3AB2 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C09EB8AA0429C11CE0A28A2753E28E54 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3E06337C3AB38562FA3E2D5489C771E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09A7F4EDC96976BCBF189C091D33CD5 /* QuartzCore.framework */; };
 		E84429134BA67260BE97612795028D4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F53349361EF5F1E0AC264C95592AA23 /* Foundation.framework */; };
-		EAF16633DB3C992CF975BE4A2932D41C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CBC71226DD374D50AA39D9CA9317EF /* AFHTTPSessionManager.m */; };
-		EEBE228769FF05AF5C69A88ADED7EF12 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF0B5F284ED48D3F43FE8287E3C59EB /* UIImage+ImageEffects.m */; };
-		F040253E93935C1334327893D5FDF86F /* SCLAlertViewResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 591942A1C0CC396F408999AFD0B60869 /* SCLAlertViewResponder.m */; };
-		F161A54DB78A90DC8EB3FD6B24D049D4 /* SCLAlertView-Objective-C-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A564D43EC320D731C81AD3F511E397F /* SCLAlertView-Objective-C-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1CAA2EBDDFF558DEF98684F2479A7AF /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 419388AEAA9A27D71C5F3F64556FD30A /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2D899C7AA0D7FC20160091BB9D31CF3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 019E62B8C937CE353A5ADDE7737DF4D1 /* UIImageView+AFNetworking.m */; };
-		F519F75EE77526D859C8EF43C1A0756A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F53349361EF5F1E0AC264C95592AA23 /* Foundation.framework */; };
-		F836858CED19319F3FA7465C895F2A4D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6376BD8058723BC9B0F62A5F6F1974 /* Accelerate.framework */; };
-		F84DD74BB7F612DE372F8C051420DF72 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 21C7BB40B49E5E7B5239E7995B33422D /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F95E7E554957B9890C424C63370A7805 /* SCLTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = B8EF7F4B22D4F3044996A33EB360474F /* SCLTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEF6EACE962EAE70E2EAC5F3C83EF7C8 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = CA08FAF1C499176C3E31ADF7BA54C170 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8F74F4C0C101786142171560D857ABC /* SCLAlertViewStyleKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAB1D6ACF35C7C125B32775EFAB15EF /* SCLAlertViewStyleKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9D4949B6ADFA572F07CFF740FE736E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226F1E3B94A37EEA4C21F7F674E88566 /* CoreGraphics.framework */; };
+		EAF16633DB3C992CF975BE4A2932D41C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0069B6F3A53C4ACDF9FC66E7F50FE06A /* AFHTTPSessionManager.m */; };
+		EBE1318AE1EB9C254D0E196E2FCBECF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F53349361EF5F1E0AC264C95592AA23 /* Foundation.framework */; };
+		EDD7272BC42A041A5754B55CD3144B0B /* TNImageRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ACFCF89701CBC25828A617567EE52D8 /* TNImageRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEECD52EC9DEC0D14D6858320AA56DDF /* TNRectangularRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C6ACEB8D293D427F582EBE910D38567D /* TNRectangularRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF80E15D511BE69FB653A73882BA0925 /* SCLTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C55917EC740DFCBC9602D059BF22A8B /* SCLTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1CAA2EBDDFF558DEF98684F2479A7AF /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6BA0820B50C107A0D6738D32187123 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2D899C7AA0D7FC20160091BB9D31CF3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B7CD2D96BEE94E897E2CA9977D5B13 /* UIImageView+AFNetworking.m */; };
+		F3FEC5F291DDB12C3760182B96D160E2 /* WYStoryboardPopoverSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 674F10D72674081769D174E0A59AC9B7 /* WYStoryboardPopoverSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F57083EA05DDA4C8F3FD2F34DEA7BC7E /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A8C18709D017212F2E85BBF8F15440 /* WYStoryboardPopoverSegue.m */; };
+		F7CAB83E3E990CF3E0AE8D16E36BEE73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F53349361EF5F1E0AC264C95592AA23 /* Foundation.framework */; };
+		F84DD74BB7F612DE372F8C051420DF72 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A61F0CFF819ADA6F17823D11B0A4F966 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEF6EACE962EAE70E2EAC5F3C83EF7C8 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A4150BB8EB786A70DCA41CF1557B2 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		19882C1EA5A1B6EE0D7978F38CF1BA76 /* PBXContainerItemProxy */ = {
+		13BFC2369D93A3F1E78979E8B187A8BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CF671F7E57B92905F1CC91D036D6B4A7;
-			remoteInfo = AFNetworking;
+			remoteGlobalIDString = 17FD5EF019B59C1EAA694DDE43116516;
+			remoteInfo = TNRadioButtonGroup;
 		};
-		A68824C830D3FD976C576D4C618E0EC0 /* PBXContainerItemProxy */ = {
+		1ABEB28D61DEA246F06BE1541B1AE834 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 41FA54D12162DAD51D02FC58A2CD5034;
 			remoteInfo = MBProgressHUD;
 		};
-		C12FE453175CB844B027F9BBFC54C7F3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A7BA061FD1085748ED10984CD89F289D;
-			remoteInfo = "SCLAlertView-Objective-C";
-		};
-		C8F0BFC61C39B55C482945334CDBB03C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B318D7B0293849A2D17BC919867A8373;
-			remoteInfo = TNRadioButtonGroup;
-		};
-		FBBF3061D302579B73A4266F57CD9DA6 /* PBXContainerItemProxy */ = {
+		20D3269830D09787C50E69FDE8FED81D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9DF61A38842AB92FE7443ED3A096DCD3;
 			remoteInfo = MTBBarcodeScanner;
 		};
+		426F642591F3C6CE00A43A39999E876E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF671F7E57B92905F1CC91D036D6B4A7;
+			remoteInfo = AFNetworking;
+		};
+		4EC6092D384E2E4C8AF2D35FA7D33E8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2492A5B5FDAD1EA8A766A700A02ABD08;
+			remoteInfo = WYPopoverController;
+		};
+		5A81386161B9DDB9A150D7030C6E23D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C35D3F16E8A5A52628C84C6E06A8787;
+			remoteInfo = "UIAlertController+Blocks";
+		};
+		E17EDB0B48BB3D8F8BB805631DA9F6CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BE1F40A12FA5AA705098C7B95B79896;
+			remoteInfo = "SCLAlertView-Objective-C";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0076D30AB7A784801E31654DE3C11171 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
-		00873C2FDBACB2766504CCD1007E7FC8 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
-		019E62B8C937CE353A5ADDE7737DF4D1 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		0069B6F3A53C4ACDF9FC66E7F50FE06A /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		0089093EF72A0B8D884753B9114B8F4B /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B0A4169DA4B7690F2E7F6F6A95A747 /* TNRectangularRadioButtonData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNRectangularRadioButtonData.m; path = src/TNRectangularRadioButtonData.m; sourceTree = "<group>"; };
 		01B6CE42B5F0DAFD5DD5302F8BF1CAE0 /* Pods-MBZBarcode-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MBZBarcode-resources.sh"; sourceTree = "<group>"; };
-		02261881E0B312F052566ABF2358C65C /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
-		02DEADB712F51C2FB9EE2403C94E65C4 /* TNCircularRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNCircularRadioButton.m; path = src/TNCircularRadioButton.m; sourceTree = "<group>"; };
-		03B17ED59EB4D09AC015D85ECDD5E253 /* TNRadioButtonDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNRadioButtonDelegate.h; path = src/TNRadioButtonDelegate.h; sourceTree = "<group>"; };
-		03FCFD0E9E7B1BB929F2E50FF287738D /* TNImageRadioButtonData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNImageRadioButtonData.h; path = src/TNImageRadioButtonData.h; sourceTree = "<group>"; };
-		0582CB3898DB51D5AA701BF0B10E1AB7 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
-		06C204B27FC75D82E8DE4C46EF9C17F1 /* SCLAlertViewResponder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLAlertViewResponder.h; path = SCLAlertView/SCLAlertViewResponder.h; sourceTree = "<group>"; };
-		06D68308253F62B0B8392D0B654A6C06 /* TNRadioButtonGroup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TNRadioButtonGroup.framework; path = TNRadioButtonGroup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EDED464BD95303F72B5604B1D8DBA7 /* SCLAlertView_Objective_C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView_Objective_C.framework; path = "SCLAlertView-Objective-C.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0705193C9765316C2062B8A16AAAE95F /* Pods-MBZBarcode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MBZBarcode.debug.xcconfig"; sourceTree = "<group>"; };
+		08CF782EF2DF6C4D8A0229E9F4FE0684 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
 		08E17A5DA352C5E911D3F80E1944A480 /* Pods-MBZBarcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MBZBarcode.release.xcconfig"; sourceTree = "<group>"; };
-		0A564D43EC320D731C81AD3F511E397F /* SCLAlertView-Objective-C-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-Objective-C-umbrella.h"; sourceTree = "<group>"; };
+		0B93766EFE7563C89FD0C951737F09BF /* SCLButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLButton.m; path = SCLAlertView/SCLButton.m; sourceTree = "<group>"; };
 		0B9397607179C430D3CAC3D4EA28A77E /* Pods-MBZBarcode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MBZBarcode.modulemap"; sourceTree = "<group>"; };
-		0D9DF95335A7206AC062733C16F90A16 /* SCLAlertViewStyleKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLAlertViewStyleKit.m; path = SCLAlertView/SCLAlertViewStyleKit.m; sourceTree = "<group>"; };
-		1110405C4BC468DD24907D7E25F40CF5 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		18089161BA6D05E36CF3A5883D29BB6D /* SCLSwitchView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLSwitchView.h; path = SCLAlertView/SCLSwitchView.h; sourceTree = "<group>"; };
-		1D0212C4D32177C63991CCAFBE5FC43E /* Pods_MBZBarcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MBZBarcode.framework; path = "Pods-MBZBarcode.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FD9021E54148A064F11810DB2976D0D /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		21C7BB40B49E5E7B5239E7995B33422D /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		21E561ADDC4C23F768385BBDD5C6C40B /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
-		224EFF57410B8B4B4B57C4E77F628746 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		0C0DDB84BA05E9EB702C283828D72F43 /* MTBBarcodeScanner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTBBarcodeScanner.m; path = Classes/ios/Scanners/MTBBarcodeScanner.m; sourceTree = "<group>"; };
+		0E4EFF2F61A69F436943DCFDBABD0FF9 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		198077CC1854D500281BED81A5AC70CC /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "SCLAlertView/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		1995A5E79A3B84B6EF8598E625A77B91 /* TNImageRadioButtonData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNImageRadioButtonData.m; path = src/TNImageRadioButtonData.m; sourceTree = "<group>"; };
+		1A8579323A15789F8F87AEB62AAA2195 /* TNRadioButtonGroup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TNRadioButtonGroup-dummy.m"; sourceTree = "<group>"; };
+		1F4A4150BB8EB786A70DCA41CF1557B2 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		21704B16A023A81A544313E1AB38A49D /* SCLSwitchView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLSwitchView.m; path = SCLAlertView/SCLSwitchView.m; sourceTree = "<group>"; };
 		226F1E3B94A37EEA4C21F7F674E88566 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		237B50D0B4F9163919F92188720A586E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		23EA5B4C5C3288B6FC8A9657E1A60C7F /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
-		290993AAF04CE1973C37F1404F5FA61D /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		2AAEBBFB4B844C55159F6329FF69098B /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		23E5576E64CE2410EA7BD34D18B8B348 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		25A0A372B3B6083BD5F6556509049975 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		26CD19D75E02426A97648FB3DA39446D /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		27F90A04DDFA9D21DAAAB130C6B30989 /* UIAlertController+Blocks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIAlertController+Blocks.xcconfig"; sourceTree = "<group>"; };
+		2AEEDEF7490330953EB5AE95C3E3C4DE /* SCLAlertView-Objective-C-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-Objective-C-umbrella.h"; sourceTree = "<group>"; };
+		2BDEECC05B113FDD1FC8F3A894A0846C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D137560F9FF71C536FCD7DFB4B2B181 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		2F833A9FE22E578D7908C7C7642130FE /* Pods-MBZBarcode-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MBZBarcode-acknowledgements.markdown"; sourceTree = "<group>"; };
-		377D71251F1FB70C813696AC6FB0C9BD /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		380E753DE1E1D72EFBF7F80CB05327F3 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
-		38BA2D0DC53FE17E668EC8D47B2A562D /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
-		3C4205309AC199CD55A6BCE40F61384B /* SCLAlertView-Objective-C.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SCLAlertView-Objective-C.xcconfig"; sourceTree = "<group>"; };
-		3CF7319EBC1F1FBFE75A661C7E6F1194 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		3F6FCCF5A8C2A40AA4EA2F5957CF48EA /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		419388AEAA9A27D71C5F3F64556FD30A /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		4448C228285165BD5B2EF4FB2B004B96 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AFNetworking.modulemap; sourceTree = "<group>"; };
-		45494995F7F44B2A17BA07716A15706D /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
-		4C33531D0CC19E21CAA2E7CCFB71BBA7 /* TNRadioButtonGroupProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNRadioButtonGroupProtocol.h; path = src/TNRadioButtonGroupProtocol.h; sourceTree = "<group>"; };
-		4F94DD5BA5A6F2AA0171B72E1F43BCA0 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
-		54EEB199171C61026795091779F9CDCB /* SCLAlertView_Objective_C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView_Objective_C.framework; path = "SCLAlertView-Objective-C.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		55400EE85EDC4C03E38BBF7142DAA282 /* MTBBarcodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MTBBarcodeScanner.framework; path = MTBBarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		587D93AFB12ABA616C597A289FA49797 /* TNCircularRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNCircularRadioButton.h; path = src/TNCircularRadioButton.h; sourceTree = "<group>"; };
+		2F9708E4CF611129673D5EA6B5032ED8 /* TNRectangularRadioButtonData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNRectangularRadioButtonData.h; path = src/TNRectangularRadioButtonData.h; sourceTree = "<group>"; };
+		30A94A594A68A89E6C304638F381B88E /* MTBBarcodeScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTBBarcodeScanner-umbrella.h"; sourceTree = "<group>"; };
+		32B800E500A09786DB02510EBAF0916B /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		37741AB02B2CCC76A2F1589019B18532 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		397DEE3A5EE6E0BDA2FF8EA93B87FCDE /* SCLAlertViewResponder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLAlertViewResponder.h; path = SCLAlertView/SCLAlertViewResponder.h; sourceTree = "<group>"; };
+		39E1C71A8F3B00331FC9CA8A43A03DFC /* SCLAlertView-Objective-C-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-Objective-C-prefix.pch"; sourceTree = "<group>"; };
+		3ACFCF89701CBC25828A617567EE52D8 /* TNImageRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNImageRadioButton.h; path = src/TNImageRadioButton.h; sourceTree = "<group>"; };
+		3FCDB123FF2A94686C4EABB49D7A632A /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		41C0599753D5FBBB586DF7C3EE8129AE /* WYPopoverController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYPopoverController-prefix.pch"; sourceTree = "<group>"; };
+		420ABC5F5A7B08461078129B1033A32B /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		43292DC5B6469F3379F3DE37D323E916 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		43C39AB8B7CAEA5CED17A3846DBC4347 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		462EC328A08FE8D1FFB4E93CE1A66B5D /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		462FC1C2E8555B45FF09C206055DEC4B /* MTBBarcodeScanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTBBarcodeScanner.h; path = Classes/ios/Scanners/MTBBarcodeScanner.h; sourceTree = "<group>"; };
+		480007EA923E42569E4A88583952777E /* Pods_MBZBarcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MBZBarcode.framework; path = "Pods-MBZBarcode.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		486274569465735F676B267549E896DC /* WYPopoverController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WYPopoverController.modulemap; sourceTree = "<group>"; };
+		4889547B09165C60DB191C1E88FE8DAA /* TNRadioButtonGroup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TNRadioButtonGroup-umbrella.h"; sourceTree = "<group>"; };
+		4941A1D63EFC0DA342743932DBD6AEC1 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		4A94078DAA9CE9134F29163B49994C5F /* TNRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNRadioButton.m; path = src/TNRadioButton.m; sourceTree = "<group>"; };
+		4D6544F5098C17A3447180D5896DC4C1 /* TNCircularRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNCircularRadioButton.m; path = src/TNCircularRadioButton.m; sourceTree = "<group>"; };
+		4E15B116F7C832063780781322A643DA /* UIAlertController+Blocks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Blocks-umbrella.h"; sourceTree = "<group>"; };
+		4E281DDF33E8A6C1B0C135D4FC8FE509 /* MTBBarcodeScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MTBBarcodeScanner.modulemap; sourceTree = "<group>"; };
+		4EAA040EADCF2C19EE9E6029F467B63D /* WYPopoverController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WYPopoverController-dummy.m"; sourceTree = "<group>"; };
+		514E4DF703391763DE5C4F872DF8E6AA /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		536E6184C7F408F8D6C00CE976C1C1BD /* SCLAlertViewStyleKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLAlertViewStyleKit.m; path = SCLAlertView/SCLAlertViewStyleKit.m; sourceTree = "<group>"; };
+		53DCAF7A9D9500A207BAC64ECF19464E /* SCLAlertView-Objective-C.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SCLAlertView-Objective-C.xcconfig"; sourceTree = "<group>"; };
+		5627B97553DF08790A9FE3DAEA559264 /* TNRadioButtonData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNRadioButtonData.h; path = src/TNRadioButtonData.h; sourceTree = "<group>"; };
 		59051460350B068265BD64BE2537DCB0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		591942A1C0CC396F408999AFD0B60869 /* SCLAlertViewResponder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLAlertViewResponder.m; path = SCLAlertView/SCLAlertViewResponder.m; sourceTree = "<group>"; };
-		5A3C45AF3050BCE160E9CF71D99B9F15 /* TNRectangularRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNRectangularRadioButton.m; path = src/TNRectangularRadioButton.m; sourceTree = "<group>"; };
 		5D6CD9537BD309B0989C8606697F712B /* Pods-MBZBarcode-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MBZBarcode-acknowledgements.plist"; sourceTree = "<group>"; };
-		5DF600CCADEA136B480CBBD7C852AEAE /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
-		5E3B4CBD2064DCC8B480E6C19C171192 /* TNRadioButtonData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNRadioButtonData.h; path = src/TNRadioButtonData.h; sourceTree = "<group>"; };
-		623D11A619FDB49DBF4DBA686C7BABC2 /* TNCircularRadioButtonData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNCircularRadioButtonData.h; path = src/TNCircularRadioButtonData.h; sourceTree = "<group>"; };
-		627EB78D017122F2955C60869F635527 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
-		6322EA01FA48B11B17494D49F81406C9 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		655DDC28373C785A826F69F51868D519 /* SCLButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLButton.h; path = SCLAlertView/SCLButton.h; sourceTree = "<group>"; };
-		65C8D0719A9704043ED6D8F6AB1ADEE2 /* MTBBarcodeScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTBBarcodeScanner-umbrella.h"; sourceTree = "<group>"; };
+		5DF73179ECD01E15D0BFFEE12FE058C9 /* WYPopoverController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WYPopoverController.framework; path = WYPopoverController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA84D9BC421B29BF0E24363BA7CB6A6 /* TNRadioButtonGroup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TNRadioButtonGroup.modulemap; sourceTree = "<group>"; };
+		5F52A828DFD9493EFE699D15F6C6A046 /* TNRadioButtonGroupProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNRadioButtonGroupProtocol.h; path = src/TNRadioButtonGroupProtocol.h; sourceTree = "<group>"; };
+		62B7F6350F2969A306BB149987A0612F /* SCLTimerDisplay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLTimerDisplay.m; path = SCLAlertView/SCLTimerDisplay.m; sourceTree = "<group>"; };
 		65FA67248728C62F519D04B4D1C05C54 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		662EB1375E23778703BC626194897EE4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		674F10D72674081769D174E0A59AC9B7 /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WYStoryboardPopoverSegue.h; path = WYPopoverController/WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
+		68871DCB42DC0978F19A944F0CE48D68 /* SCLAlertView-Objective-C.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "SCLAlertView-Objective-C.modulemap"; sourceTree = "<group>"; };
 		691ABC5FA604F2FAE095195B2C667CBF /* Pods-MBZBarcode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MBZBarcode-dummy.m"; sourceTree = "<group>"; };
-		6AA5145172CD98FFFB8FE816CB3BC17C /* MTBBarcodeScanner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTBBarcodeScanner.m; path = Classes/ios/Scanners/MTBBarcodeScanner.m; sourceTree = "<group>"; };
-		6AC0A16763FBB7775A5AB578E4231691 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		6AC6E751E8611E0196C85C85FF90B2A7 /* MTBBarcodeScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTBBarcodeScanner-prefix.pch"; sourceTree = "<group>"; };
-		6C26B00205AE578E80990BE60B9BA78B /* TNRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNRadioButton.h; path = src/TNRadioButton.h; sourceTree = "<group>"; };
-		6ED23FC14F78CE4DF856CECEF78B697A /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		73B5790399E676FE4780DF793EA52666 /* TNRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNRadioButton.m; path = src/TNRadioButton.m; sourceTree = "<group>"; };
-		740536601CCF7C2C4E623E0E44552428 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76D962F8F3B13C7617ED2DB121E1AEB8 /* SCLTimerDisplay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLTimerDisplay.h; path = SCLAlertView/SCLTimerDisplay.h; sourceTree = "<group>"; };
-		779562A403C73A224E0FAF4E78F17D8C /* SCLAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLAlertView.h; path = SCLAlertView/SCLAlertView.h; sourceTree = "<group>"; };
-		792192448996F976E1823548A797D652 /* TNRadioButtonGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNRadioButtonGroup.m; path = src/TNRadioButtonGroup.m; sourceTree = "<group>"; };
-		7A1D13F41FB3E480FA4AB54236562F7B /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
-		7D1873E8D5A15C9F1B9D1EE11107C2F5 /* MTBBarcodeScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MTBBarcodeScanner.modulemap; sourceTree = "<group>"; };
-		832DD7A3CC42D92ADFD8F553D56EA47B /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
-		87C13995603AF5E94CA1C286137A52EB /* SCLSwitchView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLSwitchView.m; path = SCLAlertView/SCLSwitchView.m; sourceTree = "<group>"; };
-		8A291EEC35BD202524F057658A5AD0C9 /* SCLMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLMacros.h; path = SCLAlertView/SCLMacros.h; sourceTree = "<group>"; };
-		8ACB5F60ACC8BDF12FC3B51E51F01EA5 /* MTBBarcodeScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MTBBarcodeScanner-dummy.m"; sourceTree = "<group>"; };
-		8B655C525A0BD837BA244FBFA698782D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F34D262200FEF852956F64519A6E883 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
-		92BAEA310E584F9C2E48D22BF9C897C2 /* TNRadioButtonGroup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TNRadioButtonGroup.modulemap; sourceTree = "<group>"; };
-		9307EA907F651541967E96210E2A0C1B /* TNImageRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNImageRadioButton.h; path = src/TNImageRadioButton.h; sourceTree = "<group>"; };
-		933BCB9D31038DEF108AAAA5025C4651 /* comic-sans.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "comic-sans.ttf"; path = "SCLAlertView/comic-sans.ttf"; sourceTree = "<group>"; };
+		6C66AAF1925EC12157DF1D0C65AA78E0 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		6EC3CDEE92CF371A02819F7FD4F6A7C5 /* SCLAlertViewResponder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLAlertViewResponder.m; path = SCLAlertView/SCLAlertViewResponder.m; sourceTree = "<group>"; };
+		70A3F03633468B455873248CFE3F1F1F /* SCLSwitchView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLSwitchView.h; path = SCLAlertView/SCLSwitchView.h; sourceTree = "<group>"; };
+		7439A7B9B530AC0FF9ED572F16960A37 /* MTBBarcodeScanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MTBBarcodeScanner.xcconfig; sourceTree = "<group>"; };
+		7955F206C6390077FD198E1EF37693C7 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		79C9D1248EAB42665EEDB4ACB1506F2F /* TNRadioButtonGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNRadioButtonGroup.h; path = src/TNRadioButtonGroup.h; sourceTree = "<group>"; };
+		7B7B6B344C46A0790C281D526F83C32F /* TNRadioButtonGroup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TNRadioButtonGroup.xcconfig; sourceTree = "<group>"; };
+		7B90DF80F70103199AECFF6CC08C3EBA /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		7C55917EC740DFCBC9602D059BF22A8B /* SCLTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLTextView.h; path = SCLAlertView/SCLTextView.h; sourceTree = "<group>"; };
+		7EBDC4373B4C151B46ED18539427D3E6 /* WYPopoverController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WYPopoverController.h; path = WYPopoverController/WYPopoverController.h; sourceTree = "<group>"; };
+		8080DA81BB9ECAC2A253926898F6621C /* SCLAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLAlertView.m; path = SCLAlertView/SCLAlertView.m; sourceTree = "<group>"; };
+		8163CB11D7D3425588647195AC3D4061 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		81D8D8C59B6B1E64385DF0DE2989243F /* TNImageRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNImageRadioButton.m; path = src/TNImageRadioButton.m; sourceTree = "<group>"; };
+		87B81E551EE6DB5F920D44692F7DC3A5 /* MTBBarcodeScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MTBBarcodeScanner-dummy.m"; sourceTree = "<group>"; };
+		88C7EDC7CD974EE2A59D36D31E755AF4 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		8B740A5B041ECE53780336361D284613 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		8E98DE916BD42F64773322459DABDEC0 /* TNRadioButtonGroup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TNRadioButtonGroup-prefix.pch"; sourceTree = "<group>"; };
+		91EC7BDBF154CBE99D3DEF0486B9D0AB /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		92F189CEDC54CC085F83E275EAE72AE3 /* SCLTimerDisplay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLTimerDisplay.h; path = SCLAlertView/SCLTimerDisplay.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96912DE645A256FBEEAB8D3C944E484A /* SCLAlertView-Objective-C-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-Objective-C-prefix.pch"; sourceTree = "<group>"; };
-		97217910AD595E499C2372DBD685A3F0 /* TNRadioButtonGroup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TNRadioButtonGroup-prefix.pch"; sourceTree = "<group>"; };
+		93B7CD2D96BEE94E897E2CA9977D5B13 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		9680C1DD0E70273387D2F451B28C821E /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		993068E5CA7FCB403A6EC163CF376B55 /* TNRadioButtonDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNRadioButtonDelegate.h; path = src/TNRadioButtonDelegate.h; sourceTree = "<group>"; };
 		99F62D60245B49AA876AB1ABB94DE1A3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		9A52400AB81F3D5C99D1E12622B9F892 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
 		9B762E5703A470535F72A3912CEA0C43 /* Pods-MBZBarcode-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MBZBarcode-frameworks.sh"; sourceTree = "<group>"; };
 		9C6376BD8058723BC9B0F62A5F6F1974 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		9D0642F2BD8A48D082D94CF57CE3484F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EA8CBAC2447F8AE4E938C28C6A70920 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		9EFC72F6415CE25434FD262FF9DF58A1 /* TNImageRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNImageRadioButton.m; path = src/TNImageRadioButton.m; sourceTree = "<group>"; };
 		9F53349361EF5F1E0AC264C95592AA23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A065043688CEED34F941BFA45EA50513 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
-		A3CBC71226DD374D50AA39D9CA9317EF /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		AC4A08FEBD967415CA323F714F59DC40 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		AD1D6B77CE7F7BEC5D4AEE97C15BCF2C /* TNRadioButtonGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNRadioButtonGroup.h; path = src/TNRadioButtonGroup.h; sourceTree = "<group>"; };
-		ADF0B5F284ED48D3F43FE8287E3C59EB /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "SCLAlertView/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		B2D6D7C5F01A871DF3DEE2277BF62AB0 /* TNRadioButtonData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNRadioButtonData.m; path = src/TNRadioButtonData.m; sourceTree = "<group>"; };
-		B3E9D0BD2176DF732B28CCE5EE47900C /* TNRectangularRadioButtonData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNRectangularRadioButtonData.h; path = src/TNRectangularRadioButtonData.h; sourceTree = "<group>"; };
-		B5382AA7F876E55F2C459F8F35708B5A /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6A78C67BA0EF6F4C66EFFB150DF29D0 /* MTBBarcodeScanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MTBBarcodeScanner.xcconfig; sourceTree = "<group>"; };
-		B7F98704FC6AA7BAF2D1CE6090E4FD9F /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
-		B8EF7F4B22D4F3044996A33EB360474F /* SCLTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLTextView.h; path = SCLAlertView/SCLTextView.h; sourceTree = "<group>"; };
-		BB756A63367F82F02BA720C2BC5E21FE /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		BF19ACB73EB6D0C3DD4C94AB1DB1E249 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
-		BFCCD98706D5078354954CFD32BB7CB2 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
-		BFE274DD2B4DB26DC9CE809A4EFCDB65 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		A46C32F37041EE4877E7ADFBECBB8002 /* UIAlertController+Blocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Blocks.h"; sourceTree = "<group>"; };
+		A50A9144F678E76950929307D13057E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A54284163BCB057486B39364A0507E60 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		A61F0CFF819ADA6F17823D11B0A4F966 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		A8135783A6CECCC61C4E6C72FF825246 /* TNRadioButtonGroup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TNRadioButtonGroup.framework; path = TNRadioButtonGroup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A873EB707773E8033B2DB7A549F0CE46 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		A926F79D2003ADFACBD9FF6667A846EB /* TNRadioButtonData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNRadioButtonData.m; path = src/TNRadioButtonData.m; sourceTree = "<group>"; };
+		ABE2FDB64749F62DA1942A7A3A14738F /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		AC30B3899DCF21FA1F95857FCB71C4DA /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		AE9B9D782F101A03BBA16E8272CB586A /* UIAlertController+Blocks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "UIAlertController+Blocks.modulemap"; sourceTree = "<group>"; };
+		B1674051568F58D90FBE3AF8DA6B5C39 /* TNRadioButtonGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNRadioButtonGroup.m; path = src/TNRadioButtonGroup.m; sourceTree = "<group>"; };
+		B3315CF1277D06C1F80DCD9B1ACEBDB7 /* WYPopoverController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WYPopoverController.m; path = WYPopoverController/WYPopoverController.m; sourceTree = "<group>"; };
+		B3398D3E6FCB6A5CB02FD2BB0EA87824 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		B4155266DEEE832C8C6B751F0A21E801 /* UIAlertController+Blocks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Blocks-prefix.pch"; sourceTree = "<group>"; };
+		B6633534941EDDDE7DE6BC3547467976 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		B7AC1906BF615615C255703B1ABED11A /* comic-sans.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "comic-sans.ttf"; path = "SCLAlertView/comic-sans.ttf"; sourceTree = "<group>"; };
+		B7B8D05E5349AF9F8FB2C6F3E3C470A9 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "SCLAlertView/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		B820F7F949316E18754BB1CB2A628C98 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		B8A8C18709D017212F2E85BBF8F15440 /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WYStoryboardPopoverSegue.m; path = WYPopoverController/WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
+		B8F5AE9DEA8B9FAE7AF126E33213696C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA4A67FBA206E89E796362EB104A680E /* UIAlertController+Blocks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Blocks-dummy.m"; sourceTree = "<group>"; };
+		BDAB1D6ACF35C7C125B32775EFAB15EF /* SCLAlertViewStyleKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLAlertViewStyleKit.h; path = SCLAlertView/SCLAlertViewStyleKit.h; sourceTree = "<group>"; };
+		BE6BA0820B50C107A0D6738D32187123 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		BF2AB2EF6CA8297C79EA9F2C52BAFB2F /* TNImageRadioButtonData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNImageRadioButtonData.h; path = src/TNImageRadioButtonData.h; sourceTree = "<group>"; };
+		C09EB8AA0429C11CE0A28A2753E28E54 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		C13585553E1CE4FB2A478B481589449D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C13E3D97F61A0462A1DE27B7B1076347 /* Pods-MBZBarcode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MBZBarcode-umbrella.h"; sourceTree = "<group>"; };
-		C15B04A3561D1CF361A4D027604893CE /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "SCLAlertView/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		C5FA6BF4145A8D76B0A638A2CF3DD05F /* SCLTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLTextView.m; path = SCLAlertView/SCLTextView.m; sourceTree = "<group>"; };
-		C68219682E9E9099BC03660B920032CD /* SCLAlertView-Objective-C.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "SCLAlertView-Objective-C.modulemap"; sourceTree = "<group>"; };
-		C8DC3F7FD476D2C7DCCDA2FB1E31CFE9 /* TNRadioButtonGroup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TNRadioButtonGroup-umbrella.h"; sourceTree = "<group>"; };
-		CA08FAF1C499176C3E31ADF7BA54C170 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
-		CAF61F5EBF6C7BF8D362A10A2A02830E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEA2CC59212356EBF6B11A9D47DDEE35 /* TNRectangularRadioButtonData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNRectangularRadioButtonData.m; path = src/TNRectangularRadioButtonData.m; sourceTree = "<group>"; };
-		D10514EEA9F92BA779507B8410B6A042 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D295F95BFB198A053AB7A908CC27847D /* TNRadioButtonGroup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TNRadioButtonGroup.xcconfig; sourceTree = "<group>"; };
-		D52596E03505E8CE4FD1217338838F23 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA9CE7CBCBF080DF8A87E1916E867779 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		DB0E78CABA6960CF9FDF7CD681B15701 /* TNCircularRadioButtonData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNCircularRadioButtonData.m; path = src/TNCircularRadioButtonData.m; sourceTree = "<group>"; };
+		C1F5F45B6D930CB3D1ADB63A788C2F20 /* WYPopoverController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYPopoverController-umbrella.h"; sourceTree = "<group>"; };
+		C4402F946CE74870AEB2675BA3709D84 /* TNCircularRadioButtonData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNCircularRadioButtonData.m; path = src/TNCircularRadioButtonData.m; sourceTree = "<group>"; };
+		C58A33BD8361371AAB1CD346717158A9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6ACEB8D293D427F582EBE910D38567D /* TNRectangularRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNRectangularRadioButton.h; path = src/TNRectangularRadioButton.h; sourceTree = "<group>"; };
+		CF215E863A1AEC29FA102BA988394530 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		CFE3F9E3088C47C2496AC40B2FE19201 /* UIAlertController_Blocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIAlertController_Blocks.framework; path = "UIAlertController+Blocks.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21AAFD51C10121B1601A35186361E5F /* UIAlertController+Blocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Blocks.m"; sourceTree = "<group>"; };
+		D2F46C0DE9C9B976D842DA7C08E7F146 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		D5AB5024C24091707814E8671E9C4938 /* MTBBarcodeScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTBBarcodeScanner-prefix.pch"; sourceTree = "<group>"; };
+		D7B2A9D5C4FD85FE0012C3C4BB4A5D0A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA876F0927E73B642F76C7FA4DF5C63E /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		DEF8E8DF506558C7E645D5EEF8739B93 /* TNCircularRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNCircularRadioButton.h; path = src/TNCircularRadioButton.h; sourceTree = "<group>"; };
+		E104257C6467A4AB17324388CD8F0169 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		E238989CEC68E957AD4DC47B9A90D805 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
 		E25C8ADD448C1AA6B90720B062933B0C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		E51CB3D03000BB638B906B2A036F047C /* TNRadioButtonGroup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TNRadioButtonGroup-dummy.m"; sourceTree = "<group>"; };
-		E5AB74D76EB55884B6A562CB86ECAA72 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		E5BB50709D49FAF190F6B090E9B97B6F /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
-		E77FC1F35C3088C5650B07E57BCBF483 /* SCLButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLButton.m; path = SCLAlertView/SCLButton.m; sourceTree = "<group>"; };
-		EE3CC68CE128864182FB35E608818332 /* TNRectangularRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNRectangularRadioButton.h; path = src/TNRectangularRadioButton.h; sourceTree = "<group>"; };
-		EF0341DB855308FC549E79A1EDE10402 /* SCLAlertViewStyleKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLAlertViewStyleKit.h; path = SCLAlertView/SCLAlertViewStyleKit.h; sourceTree = "<group>"; };
-		EF9C9CEE25C2896DFB5A6DC4012723B4 /* MTBBarcodeScanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTBBarcodeScanner.h; path = Classes/ios/Scanners/MTBBarcodeScanner.h; sourceTree = "<group>"; };
+		E41194F9A4747F2939A04A6DFF16E71D /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		E4174C8759634178EEFC618D75EC5BFD /* TNCircularRadioButtonData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNCircularRadioButtonData.h; path = src/TNCircularRadioButtonData.h; sourceTree = "<group>"; };
+		E4F0C24727DC401D53E0DA43691B241F /* MTBBarcodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MTBBarcodeScanner.framework; path = MTBBarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E548FCB3FC0691BF76A62DEF6D5B52AA /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		E6CAD713289EEEA9C83CF12C3C9513AA /* SCLAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLAlertView.h; path = SCLAlertView/SCLAlertView.h; sourceTree = "<group>"; };
+		EF4294A19E89199A1E4CE095BF54444E /* SCLMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLMacros.h; path = SCLAlertView/SCLMacros.h; sourceTree = "<group>"; };
 		F09A7F4EDC96976BCBF189C091D33CD5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		F1575F442AE74AC19DC0862D5D94B99D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F27C49D077C1A0D828BE7529465BC7E4 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
-		F4E30DC4AD7ECABF6E890DB2117A52F9 /* TNImageRadioButtonData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNImageRadioButtonData.m; path = src/TNImageRadioButtonData.m; sourceTree = "<group>"; };
-		F663CF805BE6692E26084C1D594F8663 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
-		F78B9474809FC5162712415DD44EDACF /* SCLTimerDisplay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLTimerDisplay.m; path = SCLAlertView/SCLTimerDisplay.m; sourceTree = "<group>"; };
-		F9D3E5A992CC73A3ECE40065BFC89A31 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
-		FB0FD03B3A5FBD5919BD7CE9E9416D8B /* SCLAlertView-Objective-C-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-Objective-C-dummy.m"; sourceTree = "<group>"; };
-		FB19B7E75B3FCE9784B5897829ADB167 /* SCLAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLAlertView.m; path = SCLAlertView/SCLAlertView.m; sourceTree = "<group>"; };
+		F623052688ECB5A65DFAAF7A63B7C144 /* WYPopoverController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WYPopoverController.xcconfig; sourceTree = "<group>"; };
+		F7876A9063DCA2AEDB860651823B11F6 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		F912BAD87F86B47E136329DEAC11D3A7 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		FB2BE3726E1D642ECBF98F1BD2C6E212 /* SCLButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLButton.h; path = SCLAlertView/SCLButton.h; sourceTree = "<group>"; };
+		FC118B15A1B271896DD961C9C1EEF2F9 /* SCLTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLTextView.m; path = SCLAlertView/SCLTextView.m; sourceTree = "<group>"; };
+		FD795DCE037E598096BE609A60BDE9CA /* SCLAlertView-Objective-C-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-Objective-C-dummy.m"; sourceTree = "<group>"; };
+		FE540331FE9DE292FD23A53AD035D36A /* TNRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TNRadioButton.h; path = src/TNRadioButton.h; sourceTree = "<group>"; };
+		FF61A40BAB80480BFC656B76A6C2BB55 /* TNRectangularRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TNRectangularRadioButton.m; path = src/TNRectangularRadioButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,31 +347,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1227A3DE7399B4B1E1D75FEFED22EFA7 /* Frameworks */ = {
+		0E0DDE8DDFAE623AEA5B2CEAD0ADB5CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F836858CED19319F3FA7465C895F2A4D /* Accelerate.framework in Frameworks */,
-				97D43862E70D6372A613C4F572BF7BAB /* AudioToolbox.framework in Frameworks */,
-				CCD287FE2F5C723969B38FD579B67A14 /* CoreGraphics.framework in Frameworks */,
-				5C9D3B7D68EC2BE34D9F34F1D0BB5ACB /* Foundation.framework in Frameworks */,
-				D1E28D6587C05AC2EFCDEF918C8EDDC9 /* UIKit.framework in Frameworks */,
+				E9D4949B6ADFA572F07CFF740FE736E5 /* CoreGraphics.framework in Frameworks */,
+				EBE1318AE1EB9C254D0E196E2FCBECF1 /* Foundation.framework in Frameworks */,
+				E3E06337C3AB38562FA3E2D5489C771E /* QuartzCore.framework in Frameworks */,
+				75778FAD6ED3195770EE27DE1EE9CD6C /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F515A2B43DA365AA800C7D4F10C7550 /* Frameworks */ = {
+		4403B6B2F4EBF58D9D06AC7BFFD5FF5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B9F5BFA628C605CBCC657B0C4F9C25D /* Foundation.framework in Frameworks */,
+				B785C51732258E09C336ABEA05897A27 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45812294670476BB165B87F7AAD72533 /* Frameworks */ = {
+		4BE7B72B9255FAA76F42514B78B8A615 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F519F75EE77526D859C8EF43C1A0756A /* Foundation.framework in Frameworks */,
+				73640C01152AFF8E32168FAD202492B3 /* Accelerate.framework in Frameworks */,
+				08D6BCEC00D53035A0D84F572175D5D8 /* AudioToolbox.framework in Frameworks */,
+				A502DC8BA0CF52D1F5AD7F314E993F44 /* CoreGraphics.framework in Frameworks */,
+				B168CA3DFCE08264EDC11735A1CEAF31 /* Foundation.framework in Frameworks */,
+				9019DE90B9469C9C71EBA986FD7A2348 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +390,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62A81E7F63A9DBC2F212463363ECC457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7CAB83E3E990CF3E0AE8D16E36BEE73 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B57774E30FD88AE26F9037E1360E947B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,165 +408,133 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C30E911101FD583B6177F6C18C21EC37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD395C1A2B958899E668856FA4FE82F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		037B5933A190B887607AAE2B9A8DDC3F /* Security */ = {
+		1AC6A8952E7194C4E8040DC70742F973 /* UIAlertController+Blocks */ = {
 			isa = PBXGroup;
 			children = (
-				00873C2FDBACB2766504CCD1007E7FC8 /* AFSecurityPolicy.h */,
-				5DF600CCADEA136B480CBBD7C852AEAE /* AFSecurityPolicy.m */,
+				A46C32F37041EE4877E7ADFBECBB8002 /* UIAlertController+Blocks.h */,
+				D21AAFD51C10121B1601A35186361E5F /* UIAlertController+Blocks.m */,
+				4325FC0DE0948F9291E293D8C6A9D8E7 /* Support Files */,
 			);
-			name = Security;
+			name = "UIAlertController+Blocks";
+			path = "UIAlertController+Blocks";
 			sourceTree = "<group>";
 		};
-		0976322C056E276CAFA69776EA7B7710 /* UIKit */ = {
+		282C7C34D25437B5AA5912A4351D84AF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				02261881E0B312F052566ABF2358C65C /* AFAutoPurgingImageCache.h */,
-				F9D3E5A992CC73A3ECE40065BFC89A31 /* AFAutoPurgingImageCache.m */,
-				CA08FAF1C499176C3E31ADF7BA54C170 /* AFImageDownloader.h */,
-				21E561ADDC4C23F768385BBDD5C6C40B /* AFImageDownloader.m */,
-				B7F98704FC6AA7BAF2D1CE6090E4FD9F /* AFNetworkActivityIndicatorManager.h */,
-				BFE274DD2B4DB26DC9CE809A4EFCDB65 /* AFNetworkActivityIndicatorManager.m */,
-				BF19ACB73EB6D0C3DD4C94AB1DB1E249 /* UIActivityIndicatorView+AFNetworking.h */,
-				4F94DD5BA5A6F2AA0171B72E1F43BCA0 /* UIActivityIndicatorView+AFNetworking.m */,
-				38BA2D0DC53FE17E668EC8D47B2A562D /* UIButton+AFNetworking.h */,
-				7A1D13F41FB3E480FA4AB54236562F7B /* UIButton+AFNetworking.m */,
-				627EB78D017122F2955C60869F635527 /* UIImage+AFNetworking.h */,
-				DA9CE7CBCBF080DF8A87E1916E867779 /* UIImageView+AFNetworking.h */,
-				019E62B8C937CE353A5ADDE7737DF4D1 /* UIImageView+AFNetworking.m */,
-				23EA5B4C5C3288B6FC8A9657E1A60C7F /* UIKit+AFNetworking.h */,
-				21C7BB40B49E5E7B5239E7995B33422D /* UIProgressView+AFNetworking.h */,
-				F663CF805BE6692E26084C1D594F8663 /* UIProgressView+AFNetworking.m */,
-				1110405C4BC468DD24907D7E25F40CF5 /* UIRefreshControl+AFNetworking.h */,
-				45494995F7F44B2A17BA07716A15706D /* UIRefreshControl+AFNetworking.m */,
-				F27C49D077C1A0D828BE7529465BC7E4 /* UIWebView+AFNetworking.h */,
-				1FD9021E54148A064F11810DB2976D0D /* UIWebView+AFNetworking.m */,
-			);
-			name = UIKit;
-			sourceTree = "<group>";
-		};
-		13DB348624728066EED586AC3387051F /* TNRadioButtonGroup */ = {
-			isa = PBXGroup;
-			children = (
-				587D93AFB12ABA616C597A289FA49797 /* TNCircularRadioButton.h */,
-				02DEADB712F51C2FB9EE2403C94E65C4 /* TNCircularRadioButton.m */,
-				623D11A619FDB49DBF4DBA686C7BABC2 /* TNCircularRadioButtonData.h */,
-				DB0E78CABA6960CF9FDF7CD681B15701 /* TNCircularRadioButtonData.m */,
-				9307EA907F651541967E96210E2A0C1B /* TNImageRadioButton.h */,
-				9EFC72F6415CE25434FD262FF9DF58A1 /* TNImageRadioButton.m */,
-				03FCFD0E9E7B1BB929F2E50FF287738D /* TNImageRadioButtonData.h */,
-				F4E30DC4AD7ECABF6E890DB2117A52F9 /* TNImageRadioButtonData.m */,
-				6C26B00205AE578E80990BE60B9BA78B /* TNRadioButton.h */,
-				73B5790399E676FE4780DF793EA52666 /* TNRadioButton.m */,
-				5E3B4CBD2064DCC8B480E6C19C171192 /* TNRadioButtonData.h */,
-				B2D6D7C5F01A871DF3DEE2277BF62AB0 /* TNRadioButtonData.m */,
-				03B17ED59EB4D09AC015D85ECDD5E253 /* TNRadioButtonDelegate.h */,
-				AD1D6B77CE7F7BEC5D4AEE97C15BCF2C /* TNRadioButtonGroup.h */,
-				792192448996F976E1823548A797D652 /* TNRadioButtonGroup.m */,
-				4C33531D0CC19E21CAA2E7CCFB71BBA7 /* TNRadioButtonGroupProtocol.h */,
-				EE3CC68CE128864182FB35E608818332 /* TNRectangularRadioButton.h */,
-				5A3C45AF3050BCE160E9CF71D99B9F15 /* TNRectangularRadioButton.m */,
-				B3E9D0BD2176DF732B28CCE5EE47900C /* TNRectangularRadioButtonData.h */,
-				CEA2CC59212356EBF6B11A9D47DDEE35 /* TNRectangularRadioButtonData.m */,
-				F646BEE1AA62C7B19B54403469B3866B /* Support Files */,
-			);
-			name = TNRadioButtonGroup;
-			path = TNRadioButtonGroup;
-			sourceTree = "<group>";
-		};
-		1C1EED9E001E7987530AEF283F0AAF27 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D52596E03505E8CE4FD1217338838F23 /* Info.plist */,
-				7D1873E8D5A15C9F1B9D1EE11107C2F5 /* MTBBarcodeScanner.modulemap */,
-				B6A78C67BA0EF6F4C66EFFB150DF29D0 /* MTBBarcodeScanner.xcconfig */,
-				8ACB5F60ACC8BDF12FC3B51E51F01EA5 /* MTBBarcodeScanner-dummy.m */,
-				6AC6E751E8611E0196C85C85FF90B2A7 /* MTBBarcodeScanner-prefix.pch */,
-				65C8D0719A9704043ED6D8F6AB1ADEE2 /* MTBBarcodeScanner-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MTBBarcodeScanner";
-			sourceTree = "<group>";
-		};
-		1EE2314D00B41D5D4945649DEB5961A2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				44ECF8AFB31C3C3429513C497C97B9E7 /* AFNetworking */,
-				7EAB7DF9EBA8B1C569D502E643F65F01 /* MBProgressHUD */,
-				74285E9294D81292619D5E478129B0E1 /* MTBBarcodeScanner */,
-				27FC323026DD55D4D208BB1DAF0790EA /* SCLAlertView-Objective-C */,
-				13DB348624728066EED586AC3387051F /* TNRadioButtonGroup */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		27FC323026DD55D4D208BB1DAF0790EA /* SCLAlertView-Objective-C */ = {
-			isa = PBXGroup;
-			children = (
-				933BCB9D31038DEF108AAAA5025C4651 /* comic-sans.ttf */,
-				779562A403C73A224E0FAF4E78F17D8C /* SCLAlertView.h */,
-				FB19B7E75B3FCE9784B5897829ADB167 /* SCLAlertView.m */,
-				06C204B27FC75D82E8DE4C46EF9C17F1 /* SCLAlertViewResponder.h */,
-				591942A1C0CC396F408999AFD0B60869 /* SCLAlertViewResponder.m */,
-				EF0341DB855308FC549E79A1EDE10402 /* SCLAlertViewStyleKit.h */,
-				0D9DF95335A7206AC062733C16F90A16 /* SCLAlertViewStyleKit.m */,
-				655DDC28373C785A826F69F51868D519 /* SCLButton.h */,
-				E77FC1F35C3088C5650B07E57BCBF483 /* SCLButton.m */,
-				8A291EEC35BD202524F057658A5AD0C9 /* SCLMacros.h */,
-				18089161BA6D05E36CF3A5883D29BB6D /* SCLSwitchView.h */,
-				87C13995603AF5E94CA1C286137A52EB /* SCLSwitchView.m */,
-				B8EF7F4B22D4F3044996A33EB360474F /* SCLTextView.h */,
-				C5FA6BF4145A8D76B0A638A2CF3DD05F /* SCLTextView.m */,
-				76D962F8F3B13C7617ED2DB121E1AEB8 /* SCLTimerDisplay.h */,
-				F78B9474809FC5162712415DD44EDACF /* SCLTimerDisplay.m */,
-				C15B04A3561D1CF361A4D027604893CE /* UIImage+ImageEffects.h */,
-				ADF0B5F284ED48D3F43FE8287E3C59EB /* UIImage+ImageEffects.m */,
-				8C44D26FFCCC7DE1076741437166B2C3 /* Support Files */,
-			);
-			name = "SCLAlertView-Objective-C";
-			path = "SCLAlertView-Objective-C";
-			sourceTree = "<group>";
-		};
-		44ECF8AFB31C3C3429513C497C97B9E7 /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				9EA8CBAC2447F8AE4E938C28C6A70920 /* AFNetworking.h */,
-				C631EACAB46A8460F79678E1B97890B9 /* NSURLSession */,
-				93FF5784397E9927E9CC2CA9265C5DEA /* Reachability */,
-				037B5933A190B887607AAE2B9A8DDC3F /* Security */,
-				BD34E4CB8D074A4B3231F03D983BAB4A /* Serialization */,
-				E9DE4F41C21FF3A1B90E27251A347A03 /* Support Files */,
-				0976322C056E276CAFA69776EA7B7710 /* UIKit */,
-			);
-			name = AFNetworking;
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		6F891702548B04AA49C1AE3A736CFEA9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8B655C525A0BD837BA244FBFA698782D /* Info.plist */,
-				0582CB3898DB51D5AA701BF0B10E1AB7 /* MBProgressHUD.modulemap */,
-				224EFF57410B8B4B4B57C4E77F628746 /* MBProgressHUD.xcconfig */,
-				6322EA01FA48B11B17494D49F81406C9 /* MBProgressHUD-dummy.m */,
-				BB756A63367F82F02BA720C2BC5E21FE /* MBProgressHUD-prefix.pch */,
-				377D71251F1FB70C813696AC6FB0C9BD /* MBProgressHUD-umbrella.h */,
+				2BDEECC05B113FDD1FC8F3A894A0846C /* Info.plist */,
+				23E5576E64CE2410EA7BD34D18B8B348 /* MBProgressHUD.modulemap */,
+				9A52400AB81F3D5C99D1E12622B9F892 /* MBProgressHUD.xcconfig */,
+				7955F206C6390077FD198E1EF37693C7 /* MBProgressHUD-dummy.m */,
+				8163CB11D7D3425588647195AC3D4061 /* MBProgressHUD-prefix.pch */,
+				9680C1DD0E70273387D2F451B28C821E /* MBProgressHUD-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MBProgressHUD";
 			sourceTree = "<group>";
 		};
-		74285E9294D81292619D5E478129B0E1 /* MTBBarcodeScanner */ = {
+		39D2D30DD0D2D1EBA8C5EEE7B9F57B9E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EF9C9CEE25C2896DFB5A6DC4012723B4 /* MTBBarcodeScanner.h */,
-				6AA5145172CD98FFFB8FE816CB3BC17C /* MTBBarcodeScanner.m */,
-				1C1EED9E001E7987530AEF283F0AAF27 /* Support Files */,
+				A50A9144F678E76950929307D13057E3 /* Info.plist */,
+				486274569465735F676B267549E896DC /* WYPopoverController.modulemap */,
+				F623052688ECB5A65DFAAF7A63B7C144 /* WYPopoverController.xcconfig */,
+				4EAA040EADCF2C19EE9E6029F467B63D /* WYPopoverController-dummy.m */,
+				41C0599753D5FBBB586DF7C3EE8129AE /* WYPopoverController-prefix.pch */,
+				C1F5F45B6D930CB3D1ADB63A788C2F20 /* WYPopoverController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WYPopoverController";
+			sourceTree = "<group>";
+		};
+		3E94D4644BFC2AD4624B00D5E0764386 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				91EC7BDBF154CBE99D3DEF0486B9D0AB /* MBProgressHUD.h */,
+				E548FCB3FC0691BF76A62DEF6D5B52AA /* MBProgressHUD.m */,
+				282C7C34D25437B5AA5912A4351D84AF /* Support Files */,
+			);
+			name = MBProgressHUD;
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		4325FC0DE0948F9291E293D8C6A9D8E7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8F5AE9DEA8B9FAE7AF126E33213696C /* Info.plist */,
+				AE9B9D782F101A03BBA16E8272CB586A /* UIAlertController+Blocks.modulemap */,
+				27F90A04DDFA9D21DAAAB130C6B30989 /* UIAlertController+Blocks.xcconfig */,
+				BA4A67FBA206E89E796362EB104A680E /* UIAlertController+Blocks-dummy.m */,
+				B4155266DEEE832C8C6B751F0A21E801 /* UIAlertController+Blocks-prefix.pch */,
+				4E15B116F7C832063780781322A643DA /* UIAlertController+Blocks-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIAlertController+Blocks";
+			sourceTree = "<group>";
+		};
+		45454806D62B9D3B9922E54C5BE25D62 /* MTBBarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				462FC1C2E8555B45FF09C206055DEC4B /* MTBBarcodeScanner.h */,
+				0C0DDB84BA05E9EB702C283828D72F43 /* MTBBarcodeScanner.m */,
+				C9458FBF2E9906FF2BD7CE21D6053BA4 /* Support Files */,
 			);
 			name = MTBBarcodeScanner;
 			path = MTBBarcodeScanner;
+			sourceTree = "<group>";
+		};
+		644CFEB593B2E18E7FF2368AF59B3D39 /* TNRadioButtonGroup */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8E8DF506558C7E645D5EEF8739B93 /* TNCircularRadioButton.h */,
+				4D6544F5098C17A3447180D5896DC4C1 /* TNCircularRadioButton.m */,
+				E4174C8759634178EEFC618D75EC5BFD /* TNCircularRadioButtonData.h */,
+				C4402F946CE74870AEB2675BA3709D84 /* TNCircularRadioButtonData.m */,
+				3ACFCF89701CBC25828A617567EE52D8 /* TNImageRadioButton.h */,
+				81D8D8C59B6B1E64385DF0DE2989243F /* TNImageRadioButton.m */,
+				BF2AB2EF6CA8297C79EA9F2C52BAFB2F /* TNImageRadioButtonData.h */,
+				1995A5E79A3B84B6EF8598E625A77B91 /* TNImageRadioButtonData.m */,
+				FE540331FE9DE292FD23A53AD035D36A /* TNRadioButton.h */,
+				4A94078DAA9CE9134F29163B49994C5F /* TNRadioButton.m */,
+				5627B97553DF08790A9FE3DAEA559264 /* TNRadioButtonData.h */,
+				A926F79D2003ADFACBD9FF6667A846EB /* TNRadioButtonData.m */,
+				993068E5CA7FCB403A6EC163CF376B55 /* TNRadioButtonDelegate.h */,
+				79C9D1248EAB42665EEDB4ACB1506F2F /* TNRadioButtonGroup.h */,
+				B1674051568F58D90FBE3AF8DA6B5C39 /* TNRadioButtonGroup.m */,
+				5F52A828DFD9493EFE699D15F6C6A046 /* TNRadioButtonGroupProtocol.h */,
+				C6ACEB8D293D427F582EBE910D38567D /* TNRectangularRadioButton.h */,
+				FF61A40BAB80480BFC656B76A6C2BB55 /* TNRectangularRadioButton.m */,
+				2F9708E4CF611129673D5EA6B5032ED8 /* TNRectangularRadioButtonData.h */,
+				00B0A4169DA4B7690F2E7F6F6A95A747 /* TNRectangularRadioButtonData.m */,
+				AFDF919863EDFC6AB0F0838A5B15B923 /* Support Files */,
+			);
+			name = TNRadioButtonGroup;
+			path = TNRadioButtonGroup;
+			sourceTree = "<group>";
+		};
+		765B758330DEF7B18D7D5C59AE2B7EED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B90DF80F70103199AECFF6CC08C3EBA /* AFNetworking.modulemap */,
+				4941A1D63EFC0DA342743932DBD6AEC1 /* AFNetworking.xcconfig */,
+				A873EB707773E8033B2DB7A549F0CE46 /* AFNetworking-dummy.m */,
+				B820F7F949316E18754BB1CB2A628C98 /* AFNetworking-prefix.pch */,
+				420ABC5F5A7B08461078129B1033A32B /* AFNetworking-umbrella.h */,
+				662EB1375E23778703BC626194897EE4 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -514,21 +542,10 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				876F80F8AFD1240ED0B7B9EA9C5BFAD8 /* Frameworks */,
-				1EE2314D00B41D5D4945649DEB5961A2 /* Pods */,
-				A15720836D056D2158B7FFDF9BCDE6C1 /* Products */,
+				FD118CCCF92123AC52AA5CCF38FB2324 /* Pods */,
+				F7D035C149AC6C840DDDEFBCD5C2F345 /* Products */,
 				8B7AB5E803FA61E9CED97FDC9992B992 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		7EAB7DF9EBA8B1C569D502E643F65F01 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				E5AB74D76EB55884B6A562CB86ECAA72 /* MBProgressHUD.h */,
-				3CF7319EBC1F1FBFE75A661C7E6F1194 /* MBProgressHUD.m */,
-				6F891702548B04AA49C1AE3A736CFEA9 /* Support Files */,
-			);
-			name = MBProgressHUD;
-			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		876F80F8AFD1240ED0B7B9EA9C5BFAD8 /* Frameworks */ = {
@@ -547,62 +564,159 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		8C44D26FFCCC7DE1076741437166B2C3 /* Support Files */ = {
+		8C0BBCB32120810DC1A3CF813AFFE30F /* Security */ = {
 			isa = PBXGroup;
 			children = (
-				9D0642F2BD8A48D082D94CF57CE3484F /* Info.plist */,
-				C68219682E9E9099BC03660B920032CD /* SCLAlertView-Objective-C.modulemap */,
-				3C4205309AC199CD55A6BCE40F61384B /* SCLAlertView-Objective-C.xcconfig */,
-				FB0FD03B3A5FBD5919BD7CE9E9416D8B /* SCLAlertView-Objective-C-dummy.m */,
-				96912DE645A256FBEEAB8D3C944E484A /* SCLAlertView-Objective-C-prefix.pch */,
-				0A564D43EC320D731C81AD3F511E397F /* SCLAlertView-Objective-C-umbrella.h */,
+				A54284163BCB057486B39364A0507E60 /* AFSecurityPolicy.h */,
+				26CD19D75E02426A97648FB3DA39446D /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		8CDC586662F8D85F01C2AC55CD2CD371 /* SCLAlertView-Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				B7AC1906BF615615C255703B1ABED11A /* comic-sans.ttf */,
+				E6CAD713289EEEA9C83CF12C3C9513AA /* SCLAlertView.h */,
+				8080DA81BB9ECAC2A253926898F6621C /* SCLAlertView.m */,
+				397DEE3A5EE6E0BDA2FF8EA93B87FCDE /* SCLAlertViewResponder.h */,
+				6EC3CDEE92CF371A02819F7FD4F6A7C5 /* SCLAlertViewResponder.m */,
+				BDAB1D6ACF35C7C125B32775EFAB15EF /* SCLAlertViewStyleKit.h */,
+				536E6184C7F408F8D6C00CE976C1C1BD /* SCLAlertViewStyleKit.m */,
+				FB2BE3726E1D642ECBF98F1BD2C6E212 /* SCLButton.h */,
+				0B93766EFE7563C89FD0C951737F09BF /* SCLButton.m */,
+				EF4294A19E89199A1E4CE095BF54444E /* SCLMacros.h */,
+				70A3F03633468B455873248CFE3F1F1F /* SCLSwitchView.h */,
+				21704B16A023A81A544313E1AB38A49D /* SCLSwitchView.m */,
+				7C55917EC740DFCBC9602D059BF22A8B /* SCLTextView.h */,
+				FC118B15A1B271896DD961C9C1EEF2F9 /* SCLTextView.m */,
+				92F189CEDC54CC085F83E275EAE72AE3 /* SCLTimerDisplay.h */,
+				62B7F6350F2969A306BB149987A0612F /* SCLTimerDisplay.m */,
+				198077CC1854D500281BED81A5AC70CC /* UIImage+ImageEffects.h */,
+				B7B8D05E5349AF9F8FB2C6F3E3C470A9 /* UIImage+ImageEffects.m */,
+				9FAA088C532954377EAA829CFDCFB9AE /* Support Files */,
+			);
+			name = "SCLAlertView-Objective-C";
+			path = "SCLAlertView-Objective-C";
+			sourceTree = "<group>";
+		};
+		9FAA088C532954377EAA829CFDCFB9AE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7B2A9D5C4FD85FE0012C3C4BB4A5D0A /* Info.plist */,
+				68871DCB42DC0978F19A944F0CE48D68 /* SCLAlertView-Objective-C.modulemap */,
+				53DCAF7A9D9500A207BAC64ECF19464E /* SCLAlertView-Objective-C.xcconfig */,
+				FD795DCE037E598096BE609A60BDE9CA /* SCLAlertView-Objective-C-dummy.m */,
+				39E1C71A8F3B00331FC9CA8A43A03DFC /* SCLAlertView-Objective-C-prefix.pch */,
+				2AEEDEF7490330953EB5AE95C3E3C4DE /* SCLAlertView-Objective-C-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SCLAlertView-Objective-C";
 			sourceTree = "<group>";
 		};
-		93FF5784397E9927E9CC2CA9265C5DEA /* Reachability */ = {
+		AFDF919863EDFC6AB0F0838A5B15B923 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				290993AAF04CE1973C37F1404F5FA61D /* AFNetworkReachabilityManager.h */,
-				3F6FCCF5A8C2A40AA4EA2F5957CF48EA /* AFNetworkReachabilityManager.m */,
+				C13585553E1CE4FB2A478B481589449D /* Info.plist */,
+				5EA84D9BC421B29BF0E24363BA7CB6A6 /* TNRadioButtonGroup.modulemap */,
+				7B7B6B344C46A0790C281D526F83C32F /* TNRadioButtonGroup.xcconfig */,
+				1A8579323A15789F8F87AEB62AAA2195 /* TNRadioButtonGroup-dummy.m */,
+				8E98DE916BD42F64773322459DABDEC0 /* TNRadioButtonGroup-prefix.pch */,
+				4889547B09165C60DB191C1E88FE8DAA /* TNRadioButtonGroup-umbrella.h */,
 			);
-			name = Reachability;
+			name = "Support Files";
+			path = "../Target Support Files/TNRadioButtonGroup";
 			sourceTree = "<group>";
 		};
-		A15720836D056D2158B7FFDF9BCDE6C1 /* Products */ = {
+		BF3C37BB07E7B700485D96D9E23E8674 /* NSURLSession */ = {
 			isa = PBXGroup;
 			children = (
-				B5382AA7F876E55F2C459F8F35708B5A /* AFNetworking.framework */,
-				D10514EEA9F92BA779507B8410B6A042 /* MBProgressHUD.framework */,
-				55400EE85EDC4C03E38BBF7142DAA282 /* MTBBarcodeScanner.framework */,
-				1D0212C4D32177C63991CCAFBE5FC43E /* Pods_MBZBarcode.framework */,
-				54EEB199171C61026795091779F9CDCB /* SCLAlertView_Objective_C.framework */,
-				06D68308253F62B0B8392D0B654A6C06 /* TNRadioButtonGroup.framework */,
+				F7876A9063DCA2AEDB860651823B11F6 /* AFHTTPSessionManager.h */,
+				0069B6F3A53C4ACDF9FC66E7F50FE06A /* AFHTTPSessionManager.m */,
+				E238989CEC68E957AD4DC47B9A90D805 /* AFURLSessionManager.h */,
+				B3398D3E6FCB6A5CB02FD2BB0EA87824 /* AFURLSessionManager.m */,
 			);
-			name = Products;
+			name = NSURLSession;
 			sourceTree = "<group>";
 		};
-		BD34E4CB8D074A4B3231F03D983BAB4A /* Serialization */ = {
+		C63598A793453CA68B1E590F2FC6BE1D /* WYPopoverController */ = {
 			isa = PBXGroup;
 			children = (
-				419388AEAA9A27D71C5F3F64556FD30A /* AFURLRequestSerialization.h */,
-				AC4A08FEBD967415CA323F714F59DC40 /* AFURLRequestSerialization.m */,
-				6ED23FC14F78CE4DF856CECEF78B697A /* AFURLResponseSerialization.h */,
-				2AAEBBFB4B844C55159F6329FF69098B /* AFURLResponseSerialization.m */,
+				7EBDC4373B4C151B46ED18539427D3E6 /* WYPopoverController.h */,
+				B3315CF1277D06C1F80DCD9B1ACEBDB7 /* WYPopoverController.m */,
+				674F10D72674081769D174E0A59AC9B7 /* WYStoryboardPopoverSegue.h */,
+				B8A8C18709D017212F2E85BBF8F15440 /* WYStoryboardPopoverSegue.m */,
+				39D2D30DD0D2D1EBA8C5EEE7B9F57B9E /* Support Files */,
+			);
+			name = WYPopoverController;
+			path = WYPopoverController;
+			sourceTree = "<group>";
+		};
+		C9458FBF2E9906FF2BD7CE21D6053BA4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				37741AB02B2CCC76A2F1589019B18532 /* Info.plist */,
+				4E281DDF33E8A6C1B0C135D4FC8FE509 /* MTBBarcodeScanner.modulemap */,
+				7439A7B9B530AC0FF9ED572F16960A37 /* MTBBarcodeScanner.xcconfig */,
+				87B81E551EE6DB5F920D44692F7DC3A5 /* MTBBarcodeScanner-dummy.m */,
+				D5AB5024C24091707814E8671E9C4938 /* MTBBarcodeScanner-prefix.pch */,
+				30A94A594A68A89E6C304638F381B88E /* MTBBarcodeScanner-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MTBBarcodeScanner";
+			sourceTree = "<group>";
+		};
+		CC5368FFC2BAC358B6C7FB4A66A0D01E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				43C39AB8B7CAEA5CED17A3846DBC4347 /* AFAutoPurgingImageCache.h */,
+				514E4DF703391763DE5C4F872DF8E6AA /* AFAutoPurgingImageCache.m */,
+				1F4A4150BB8EB786A70DCA41CF1557B2 /* AFImageDownloader.h */,
+				32B800E500A09786DB02510EBAF0916B /* AFImageDownloader.m */,
+				D2F46C0DE9C9B976D842DA7C08E7F146 /* AFNetworkActivityIndicatorManager.h */,
+				6C66AAF1925EC12157DF1D0C65AA78E0 /* AFNetworkActivityIndicatorManager.m */,
+				F912BAD87F86B47E136329DEAC11D3A7 /* UIActivityIndicatorView+AFNetworking.h */,
+				B6633534941EDDDE7DE6BC3547467976 /* UIActivityIndicatorView+AFNetworking.m */,
+				0E4EFF2F61A69F436943DCFDBABD0FF9 /* UIButton+AFNetworking.h */,
+				08CF782EF2DF6C4D8A0229E9F4FE0684 /* UIButton+AFNetworking.m */,
+				462EC328A08FE8D1FFB4E93CE1A66B5D /* UIImage+AFNetworking.h */,
+				E41194F9A4747F2939A04A6DFF16E71D /* UIImageView+AFNetworking.h */,
+				93B7CD2D96BEE94E897E2CA9977D5B13 /* UIImageView+AFNetworking.m */,
+				C09EB8AA0429C11CE0A28A2753E28E54 /* UIKit+AFNetworking.h */,
+				A61F0CFF819ADA6F17823D11B0A4F966 /* UIProgressView+AFNetworking.h */,
+				AC30B3899DCF21FA1F95857FCB71C4DA /* UIProgressView+AFNetworking.m */,
+				E104257C6467A4AB17324388CD8F0169 /* UIRefreshControl+AFNetworking.h */,
+				ABE2FDB64749F62DA1942A7A3A14738F /* UIRefreshControl+AFNetworking.m */,
+				25A0A372B3B6083BD5F6556509049975 /* UIWebView+AFNetworking.h */,
+				88C7EDC7CD974EE2A59D36D31E755AF4 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		D23EFE995C86F1613DAAA2365841A282 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				BE6BA0820B50C107A0D6738D32187123 /* AFURLRequestSerialization.h */,
+				3FCDB123FF2A94686C4EABB49D7A632A /* AFURLRequestSerialization.m */,
+				8B740A5B041ECE53780336361D284613 /* AFURLResponseSerialization.h */,
+				43292DC5B6469F3379F3DE37D323E916 /* AFURLResponseSerialization.m */,
 			);
 			name = Serialization;
 			sourceTree = "<group>";
 		};
-		C631EACAB46A8460F79678E1B97890B9 /* NSURLSession */ = {
+		D6FBF4BD4139D31951B90D0C6740AAEA /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				6AC0A16763FBB7775A5AB578E4231691 /* AFHTTPSessionManager.h */,
-				A3CBC71226DD374D50AA39D9CA9317EF /* AFHTTPSessionManager.m */,
-				0076D30AB7A784801E31654DE3C11171 /* AFURLSessionManager.h */,
-				8F34D262200FEF852956F64519A6E883 /* AFURLSessionManager.m */,
+				DA876F0927E73B642F76C7FA4DF5C63E /* AFNetworking.h */,
+				BF3C37BB07E7B700485D96D9E23E8674 /* NSURLSession */,
+				FEBFD0363B4AF284A47C8E178119DDEA /* Reachability */,
+				8C0BBCB32120810DC1A3CF813AFFE30F /* Security */,
+				D23EFE995C86F1613DAAA2365841A282 /* Serialization */,
+				765B758330DEF7B18D7D5C59AE2B7EED /* Support Files */,
+				CC5368FFC2BAC358B6C7FB4A66A0D01E /* UIKit */,
 			);
-			name = NSURLSession;
+			name = AFNetworking;
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 		DD67CFC630C78729D059A16BA977726F /* Pods-MBZBarcode */ = {
@@ -623,32 +737,19 @@
 			path = "Target Support Files/Pods-MBZBarcode";
 			sourceTree = "<group>";
 		};
-		E9DE4F41C21FF3A1B90E27251A347A03 /* Support Files */ = {
+		F7D035C149AC6C840DDDEFBCD5C2F345 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4448C228285165BD5B2EF4FB2B004B96 /* AFNetworking.modulemap */,
-				E5BB50709D49FAF190F6B090E9B97B6F /* AFNetworking.xcconfig */,
-				BFCCD98706D5078354954CFD32BB7CB2 /* AFNetworking-dummy.m */,
-				380E753DE1E1D72EFBF7F80CB05327F3 /* AFNetworking-prefix.pch */,
-				832DD7A3CC42D92ADFD8F553D56EA47B /* AFNetworking-umbrella.h */,
-				CAF61F5EBF6C7BF8D362A10A2A02830E /* Info.plist */,
+				0089093EF72A0B8D884753B9114B8F4B /* AFNetworking.framework */,
+				C58A33BD8361371AAB1CD346717158A9 /* MBProgressHUD.framework */,
+				E4F0C24727DC401D53E0DA43691B241F /* MTBBarcodeScanner.framework */,
+				480007EA923E42569E4A88583952777E /* Pods_MBZBarcode.framework */,
+				04EDED464BD95303F72B5604B1D8DBA7 /* SCLAlertView_Objective_C.framework */,
+				A8135783A6CECCC61C4E6C72FF825246 /* TNRadioButtonGroup.framework */,
+				CFE3F9E3088C47C2496AC40B2FE19201 /* UIAlertController_Blocks.framework */,
+				5DF73179ECD01E15D0BFFEE12FE058C9 /* WYPopoverController.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/AFNetworking";
-			sourceTree = "<group>";
-		};
-		F646BEE1AA62C7B19B54403469B3866B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				740536601CCF7C2C4E623E0E44552428 /* Info.plist */,
-				92BAEA310E584F9C2E48D22BF9C897C2 /* TNRadioButtonGroup.modulemap */,
-				D295F95BFB198A053AB7A908CC27847D /* TNRadioButtonGroup.xcconfig */,
-				E51CB3D03000BB638B906B2A036F047C /* TNRadioButtonGroup-dummy.m */,
-				97217910AD595E499C2372DBD685A3F0 /* TNRadioButtonGroup-prefix.pch */,
-				C8DC3F7FD476D2C7DCCDA2FB1E31CFE9 /* TNRadioButtonGroup-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TNRadioButtonGroup";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F7F6777E0FC6947040A385AC026D7A25 /* iOS */ = {
@@ -668,6 +769,29 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		FD118CCCF92123AC52AA5CCF38FB2324 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBF4BD4139D31951B90D0C6740AAEA /* AFNetworking */,
+				3E94D4644BFC2AD4624B00D5E0764386 /* MBProgressHUD */,
+				45454806D62B9D3B9922E54C5BE25D62 /* MTBBarcodeScanner */,
+				8CDC586662F8D85F01C2AC55CD2CD371 /* SCLAlertView-Objective-C */,
+				644CFEB593B2E18E7FF2368AF59B3D39 /* TNRadioButtonGroup */,
+				1AC6A8952E7194C4E8040DC70742F973 /* UIAlertController+Blocks */,
+				C63598A793453CA68B1E590F2FC6BE1D /* WYPopoverController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FEBFD0363B4AF284A47C8E178119DDEA /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				2D137560F9FF71C536FCD7DFB4B2B181 /* AFNetworkReachabilityManager.h */,
+				CF215E863A1AEC29FA102BA988394530 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -680,6 +804,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3FF49B79C5B96BBF01FA223EC9BDBA85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3BEA74211B894AFC395B0671993DFCA /* TNCircularRadioButton.h in Headers */,
+				142D633B23FC9A5EEA85974B9266ABE2 /* TNCircularRadioButtonData.h in Headers */,
+				EDD7272BC42A041A5754B55CD3144B0B /* TNImageRadioButton.h in Headers */,
+				77ED071F8730703440267EDB74C76555 /* TNImageRadioButtonData.h in Headers */,
+				98014E72EEF7CE5BBEA03561C67ADE5C /* TNRadioButton.h in Headers */,
+				DD516403D7DECBA91F7C77DB48B0C844 /* TNRadioButtonData.h in Headers */,
+				4EB8D9F5C8EB9DD04E706595D8F6CA86 /* TNRadioButtonDelegate.h in Headers */,
+				01959CCC59B9DE2067DCFC8EF4AE43B2 /* TNRadioButtonGroup-umbrella.h in Headers */,
+				BF1719B71D910A1585C22914CBE81F4F /* TNRadioButtonGroup.h in Headers */,
+				67B2E19B462CEB2A8DE183B6CE857EF6 /* TNRadioButtonGroupProtocol.h in Headers */,
+				EEECD52EC9DEC0D14D6858320AA56DDF /* TNRectangularRadioButton.h in Headers */,
+				083C476A2B106E7426253BCA6716A190 /* TNRectangularRadioButtonData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		44A6416A6C418599495871BB3506262E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -689,30 +832,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9717BD2119A89E3AE8BDD463A4E51819 /* Headers */ = {
+		7D7291F635403670CC767E543A92859D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				453B0C33D2EBC1A3EB2B4E3B2BE50670 /* TNCircularRadioButton.h in Headers */,
-				1B6399525A10D428DF5D79FB26664524 /* TNCircularRadioButtonData.h in Headers */,
-				CC87DEFF84DEA1CBD6CBFB0DAA94099C /* TNImageRadioButton.h in Headers */,
-				029C83DA510A96C2830B579D14E3E9CE /* TNImageRadioButtonData.h in Headers */,
-				BA61FA054BE36AB3B6FB997C867AFED7 /* TNRadioButton.h in Headers */,
-				BACCDAA3876B91C7EEC76D58DA11B128 /* TNRadioButtonData.h in Headers */,
-				B44F1939EAB12430403EC69D939FD772 /* TNRadioButtonDelegate.h in Headers */,
-				0DACFDDA4A3103C1EF4F34634AA0D9C6 /* TNRadioButtonGroup-umbrella.h in Headers */,
-				3D731EE587001FEB34DDF2C4905C425C /* TNRadioButtonGroup.h in Headers */,
-				2A5B1202D898FC56341CC094E530A951 /* TNRadioButtonGroupProtocol.h in Headers */,
-				500F6404E72BBE00C8259849B6BACEA1 /* TNRectangularRadioButton.h in Headers */,
-				4EDE3AF7471ACCD4D87E3AF729C97900 /* TNRectangularRadioButtonData.h in Headers */,
+				863F50B21EFFC75082E6A7C018D29FDE /* Pods-MBZBarcode-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F11285ECE8752F802F48D62CEF3961D /* Headers */ = {
+		ACA0FAFA61A5F85709FAFA74FCFE465E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39A391192841AB0B45C27F3BD9793CA6 /* Pods-MBZBarcode-umbrella.h in Headers */,
+				19DFAE4B5924D4527B123183AEC67C3A /* UIAlertController+Blocks-umbrella.h in Headers */,
+				80A96B0C02F597FF514253F769626C31 /* UIAlertController+Blocks.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,46 +875,85 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB31B00CD04F504AA0FF8AC129F3D92D /* Headers */ = {
+		EEB35D70CACC3E80284F854B3B13C2B6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F161A54DB78A90DC8EB3FD6B24D049D4 /* SCLAlertView-Objective-C-umbrella.h in Headers */,
-				9EE8C6576FA7C024B762CFE3ECB2D35A /* SCLAlertView.h in Headers */,
-				BD36EDFF66045A2286A8EBE71A715CDA /* SCLAlertViewResponder.h in Headers */,
-				BF9ABDB083F4470476990D40E10E3C97 /* SCLAlertViewStyleKit.h in Headers */,
-				40315543F9D1585E0B6F16DB8FCB9C87 /* SCLButton.h in Headers */,
-				3051D6FF1A1E4CC641FD76EC50379C18 /* SCLMacros.h in Headers */,
-				A75A0C1E9F1A6A930A9ED17248891544 /* SCLSwitchView.h in Headers */,
-				F95E7E554957B9890C424C63370A7805 /* SCLTextView.h in Headers */,
-				A2740766ACE4C8540506CC619B29176F /* SCLTimerDisplay.h in Headers */,
-				A22AA018F146F37B5076EBB0EDAE0238 /* UIImage+ImageEffects.h in Headers */,
+				7C9497EE010C1D6AF4A9E882752746DF /* SCLAlertView-Objective-C-umbrella.h in Headers */,
+				3709A0EF79B3CC9264E1526F441D60EC /* SCLAlertView.h in Headers */,
+				9627F460E6E0995D96DD57C820BF5E3F /* SCLAlertViewResponder.h in Headers */,
+				E8F74F4C0C101786142171560D857ABC /* SCLAlertViewStyleKit.h in Headers */,
+				084F3D3F7F8B2BF456E216888FFBA994 /* SCLButton.h in Headers */,
+				5A7BBD4125C5893619369BEA428C689A /* SCLMacros.h in Headers */,
+				8BE5650F5979828DEEF1EC46D8847FD9 /* SCLSwitchView.h in Headers */,
+				EF80E15D511BE69FB653A73882BA0925 /* SCLTextView.h in Headers */,
+				76ED235224D9F6300F1AF3A796A8AF76 /* SCLTimerDisplay.h in Headers */,
+				404C6CAC58F87A7E3F5DC1D3B7B0E1BD /* UIImage+ImageEffects.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B4C9A544EEAF669E23B1BFCEB89E63 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E34749EB395DCA10CE3F0C0164E8C50 /* WYPopoverController-umbrella.h in Headers */,
+				728F355DF5754C08AE92392DB6F7D6DE /* WYPopoverController.h in Headers */,
+				F3FEC5F291DDB12C3760182B96D160E2 /* WYStoryboardPopoverSegue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		255AAA1ACCE08AAAAA6F21A5586ABB52 /* Pods-MBZBarcode */ = {
+		17FD5EF019B59C1EAA694DDE43116516 /* TNRadioButtonGroup */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE4F54ED1BECDDA0F6256C2CE9BC4643 /* Build configuration list for PBXNativeTarget "Pods-MBZBarcode" */;
+			buildConfigurationList = 250EE1DDB37CFD54AD60BABCCDC512E4 /* Build configuration list for PBXNativeTarget "TNRadioButtonGroup" */;
 			buildPhases = (
-				364DE6C4605A80A90722C75D1FF33989 /* Sources */,
-				45812294670476BB165B87F7AAD72533 /* Frameworks */,
-				9F11285ECE8752F802F48D62CEF3961D /* Headers */,
+				26491DFE9F0A125EE39219EF3A7FD4FC /* Sources */,
+				C30E911101FD583B6177F6C18C21EC37 /* Frameworks */,
+				3FF49B79C5B96BBF01FA223EC9BDBA85 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				50C2B4DA7223F70E2A9CECE135841546 /* PBXTargetDependency */,
-				C7DEB1C2227F5833F292CEC22B5476A9 /* PBXTargetDependency */,
-				358DFCDEFD567BC7C522BF50D3D3963C /* PBXTargetDependency */,
-				52B35243CA3CEC049B9A102CD81E992A /* PBXTargetDependency */,
-				BE27C8B2C7490D9FFD0B7DFA5FBAFA82 /* PBXTargetDependency */,
 			);
-			name = "Pods-MBZBarcode";
-			productName = "Pods-MBZBarcode";
-			productReference = 1D0212C4D32177C63991CCAFBE5FC43E /* Pods_MBZBarcode.framework */;
+			name = TNRadioButtonGroup;
+			productName = TNRadioButtonGroup;
+			productReference = A8135783A6CECCC61C4E6C72FF825246 /* TNRadioButtonGroup.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2492A5B5FDAD1EA8A766A700A02ABD08 /* WYPopoverController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C82B074797C9EED1EFF30759ECD853C1 /* Build configuration list for PBXNativeTarget "WYPopoverController" */;
+			buildPhases = (
+				A68F96479821576256622592BAD00D56 /* Sources */,
+				0E0DDE8DDFAE623AEA5B2CEAD0ADB5CB /* Frameworks */,
+				F9B4C9A544EEAF669E23B1BFCEB89E63 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WYPopoverController;
+			productName = WYPopoverController;
+			productReference = 5DF73179ECD01E15D0BFFEE12FE058C9 /* WYPopoverController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2C35D3F16E8A5A52628C84C6E06A8787 /* UIAlertController+Blocks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08FECF3C8988E55E728417BEF2B6AA6D /* Build configuration list for PBXNativeTarget "UIAlertController+Blocks" */;
+			buildPhases = (
+				E29C6E156D9642D5679C51D407338855 /* Sources */,
+				4403B6B2F4EBF58D9D06AC7BFFD5FF5C /* Frameworks */,
+				ACA0FAFA61A5F85709FAFA74FCFE465E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIAlertController+Blocks";
+			productName = "UIAlertController+Blocks";
+			productReference = CFE3F9E3088C47C2496AC40B2FE19201 /* UIAlertController_Blocks.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */ = {
@@ -798,7 +970,48 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = D10514EEA9F92BA779507B8410B6A042 /* MBProgressHUD.framework */;
+			productReference = C58A33BD8361371AAB1CD346717158A9 /* MBProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7BE1F40A12FA5AA705098C7B95B79896 /* SCLAlertView-Objective-C */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E7562F48E705844FAE20593F33204B8 /* Build configuration list for PBXNativeTarget "SCLAlertView-Objective-C" */;
+			buildPhases = (
+				886FBD4E724B717F346CD1657DD5592B /* Sources */,
+				4BE7B72B9255FAA76F42514B78B8A615 /* Frameworks */,
+				EEB35D70CACC3E80284F854B3B13C2B6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SCLAlertView-Objective-C";
+			productName = "SCLAlertView-Objective-C";
+			productReference = 04EDED464BD95303F72B5604B1D8DBA7 /* SCLAlertView_Objective_C.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		844A6FB4A6210131C9C553033FC471E3 /* Pods-MBZBarcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6FD67AAFFABC3516694A5F5C6698C2B /* Build configuration list for PBXNativeTarget "Pods-MBZBarcode" */;
+			buildPhases = (
+				5240FFD094A5406E915A6D7E41AB952E /* Sources */,
+				62A81E7F63A9DBC2F212463363ECC457 /* Frameworks */,
+				7D7291F635403670CC767E543A92859D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4D06AD8A355F0FDFB8BCE5630731249 /* PBXTargetDependency */,
+				D6DA67C14DB4CDE590FCFB67A4ED96EF /* PBXTargetDependency */,
+				D3A8A0939ED5B88D989FDD30FA48AC5E /* PBXTargetDependency */,
+				3FE6D8546772C876779C60383CC2F8C5 /* PBXTargetDependency */,
+				4F307A56EBEED252979D861DA6F5DC06 /* PBXTargetDependency */,
+				AF5DC034064D4D4AB2F614180A2CD6F5 /* PBXTargetDependency */,
+				DC9E4FEEE51285BBC6CDB0B8299245C6 /* PBXTargetDependency */,
+			);
+			name = "Pods-MBZBarcode";
+			productName = "Pods-MBZBarcode";
+			productReference = 480007EA923E42569E4A88583952777E /* Pods_MBZBarcode.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9DF61A38842AB92FE7443ED3A096DCD3 /* MTBBarcodeScanner */ = {
@@ -815,41 +1028,7 @@
 			);
 			name = MTBBarcodeScanner;
 			productName = MTBBarcodeScanner;
-			productReference = 55400EE85EDC4C03E38BBF7142DAA282 /* MTBBarcodeScanner.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A7BA061FD1085748ED10984CD89F289D /* SCLAlertView-Objective-C */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 076133CEAC27935EFA3506B52CBB5DAA /* Build configuration list for PBXNativeTarget "SCLAlertView-Objective-C" */;
-			buildPhases = (
-				2FB0A801B14E3746DEA7B1DBFE9BE0CF /* Sources */,
-				1227A3DE7399B4B1E1D75FEFED22EFA7 /* Frameworks */,
-				CB31B00CD04F504AA0FF8AC129F3D92D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "SCLAlertView-Objective-C";
-			productName = "SCLAlertView-Objective-C";
-			productReference = 54EEB199171C61026795091779F9CDCB /* SCLAlertView_Objective_C.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B318D7B0293849A2D17BC919867A8373 /* TNRadioButtonGroup */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 68402C4E0951D46304DEE34D8BB2A3A3 /* Build configuration list for PBXNativeTarget "TNRadioButtonGroup" */;
-			buildPhases = (
-				19BA164109278360ED0EB0EB33F3F5B5 /* Sources */,
-				1F515A2B43DA365AA800C7D4F10C7550 /* Frameworks */,
-				9717BD2119A89E3AE8BDD463A4E51819 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TNRadioButtonGroup;
-			productName = TNRadioButtonGroup;
-			productReference = 06D68308253F62B0B8392D0B654A6C06 /* TNRadioButtonGroup.framework */;
+			productReference = E4F0C24727DC401D53E0DA43691B241F /* MTBBarcodeScanner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */ = {
@@ -866,7 +1045,7 @@
 			);
 			name = AFNetworking;
 			productName = AFNetworking;
-			productReference = B5382AA7F876E55F2C459F8F35708B5A /* AFNetworking.framework */;
+			productReference = 0089093EF72A0B8D884753B9114B8F4B /* AFNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -886,60 +1065,45 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A15720836D056D2158B7FFDF9BCDE6C1 /* Products */;
+			productRefGroup = F7D035C149AC6C840DDDEFBCD5C2F345 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */,
 				41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */,
 				9DF61A38842AB92FE7443ED3A096DCD3 /* MTBBarcodeScanner */,
-				255AAA1ACCE08AAAAA6F21A5586ABB52 /* Pods-MBZBarcode */,
-				A7BA061FD1085748ED10984CD89F289D /* SCLAlertView-Objective-C */,
-				B318D7B0293849A2D17BC919867A8373 /* TNRadioButtonGroup */,
+				844A6FB4A6210131C9C553033FC471E3 /* Pods-MBZBarcode */,
+				7BE1F40A12FA5AA705098C7B95B79896 /* SCLAlertView-Objective-C */,
+				17FD5EF019B59C1EAA694DDE43116516 /* TNRadioButtonGroup */,
+				2C35D3F16E8A5A52628C84C6E06A8787 /* UIAlertController+Blocks */,
+				2492A5B5FDAD1EA8A766A700A02ABD08 /* WYPopoverController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		19BA164109278360ED0EB0EB33F3F5B5 /* Sources */ = {
+		26491DFE9F0A125EE39219EF3A7FD4FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AC330E2D5B21C953E07605A808C3E50 /* TNCircularRadioButton.m in Sources */,
-				4AA29C03870E4618938DB740EB9C4D78 /* TNCircularRadioButtonData.m in Sources */,
-				D94198ACCD5FE4245524494B3A0831D2 /* TNImageRadioButton.m in Sources */,
-				1294EEEB0F2E32EF1D7FB7625356B019 /* TNImageRadioButtonData.m in Sources */,
-				BDA4F2010AF00C2E2F64A5F8422E4C20 /* TNRadioButton.m in Sources */,
-				4A12EAA85E9436B0FF2800C407D5F671 /* TNRadioButtonData.m in Sources */,
-				4F3AEECC806F8F8F8892479B83FA32DB /* TNRadioButtonGroup-dummy.m in Sources */,
-				6CD7C5D08AD57BE78B74AF50835F38BF /* TNRadioButtonGroup.m in Sources */,
-				37AC4A8E0619780CB03F536973B84A4A /* TNRectangularRadioButton.m in Sources */,
-				95D1AF8C79BDE6BAFE66F90B72E49D7E /* TNRectangularRadioButtonData.m in Sources */,
+				C8892B0E55B7551E6D7D2031FA849E6D /* TNCircularRadioButton.m in Sources */,
+				56C1900FDC1EF0C25BD63CF546870C36 /* TNCircularRadioButtonData.m in Sources */,
+				164A6A80D2E4C887847066A3351B6CCF /* TNImageRadioButton.m in Sources */,
+				8B44990EC3B0496C361FED13A9BF82F9 /* TNImageRadioButtonData.m in Sources */,
+				D2BFFB941E32FDC7F243E0872B5C5329 /* TNRadioButton.m in Sources */,
+				22A387C1403AAB8CFAF8846F1F2ADD0B /* TNRadioButtonData.m in Sources */,
+				BB9CA17FA6B59940E7417B9C42935FAB /* TNRadioButtonGroup-dummy.m in Sources */,
+				D819ECBDA1D38FC1EFB867A918DF0E57 /* TNRadioButtonGroup.m in Sources */,
+				9FFAD4F1EA9120DF797AB39555733FB3 /* TNRectangularRadioButton.m in Sources */,
+				ADEB93BCA3B622981944B6D6C47A622A /* TNRectangularRadioButtonData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FB0A801B14E3746DEA7B1DBFE9BE0CF /* Sources */ = {
+		5240FFD094A5406E915A6D7E41AB952E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6FC6007DB7F8EBE816EB1F1AB2D0C9D /* comic-sans.ttf in Sources */,
-				CF23300EE76E95A6FD410AC5F9E170E1 /* SCLAlertView-Objective-C-dummy.m in Sources */,
-				CDFA574F07547153CFC75F33727D9922 /* SCLAlertView.m in Sources */,
-				F040253E93935C1334327893D5FDF86F /* SCLAlertViewResponder.m in Sources */,
-				52FE55C37E07A19D7CB039E667032D1C /* SCLAlertViewStyleKit.m in Sources */,
-				D8E80A392019137B82D9949479329EC4 /* SCLButton.m in Sources */,
-				05C22EFF3029E333BD8A343C0E703CEB /* SCLSwitchView.m in Sources */,
-				7342077CEB613C4E2958E663F32097F0 /* SCLTextView.m in Sources */,
-				6DFC5D1FA33B1BF929E586ECF37E59A1 /* SCLTimerDisplay.m in Sources */,
-				EEBE228769FF05AF5C69A88ADED7EF12 /* UIImage+ImageEffects.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		364DE6C4605A80A90722C75D1FF33989 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5F3FBC7A7D77911F1BEB9A2AD4E34CA /* Pods-MBZBarcode-dummy.m in Sources */,
+				B3FDF78068BD7BB127B8B4AD5359A017 /* Pods-MBZBarcode-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -966,12 +1130,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		886FBD4E724B717F346CD1657DD5592B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0AC2CE2CF6524AFAA5267CD0096BF34 /* comic-sans.ttf in Sources */,
+				D01994EA0FC3F28C8DBE9E8AB00D9881 /* SCLAlertView-Objective-C-dummy.m in Sources */,
+				A3B4773CA140FEFE3BCBCF9F10F24AAF /* SCLAlertView.m in Sources */,
+				45004270F959EA58D09CCBA22AB2ABE7 /* SCLAlertViewResponder.m in Sources */,
+				786A81D02AB38DD219A82BDD5DD839D8 /* SCLAlertViewStyleKit.m in Sources */,
+				A185DFD5C8970846E2F6CA3F14F438CA /* SCLButton.m in Sources */,
+				55DCDFD43169B6C64189E9A938F08EA3 /* SCLSwitchView.m in Sources */,
+				03C61A87838B58704425DE8F83D3031E /* SCLTextView.m in Sources */,
+				20DC824A9EF3059DB706547E8536229E /* SCLTimerDisplay.m in Sources */,
+				C50153129024D9A4F4AFE32F22ACC59A /* UIImage+ImageEffects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CDE839D8C8E4575EFF253269C97F81C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CB5FA14D3D12AAC2C58DBD113ECDCAD2 /* MTBBarcodeScanner-dummy.m in Sources */,
 				58D052AFB88079E97B8772B8F36E8C7D /* MTBBarcodeScanner.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A68F96479821576256622592BAD00D56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D898AA8F3D6B505E0D32AA47A585E35 /* WYPopoverController-dummy.m in Sources */,
+				41B244514FDF97608AE7F4488B93DA62 /* WYPopoverController.m in Sources */,
+				F57083EA05DDA4C8F3FD2F34DEA7BC7E /* WYStoryboardPopoverSegue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29C6E156D9642D5679C51D407338855 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D6F9D765DC3E26715550FD2C354041 /* UIAlertController+Blocks-dummy.m in Sources */,
+				9308C50EFC8855C1D6738199ED45FCF3 /* UIAlertController+Blocks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -987,42 +1187,54 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		358DFCDEFD567BC7C522BF50D3D3963C /* PBXTargetDependency */ = {
+		3FE6D8546772C876779C60383CC2F8C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SCLAlertView-Objective-C";
+			target = 7BE1F40A12FA5AA705098C7B95B79896 /* SCLAlertView-Objective-C */;
+			targetProxy = E17EDB0B48BB3D8F8BB805631DA9F6CE /* PBXContainerItemProxy */;
+		};
+		4F307A56EBEED252979D861DA6F5DC06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TNRadioButtonGroup;
+			target = 17FD5EF019B59C1EAA694DDE43116516 /* TNRadioButtonGroup */;
+			targetProxy = 13BFC2369D93A3F1E78979E8B187A8BC /* PBXContainerItemProxy */;
+		};
+		AF5DC034064D4D4AB2F614180A2CD6F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIAlertController+Blocks";
+			target = 2C35D3F16E8A5A52628C84C6E06A8787 /* UIAlertController+Blocks */;
+			targetProxy = 5A81386161B9DDB9A150D7030C6E23D4 /* PBXContainerItemProxy */;
+		};
+		D3A8A0939ED5B88D989FDD30FA48AC5E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MTBBarcodeScanner;
 			target = 9DF61A38842AB92FE7443ED3A096DCD3 /* MTBBarcodeScanner */;
-			targetProxy = FBBF3061D302579B73A4266F57CD9DA6 /* PBXContainerItemProxy */;
+			targetProxy = 20D3269830D09787C50E69FDE8FED81D /* PBXContainerItemProxy */;
 		};
-		50C2B4DA7223F70E2A9CECE135841546 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AFNetworking;
-			target = CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */;
-			targetProxy = 19882C1EA5A1B6EE0D7978F38CF1BA76 /* PBXContainerItemProxy */;
-		};
-		52B35243CA3CEC049B9A102CD81E992A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SCLAlertView-Objective-C";
-			target = A7BA061FD1085748ED10984CD89F289D /* SCLAlertView-Objective-C */;
-			targetProxy = C12FE453175CB844B027F9BBFC54C7F3 /* PBXContainerItemProxy */;
-		};
-		BE27C8B2C7490D9FFD0B7DFA5FBAFA82 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TNRadioButtonGroup;
-			target = B318D7B0293849A2D17BC919867A8373 /* TNRadioButtonGroup */;
-			targetProxy = C8F0BFC61C39B55C482945334CDBB03C /* PBXContainerItemProxy */;
-		};
-		C7DEB1C2227F5833F292CEC22B5476A9 /* PBXTargetDependency */ = {
+		D6DA67C14DB4CDE590FCFB67A4ED96EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
 			target = 41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */;
-			targetProxy = A68824C830D3FD976C576D4C618E0EC0 /* PBXContainerItemProxy */;
+			targetProxy = 1ABEB28D61DEA246F06BE1541B1AE834 /* PBXContainerItemProxy */;
+		};
+		DC9E4FEEE51285BBC6CDB0B8299245C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WYPopoverController;
+			target = 2492A5B5FDAD1EA8A766A700A02ABD08 /* WYPopoverController */;
+			targetProxy = 4EC6092D384E2E4C8AF2D35FA7D33E8E /* PBXContainerItemProxy */;
+		};
+		F4D06AD8A355F0FDFB8BCE5630731249 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */;
+			targetProxy = 426F642591F3C6CE00A43A39999E876E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3845B5F9B657EE909EE26DF9E6014F46 /* Release */ = {
+		266302200F679D1FBD879FA4668C9151 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C4205309AC199CD55A6BCE40F61384B /* SCLAlertView-Objective-C.xcconfig */;
+			baseConfigurationReference = F623052688ECB5A65DFAAF7A63B7C144 /* WYPopoverController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1035,14 +1247,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView-Objective-C/SCLAlertView-Objective-C-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCLAlertView-Objective-C/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/WYPopoverController/WYPopoverController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WYPopoverController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SCLAlertView-Objective-C/SCLAlertView-Objective-C.modulemap";
+				MODULEMAP_FILE = "Target Support Files/WYPopoverController/WYPopoverController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SCLAlertView_Objective_C;
+				PRODUCT_NAME = WYPopoverController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1051,9 +1263,102 @@
 			};
 			name = Release;
 		};
+		294C39E86DE4F146DAF09D1EDABEC83B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27F90A04DDFA9D21DAAAB130C6B30989 /* UIAlertController+Blocks.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIAlertController+Blocks/UIAlertController+Blocks-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIAlertController+Blocks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIAlertController+Blocks/UIAlertController+Blocks.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIAlertController_Blocks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		37420C258FB88B9E7EC9F8E5E51A89E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53DCAF7A9D9500A207BAC64ECF19464E /* SCLAlertView-Objective-C.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView-Objective-C/SCLAlertView-Objective-C-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView-Objective-C/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView-Objective-C/SCLAlertView-Objective-C.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SCLAlertView_Objective_C;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47E054B15678CC5DED8D5BF39550C3ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B7B6B344C46A0790C281D526F83C32F /* TNRadioButtonGroup.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TNRadioButtonGroup/TNRadioButtonGroup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TNRadioButtonGroup/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TNRadioButtonGroup/TNRadioButtonGroup.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TNRadioButtonGroup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		5164554BF1770EB032930FA9D8A02AE9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6A78C67BA0EF6F4C66EFFB150DF29D0 /* MTBBarcodeScanner.xcconfig */;
+			baseConfigurationReference = 7439A7B9B530AC0FF9ED572F16960A37 /* MTBBarcodeScanner.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1084,7 +1389,7 @@
 		};
 		570877A1EEEF39C1B130CCEEB53C7B51 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5BB50709D49FAF190F6B090E9B97B6F /* AFNetworking.xcconfig */;
+			baseConfigurationReference = 4941A1D63EFC0DA342743932DBD6AEC1 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1105,37 +1410,6 @@
 				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = AFNetworking;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		58650AFDF7511AB81EB0FF25CEBD9BD9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D295F95BFB198A053AB7A908CC27847D /* TNRadioButtonGroup.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TNRadioButtonGroup/TNRadioButtonGroup-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TNRadioButtonGroup/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TNRadioButtonGroup/TNRadioButtonGroup.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TNRadioButtonGroup;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1190,7 +1464,7 @@
 		};
 		679B973EA7AD405C207DDD569F65D749 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 224EFF57410B8B4B4B57C4E77F628746 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 9A52400AB81F3D5C99D1E12622B9F892 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1211,72 +1485,6 @@
 				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = MBProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6BD10300B94983E5D53B223B85CCC283 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08E17A5DA352C5E911D3F80E1944A480 /* Pods-MBZBarcode.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MBZBarcode/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MBZBarcode/Pods-MBZBarcode.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MBZBarcode;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		76C2A62BA1C7FDF5777521B3AC71953E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D295F95BFB198A053AB7A908CC27847D /* TNRadioButtonGroup.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TNRadioButtonGroup/TNRadioButtonGroup-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TNRadioButtonGroup/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TNRadioButtonGroup/TNRadioButtonGroup.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TNRadioButtonGroup;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1287,7 +1495,7 @@
 		};
 		7B1230B2BA14E13BD851B1184FB2BC7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 224EFF57410B8B4B4B57C4E77F628746 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 9A52400AB81F3D5C99D1E12622B9F892 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1316,15 +1524,15 @@
 			};
 			name = Release;
 		};
-		8BC44EBDC8BC2C1E8ED0563DAA34C7F2 /* Debug */ = {
+		83577D57176E3F1E528A3109D2CE1B4F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C4205309AC199CD55A6BCE40F61384B /* SCLAlertView-Objective-C.xcconfig */;
+			baseConfigurationReference = 53DCAF7A9D9500A207BAC64ECF19464E /* SCLAlertView-Objective-C.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1337,8 +1545,39 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SCLAlertView-Objective-C/SCLAlertView-Objective-C.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = SCLAlertView_Objective_C;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		993CD4DB96CD284E4B6A65C4B4451813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7439A7B9B530AC0FF9ED572F16960A37 /* MTBBarcodeScanner.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MTBBarcodeScanner/MTBBarcodeScanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MTBBarcodeScanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MTBBarcodeScanner/MTBBarcodeScanner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MTBBarcodeScanner;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1347,7 +1586,7 @@
 			};
 			name = Debug;
 		};
-		986826F518151E7B3DF2BCCC5725B04B /* Debug */ = {
+		A4B9159FA5BE91638B75B328F3114769 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0705193C9765316C2062B8A16AAAE95F /* Pods-MBZBarcode.debug.xcconfig */;
 			buildSettings = {
@@ -1382,9 +1621,9 @@
 			};
 			name = Debug;
 		};
-		993CD4DB96CD284E4B6A65C4B4451813 /* Debug */ = {
+		B173814E574D47468D313C641957A43D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6A78C67BA0EF6F4C66EFFB150DF29D0 /* MTBBarcodeScanner.xcconfig */;
+			baseConfigurationReference = F623052688ECB5A65DFAAF7A63B7C144 /* WYPopoverController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1397,14 +1636,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MTBBarcodeScanner/MTBBarcodeScanner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MTBBarcodeScanner/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/WYPopoverController/WYPopoverController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WYPopoverController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MTBBarcodeScanner/MTBBarcodeScanner.modulemap";
+				MODULEMAP_FILE = "Target Support Files/WYPopoverController/WYPopoverController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MTBBarcodeScanner;
+				PRODUCT_NAME = WYPopoverController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1453,9 +1692,71 @@
 			};
 			name = Release;
 		};
+		D2FA74F7AAD6DE3C9559C66717D44930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B7B6B344C46A0790C281D526F83C32F /* TNRadioButtonGroup.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TNRadioButtonGroup/TNRadioButtonGroup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TNRadioButtonGroup/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TNRadioButtonGroup/TNRadioButtonGroup.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TNRadioButtonGroup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D79DB7EE844926AE22EE8C234678933E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27F90A04DDFA9D21DAAAB130C6B30989 /* UIAlertController+Blocks.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIAlertController+Blocks/UIAlertController+Blocks-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIAlertController+Blocks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIAlertController+Blocks/UIAlertController+Blocks.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIAlertController_Blocks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		EC3EE9EBDDF7444FC52168CE82FF000C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5BB50709D49FAF190F6B090E9B97B6F /* AFNetworking.xcconfig */;
+			baseConfigurationReference = 4941A1D63EFC0DA342743932DBD6AEC1 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1484,14 +1785,58 @@
 			};
 			name = Debug;
 		};
+		FBDFD4F9F656759C2BEFEED16FBAF197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08E17A5DA352C5E911D3F80E1944A480 /* Pods-MBZBarcode.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MBZBarcode/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MBZBarcode/Pods-MBZBarcode.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MBZBarcode;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		076133CEAC27935EFA3506B52CBB5DAA /* Build configuration list for PBXNativeTarget "SCLAlertView-Objective-C" */ = {
+		08FECF3C8988E55E728417BEF2B6AA6D /* Build configuration list for PBXNativeTarget "UIAlertController+Blocks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BC44EBDC8BC2C1E8ED0563DAA34C7F2 /* Debug */,
-				3845B5F9B657EE909EE26DF9E6014F46 /* Release */,
+				D79DB7EE844926AE22EE8C234678933E /* Debug */,
+				294C39E86DE4F146DAF09D1EDABEC83B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		250EE1DDB37CFD54AD60BABCCDC512E4 /* Build configuration list for PBXNativeTarget "TNRadioButtonGroup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47E054B15678CC5DED8D5BF39550C3ED /* Debug */,
+				D2FA74F7AAD6DE3C9559C66717D44930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1501,6 +1846,15 @@
 			buildConfigurations = (
 				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
 				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E7562F48E705844FAE20593F33204B8 /* Build configuration list for PBXNativeTarget "SCLAlertView-Objective-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37420C258FB88B9E7EC9F8E5E51A89E5 /* Debug */,
+				83577D57176E3F1E528A3109D2CE1B4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1523,11 +1877,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68402C4E0951D46304DEE34D8BB2A3A3 /* Build configuration list for PBXNativeTarget "TNRadioButtonGroup" */ = {
+		C82B074797C9EED1EFF30759ECD853C1 /* Build configuration list for PBXNativeTarget "WYPopoverController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76C2A62BA1C7FDF5777521B3AC71953E /* Debug */,
-				58650AFDF7511AB81EB0FF25CEBD9BD9 /* Release */,
+				B173814E574D47468D313C641957A43D /* Debug */,
+				266302200F679D1FBD879FA4668C9151 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1541,11 +1895,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE4F54ED1BECDDA0F6256C2CE9BC4643 /* Build configuration list for PBXNativeTarget "Pods-MBZBarcode" */ = {
+		E6FD67AAFFABC3516694A5F5C6698C2B /* Build configuration list for PBXNativeTarget "Pods-MBZBarcode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				986826F518151E7B3DF2BCCC5725B04B /* Debug */,
-				6BD10300B94983E5D53B223B85CCC283 /* Release */,
+				A4B9159FA5BE91638B75B328F3114769 /* Debug */,
+				FBDFD4F9F656759C2BEFEED16FBAF197 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

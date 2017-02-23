@@ -10,5 +10,7 @@ target ‘MBZBarcode’ do
     pod 'SCLAlertView-Objective-C'
     pod 'MTBBarcodeScanner'
     pod 'TNRadioButtonGroup'
+    pod 'UIAlertController+Blocks'
+    pod 'WYPopoverController', '~> 0.2.2'
 
 end

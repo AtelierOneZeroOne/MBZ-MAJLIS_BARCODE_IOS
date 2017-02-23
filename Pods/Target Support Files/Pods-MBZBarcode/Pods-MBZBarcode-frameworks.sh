@@ -94,6 +94,8 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/MTBBarcodeScanner/MTBBarcodeScanner.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SCLAlertView-Objective-C/SCLAlertView_Objective_C.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TNRadioButtonGroup/TNRadioButtonGroup.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/UIAlertController+Blocks/UIAlertController_Blocks.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/WYPopoverController/WYPopoverController.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
@@ -101,6 +103,8 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/MTBBarcodeScanner/MTBBarcodeScanner.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SCLAlertView-Objective-C/SCLAlertView_Objective_C.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TNRadioButtonGroup/TNRadioButtonGroup.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/UIAlertController+Blocks/UIAlertController_Blocks.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/WYPopoverController/WYPopoverController.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

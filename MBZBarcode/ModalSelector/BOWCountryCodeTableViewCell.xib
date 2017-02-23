@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ecam-Light.otf">
+            <string>Ecam-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BOWCountryCodeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CEo-hb-TZ2">
+                        <rect key="frame" x="36" y="6" width="276" height="31"/>
+                        <fontDescription key="fontDescription" name="Ecam-Light" family="Ecam" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SettingsCheck" translatesAutoresizingMaskIntoConstraints="NO" id="cWV-2u-KfD">
+                        <rect key="frame" x="13" y="14" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="3FF-8M-YYA"/>
+                            <constraint firstAttribute="height" constant="15" id="KpN-N3-P5c"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KD7-s5-vuF">
+                        <rect key="frame" x="28" y="42" width="264" height="1"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8fO-fo-TpH"/>
+                            <constraint firstAttribute="width" constant="264" id="gdk-ib-ZuD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="KD7-s5-vuF" secondAttribute="bottom" id="5vC-kZ-Qbs"/>
+                    <constraint firstItem="CEo-hb-TZ2" firstAttribute="leading" secondItem="cWV-2u-KfD" secondAttribute="trailing" constant="8" id="GfX-5y-VWI"/>
+                    <constraint firstItem="KD7-s5-vuF" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="IQ7-j4-XEj"/>
+                    <constraint firstAttribute="trailing" secondItem="CEo-hb-TZ2" secondAttribute="trailing" constant="8" id="SsX-nS-r3j"/>
+                    <constraint firstItem="CEo-hb-TZ2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="bIP-CG-CUC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="CEo-hb-TZ2" secondAttribute="bottom" constant="-2" id="kaF-lC-eER"/>
+                    <constraint firstItem="cWV-2u-KfD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="s42-35-0rQ"/>
+                    <constraint firstItem="cWV-2u-KfD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sAf-Hx-F6p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellImage" destination="cWV-2u-KfD" id="DYJ-bq-NuO"/>
+                <outlet property="cellText" destination="CEo-hb-TZ2" id="Tdx-5Z-Lis"/>
+            </connections>
+            <point key="canvasLocation" x="-158" y="80"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="SettingsCheck" width="30" height="30"/>
+    </resources>
+</document>

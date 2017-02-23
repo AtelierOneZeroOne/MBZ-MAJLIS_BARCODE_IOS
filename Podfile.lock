@@ -18,6 +18,8 @@ PODS:
   - MTBBarcodeScanner (3.1.0)
   - SCLAlertView-Objective-C (1.1.0)
   - TNRadioButtonGroup (0.4)
+  - UIAlertController+Blocks (0.9.2)
+  - WYPopoverController (0.2.2)
 
 DEPENDENCIES:
   - AFNetworking
@@ -25,6 +27,8 @@ DEPENDENCIES:
   - MTBBarcodeScanner
   - SCLAlertView-Objective-C
   - TNRadioButtonGroup
+  - UIAlertController+Blocks
+  - WYPopoverController (~> 0.2.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -32,7 +36,9 @@ SPEC CHECKSUMS:
   MTBBarcodeScanner: 6d397077f1a4a886050df8e66584a59a1dc429e7
   SCLAlertView-Objective-C: 349a894d4e1d1dbf14d443da784c6ca1e92c78d2
   TNRadioButtonGroup: f5fb9b545d8913bbabe6a72ea1fa6fba4d833bb6
+  UIAlertController+Blocks: 80e28b92523fb58aba4d1bccec013d5a0b0bddb2
+  WYPopoverController: 00d879c25bddd1fd873dcc21aa98c8308d7f1555
 
-PODFILE CHECKSUM: 6a6b844b32613edaa8d39d2f21e5e2f3eec31da1
+PODFILE CHECKSUM: a6b05d93799a31f1db92b938950d715b81d298fa
 
 COCOAPODS: 1.2.0
