@@ -18,10 +18,11 @@ typedef void(^APIClientManagerFailureBlock)(NSError *error);
 
 #pragma mark - POST Method
 
-- (void)logInWithEmail:(NSString *)email
-			  password:(NSString *)password
-			   success:(APIClientManagerSuccessBlock)success
-			   failure:(APIClientManagerFailureBlock)failure;
+- (void)sendScanned:(NSString *)value
+               zone:(NSString *)zone
+             action:(NSString *)action
+            success:(APIClientManagerSuccessBlock)success
+            failure:(APIClientManagerFailureBlock)failure;
 
 #pragma mark - GET Method
 

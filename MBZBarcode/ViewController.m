@@ -28,6 +28,9 @@
 //Utilities
 #import "MBZCache.h"
 
+//Categories
+#import "UIColor+More.h"
+
 @interface ViewController ()
 
 //Vendor
@@ -50,10 +53,16 @@
 @property (weak, nonatomic) IBOutlet UIButton           *selectZone;
 @property (strong, nonatomic) NSString                  *selectedKeyZone;
 @property (strong, nonatomic) NSString                  *selectedAction;
+@property (strong, nonatomic) NSString                  *scannedBarcode;
+@property (weak, nonatomic) IBOutlet UITableView        *tableView;
 - (IBAction)selectZone:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel            *totalScannedText;
 
+@property (weak, nonatomic) IBOutlet UILabel            *inQueueText;
 @property (nonatomic, assign) BOOL                      captureIsFrozen;
 @property (nonatomic, assign) BOOL                      didShowCaptureWarning;
+@property int                      totalScannedCounter;
+@property int                      inQueueCounter;
 
 @end
 
@@ -63,6 +72,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.totalScannedCounter = 0;
+    self.inQueueCounter = 0;
     [self getItems];
 }
 
@@ -76,7 +87,21 @@
     [self.scanner stopScanning];
 }
 
+#pragma mark - Setters
+
+- (void)setUniqueCodes:(NSMutableArray *)uniqueCodes {
+    _uniqueCodes = uniqueCodes;
+    [self.tableView reloadData];
+}
+
 #pragma mark - private method
+
+- (void) setItems
+{
+    _listItem   = [[NSMutableArray alloc] init];
+    _listItem   = [[MBZCache shared] getCachedObjectForKey:ZONE_LIST];
+    
+}
 
 - (void)loadLoader
 {
@@ -87,6 +112,24 @@
 {
     [self.startScan addTarget:self action:@selector(startScanning) forControlEvents:UIControlEventTouchUpInside];
     [self.stopScan addTarget:self action:@selector(stopScanning) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.startScan.layer.cornerRadius = 10;
+    self.startScan.clipsToBounds = YES;
+    
+    self.stopScan.layer.cornerRadius = 10;
+    self.stopScan.clipsToBounds = YES;
+    
+    self.selectZone.layer.cornerRadius = 10;
+    self.selectZone.clipsToBounds = YES;
+    
+    [[self.startScan layer] setBorderWidth:2.0f];
+    [[self.startScan layer] setBorderColor:[UIColor colorWithHex:THEME_COLOR_ORANGE].CGColor];
+    
+    [[self.stopScan layer] setBorderWidth:2.0f];
+    [[self.stopScan layer] setBorderColor:[UIColor colorWithHex:THEME_COLOR_ORANGE].CGColor];
+    
+    [[self.selectZone layer] setBorderWidth:2.0f];
+    [[self.selectZone layer] setBorderColor:[UIColor colorWithHex:THEME_COLOR_ORANGE].CGColor];
 }
 
 - (void)setUpRadioGroup
@@ -116,6 +159,15 @@
                                                  name:SELECTED_RADIO_BUTTON_CHANGED
                                                object:self.radioGroup];
     [self.radioGroup update];
+}
+
+- (void)scrollToLastTableViewCell
+{
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.uniqueCodes.count - 1
+                                                inSection:0];
+    [self.tableView scrollToRowAtIndexPath:indexPath
+                          atScrollPosition:UITableViewScrollPositionTop
+                                  animated:YES];
 }
 
 #pragma mark - TNRadioButtonGroup
@@ -154,11 +206,20 @@
     NSError *error = nil;
     [self.scanner startScanningWithResultBlock:^(NSArray *codes) {
         for (AVMetadataMachineReadableCodeObject *code in codes) {
-            if (code.stringValue && [self.uniqueCodes indexOfObject:code.stringValue] == NSNotFound) {
+            
+            if (![code.stringValue isEqualToString: [self.uniqueCodes valueForKey: @"@lastObject"]]) {
                 [self.uniqueCodes addObject:code.stringValue];
-                NSLog(@"Found unique code: %@", code.stringValue);
-                self.barcodeValue.text = code.stringValue;
-                [self.scannedResult setHidden:NO];
+                SPLOG_DEBUG(@"Found unique code: %@", code.stringValue);
+//                self.barcodeValue.text = code.stringValue;
+                self.scannedBarcode = code.stringValue;
+//                [self.scannedResult setHidden:NO];
+                
+                self.totalScannedCounter++;
+                self.totalScannedText.text = [NSString stringWithFormat:@"%i",self.totalScannedCounter];
+                [self.tableView reloadData];
+                [self scrollToLastTableViewCell];
+                [self sendScannedCode];
+                AudioServicesPlaySystemSound(1054);
             }
         }
     } error:&error];
@@ -175,55 +236,11 @@
 }
 
 
-#pragma mark - Client API Call
-
-- (void) setItems
-{
-    _listItem   = [[NSMutableArray alloc] init];
-    _listItem   = [[MBZCache shared] getCachedObjectForKey:ZONE_LIST];
-    
-}
-
-- (void) getItems
-{
-    [self loadLoader];
-    
-    [[APIClientManager sharedManager] getZone:^(NSDictionary *responseObject) {
-        SPLOG_DEBUG(@"Response for /Agenda : %@", responseObject);
-        [self.hud hideAnimated:YES afterDelay:0.25f];
-        
-        NSMutableArray *list        = [[NSMutableArray alloc] init];
-        
-        for (NSDictionary *data in responseObject) {
-            SPLOG_DEBUG(@"%@",data);
-            Zones *zone     = [[Zones alloc] init];
-            zone.key        = data[@"key"];
-            zone.value      = data[@"value"];
-            [list addObject:zone];
-        }
-        
-        [[MBZCache shared] setCachedObject:list forKey:ZONE_LIST];
-        
-        [self setItems];
-        [self setupview];
-        [self setUpRadioGroup];
-        
-    } failure:^(NSError *error) {
-        SPLOG_DEBUG(@"Response for /Agenda : %@", error);
-        [self.hud hideAnimated:YES afterDelay:0.25f];
-        
-        [self setItems];
-        [self setupview];
-        [self setUpRadioGroup];
-    }];
-    
-}
-
 #pragma mark - UITableViewDataSource / UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_listItem count];
+    return self.uniqueCodes.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -238,14 +255,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"SimpleTableItem";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-    }
-    
+    static NSString *reuseIdentifier = @"BarcodeCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier
+                                                            forIndexPath:indexPath];
+    cell.textLabel.text = self.uniqueCodes[indexPath.row];
     return cell;
 }
 
@@ -315,4 +328,57 @@
         [self done:nil];
     }
 }
+
+#pragma mark - Client API Call
+
+- (void) getItems
+{
+    [self loadLoader];
+    
+    [[APIClientManager sharedManager] getZone:^(NSDictionary *responseObject) {
+        SPLOG_DEBUG(@"Response for /GET Zone : %@", responseObject);
+        [self.hud hideAnimated:YES afterDelay:0.25f];
+        
+        NSMutableArray *list        = [[NSMutableArray alloc] init];
+        
+        for (NSDictionary *data in responseObject) {
+            SPLOG_DEBUG(@"%@",data);
+            Zones *zone     = [[Zones alloc] init];
+            zone.key        = data[@"key"];
+            zone.value      = data[@"value"];
+            [list addObject:zone];
+        }
+        
+        [[MBZCache shared] setCachedObject:list forKey:ZONE_LIST];
+        
+        [self setItems];
+        [self setupview];
+        [self setUpRadioGroup];
+        
+    } failure:^(NSError *error) {
+        SPLOG_DEBUG(@"Response for /GET Zone : %@", error);
+        [self.hud hideAnimated:YES afterDelay:0.25f];
+        
+        [self setItems];
+        [self setupview];
+        [self setUpRadioGroup];
+    }];
+    
+}
+
+- (void)sendScannedCode
+{
+    [[APIClientManager sharedManager] sendScanned:self.scannedBarcode
+                                             zone:self.selectedKeyZone
+                                           action:self.selectedAction
+                                          success:^(NSDictionary *responseObject) {
+                                              SPLOG_DEBUG(@"Response for /Sent Scanned: %@", responseObject);
+                                              [self.hud hideAnimated:YES afterDelay:0.25f];
+                                              self.scannedBarcode = @"";
+                                          } failure:^(NSError *error) {
+                                              SPLOG_DEBUG(@"Response for /Failed Scanned : %@", error);
+                                              [self.hud hideAnimated:YES afterDelay:0.25f];
+                                          }];
+}
+
 @end

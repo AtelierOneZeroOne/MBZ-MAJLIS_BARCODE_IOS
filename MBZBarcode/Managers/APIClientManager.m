@@ -143,16 +143,19 @@ static NSString * const BOWParameterDateFormat = @"yyyy-MM-dd'T'HH:mm:ss'Z'";
 
 #pragma mark - POST Method
 
-- (void)logInWithEmail:(NSString *)email
-			  password:(NSString *)password
-			   success:(APIClientManagerSuccessBlock)success
-			   failure:(APIClientManagerFailureBlock)failure {
+- (void)sendScanned:(NSString *)value
+               zone:(NSString *)zone
+             action:(NSString *)action
+            success:(APIClientManagerSuccessBlock)success
+            failure:(APIClientManagerFailureBlock)failure {
     
-    NSString *endpoint                  = [NSString stringWithFormat:MBZ_API_SCANNING_ZONES];
+    NSString *endpoint                  = [NSString stringWithFormat:MBZ_API_MOBILE_SCANNING];
     NSString *url                       = [NSString stringWithFormat:@"%@%@",MBZ_API_BASE_URL,endpoint];
+    
 	NSMutableDictionary *parameters     = [[NSMutableDictionary alloc] initWithCapacity:2];
-	parameters[@"username"]             = [email trim];
-	parameters[@"password"]             = password;
+	parameters[@"value"]                = value;
+    parameters[@"zone"]                 = zone;
+    parameters[@"action"]               = action;
 	
 	[self POST:url
 	parameters:parameters
