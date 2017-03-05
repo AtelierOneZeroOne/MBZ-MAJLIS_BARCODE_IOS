@@ -58,11 +58,16 @@
 - (IBAction)selectZone:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel            *totalScannedText;
 
+@property (weak, nonatomic) IBOutlet UIImageView        *backgroundImage;
 @property (weak, nonatomic) IBOutlet UILabel            *inQueueText;
 @property (nonatomic, assign) BOOL                      captureIsFrozen;
 @property (nonatomic, assign) BOOL                      didShowCaptureWarning;
+@property (nonatomic, assign) BOOL                      isStartScan;
 @property int                      totalScannedCounter;
 @property int                      inQueueCounter;
+
+//Dynamic
+@property (nonatomic, strong) NSMutableDictionary       *listItemPending;
 
 @end
 
@@ -72,8 +77,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setScannedItems];
     self.totalScannedCounter = 0;
     self.inQueueCounter = 0;
+    self.isStartScan = true;
     [self getItems];
 }
 
@@ -96,6 +103,35 @@
 
 #pragma mark - private method
 
+- (void) setUpZoneView
+{
+    CGRect frame                            = self.view.frame;
+    
+    UIStoryboard *mainStoryboard             = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.workshopModal                       = [mainStoryboard instantiateViewControllerWithIdentifier:@"MBZFeedbackWorkshopListVC"];
+    self.workshopModal.view.frame            = frame;
+    self.workshopModal.tableItems            = _listItem;
+    self.workshopModal.itemType              = @"";
+    self.workshopModal.selected              = @"";
+    self.workshopModal.tableView.delegate    = (id)self;
+    
+    self.workshopModal.preferredContentSize   = CGSizeMake(frame.size.width, frame.size.width);
+}
+
+- (void) setScannedItems
+{
+    NSMutableArray *temp = [[NSMutableArray alloc] initWithArray: [[MBZCache shared] getCachedObjectForKey:SCANNED_LIST]];
+    
+    if ([temp count] != 0) {
+        self.uniqueCodes    = [[NSMutableArray alloc] initWithArray:temp];
+    } else {
+        self.uniqueCodes    = [[NSMutableArray alloc] init];
+    }
+    
+    self.totalScannedCounter = (int)[self.uniqueCodes count];
+    self.totalScannedText.text = [NSString stringWithFormat:@"%i",(int)[self.uniqueCodes count]];
+}
+
 - (void) setItems
 {
     _listItem   = [[NSMutableArray alloc] init];
@@ -113,14 +149,14 @@
     [self.startScan addTarget:self action:@selector(startScanning) forControlEvents:UIControlEventTouchUpInside];
     [self.stopScan addTarget:self action:@selector(stopScanning) forControlEvents:UIControlEventTouchUpInside];
     
-    self.startScan.layer.cornerRadius = 10;
-    self.startScan.clipsToBounds = YES;
+//    self.startScan.layer.cornerRadius = 10;
+//    self.startScan.clipsToBounds = YES;
+//    
+//    self.stopScan.layer.cornerRadius = 10;
+//    self.stopScan.clipsToBounds = YES;
     
-    self.stopScan.layer.cornerRadius = 10;
-    self.stopScan.clipsToBounds = YES;
-    
-    self.selectZone.layer.cornerRadius = 10;
-    self.selectZone.clipsToBounds = YES;
+//    self.selectZone.layer.cornerRadius = 10;
+//    self.selectZone.clipsToBounds = YES;
     
     [[self.startScan layer] setBorderWidth:2.0f];
     [[self.startScan layer] setBorderColor:[UIColor colorWithHex:THEME_COLOR_ORANGE].CGColor];
@@ -130,29 +166,39 @@
     
     [[self.selectZone layer] setBorderWidth:2.0f];
     [[self.selectZone layer] setBorderColor:[UIColor colorWithHex:THEME_COLOR_ORANGE].CGColor];
+    
+    self.backgroundImage.image = [self.backgroundImage.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    [self.backgroundImage setTintColor:[UIColor whiteColor]];
+    [self setUpZoneView];
 }
 
 - (void)setUpRadioGroup
 {
     self.selectedAction = @"checkin";
     TNCircularRadioButtonData *checkInData = [TNCircularRadioButtonData new];
-    checkInData.labelText = @"Checkin";
+    checkInData.labelText = @"CHECK IN";
     checkInData.identifier = @"checkin";
     checkInData.selected = YES;
+    checkInData.borderColor = [UIColor colorWithHex:THEME_COLOR_ORANGE];
+    checkInData.circleColor = [UIColor colorWithHex:THEME_COLOR_ORANGE];
+    checkInData.labelFont   = FONT_UI_Text_Light(FONT_SIZE_TEXTFIELD);
     
     TNCircularRadioButtonData *checkOutData = [TNCircularRadioButtonData new];
-    checkOutData.labelText = @"Checkout";
+    checkOutData.labelText = @"CHECK OUT";
     checkOutData.identifier = @"checkout";
     checkOutData.selected = NO;
     checkOutData.borderRadius = 12;
     checkOutData.circleRadius = 5;
+    checkOutData.borderColor = [UIColor colorWithHex:THEME_COLOR_ORANGE];
+    checkOutData.circleColor = [UIColor colorWithHex:THEME_COLOR_ORANGE];
+    checkOutData.labelFont   = FONT_UI_Text_Light(FONT_SIZE_TEXTFIELD);
     
     self.radioGroup = [[TNRadioButtonGroup alloc] initWithRadioButtonData:@[checkInData, checkOutData]
                                                                    layout:TNRadioButtonGroupLayoutHorizontal];
     self.radioGroup.identifier = @"Sex group";
     [self.radioGroup create];
     self.radioGroup.position = CGPointMake(((self.view.frame.size.width - self.radioGroup.frame.size.width) / 2),
-                                           self.selectZone.frame.origin.y + self.selectZone.frame.size.height + 60);
+                                           self.previewView.frame.origin.y + self.previewView.frame.size.height + self.selectZone.frame.size.height + 60);
     [self.view addSubview:self.radioGroup];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(radioGroupUpdated:)
@@ -190,43 +236,69 @@
 
 - (void)startScanning
 {
-    if (self.selectedKeyZone.length == 0) {
+    
+    if (self.isStartScan) {
         
-        [SCLAlertView showInfoWithTitle:nil
-                                message:@"Please select zone."
-                           buttonTitles:@[@"OK"]
-                               tapBlock:nil];
-        return;
-    }
-    
-    self.barcodeValue.text = @"";
-    [self.scannedResult setHidden:YES];
-    self.uniqueCodes = [[NSMutableArray alloc] init];
-    
-    NSError *error = nil;
-    [self.scanner startScanningWithResultBlock:^(NSArray *codes) {
-        for (AVMetadataMachineReadableCodeObject *code in codes) {
+        if (self.selectedKeyZone.length == 0) {
             
-            if (![code.stringValue isEqualToString: [self.uniqueCodes valueForKey: @"@lastObject"]]) {
-                [self.uniqueCodes addObject:code.stringValue];
-                SPLOG_DEBUG(@"Found unique code: %@", code.stringValue);
-//                self.barcodeValue.text = code.stringValue;
-                self.scannedBarcode = code.stringValue;
-//                [self.scannedResult setHidden:NO];
-                
-                self.totalScannedCounter++;
-                self.totalScannedText.text = [NSString stringWithFormat:@"%i",self.totalScannedCounter];
-                [self.tableView reloadData];
-                [self scrollToLastTableViewCell];
-                [self sendScannedCode];
-                AudioServicesPlaySystemSound(1054);
-            }
+            [SCLAlertView showInfoWithTitle:nil
+                                    message:@"Please select zone."
+                               buttonTitles:@[@"OK"]
+                                   tapBlock:nil];
+            return;
         }
-    } error:&error];
-    
-    if (error) {
-        NSLog(@"An error occurred: %@", error.localizedDescription);
+        
+        [self.startScan setTitle:@"STOP SCAN" forState:UIControlStateNormal];
+        self.isStartScan        = false;
+        self.barcodeValue.text  = @"";
+        [self.scannedResult setHidden:YES];
+        
+        NSError *error = nil;
+        [self.scanner startScanningWithResultBlock:^(NSArray *codes) {
+            for (AVMetadataMachineReadableCodeObject *code in codes) {
+                
+                if (![code.stringValue isEqualToString: [self.uniqueCodes valueForKey: @"@lastObject"]]) {
+                    [self.uniqueCodes addObject:code.stringValue];
+                    SPLOG_DEBUG(@"Found unique code: %@", code.stringValue);
+                    //                self.barcodeValue.text = code.stringValue;
+                    self.scannedBarcode = code.stringValue;
+                    //                [self.scannedResult setHidden:NO];
+                    
+                    self.totalScannedCounter = self.totalScannedCounter + 1;
+                    self.totalScannedText.text = [NSString stringWithFormat:@"%i",(int)[self.uniqueCodes count]];
+                    [self.tableView reloadData];
+                    [self scrollToLastTableViewCell];
+                    [self sendScannedCode];
+                    
+                    [[MBZCache shared] setCachedObject:self.uniqueCodes forKey:SCANNED_LIST];
+                    
+#if DEBUG
+                    AudioServicesPlaySystemSound(1103);
+                    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+
+#else
+                    SystemSoundID soundID = 0;
+                    NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"beep" ofType:@"wav"];
+                    NSURL *soundURL = [NSURL fileURLWithPath:soundPath];
+                    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundID);
+                    AudioServicesPlaySystemSound(soundID);
+#endif
+                    
+                }
+            }
+        } error:&error];
+        
+        if (error) {
+            NSLog(@"An error occurred: %@", error.localizedDescription);
+        }
+
+    } else {
+        [self.startScan setTitle:@"START SCAN" forState:UIControlStateNormal];
+        self.isStartScan = true;
+        [self stopScanning];
     }
+        
+    
 }
 
 - (void)stopScanning {
@@ -259,6 +331,13 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier
                                                             forIndexPath:indexPath];
     cell.textLabel.text = self.uniqueCodes[indexPath.row];
+    
+    if (indexPath.row % 2) {
+        cell.contentView.backgroundColor = [UIColor colorWithHex:@"f8f8f8"];
+    } else {
+        cell.contentView.backgroundColor = [UIColor whiteColor];
+    }
+    
     return cell;
 }
 
@@ -268,7 +347,8 @@
     self.selectedKeyZone    = zone.key;
     
     [self.selectZone setTitle:zone.value forState:UIControlStateNormal];
-    [self done:nil];
+    [self.workshopModal.view removeFromSuperview];
+//    [self done:nil];
 }
 
 #pragma mark - UIButton Action
@@ -282,51 +362,57 @@
 
 - (IBAction)selectZone:(id)sender
 {
-    if (self.popoverController == nil) {
-        
-        UIView *btn             = (UIView *)sender;
-        CGRect frame            = self.view.frame;
-        frame.size.width        = self.navigationController.view.frame.size.width;
-        frame.size.height       = 200;
-        
-        
-        UIStoryboard *mainStoryboard             = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        self.workshopModal                       = [mainStoryboard instantiateViewControllerWithIdentifier:@"MBZFeedbackWorkshopListVC"];
-        self.workshopModal.view.frame            = frame;
-        self.workshopModal.view.backgroundColor  = [[UIColor blackColor] colorWithAlphaComponent:0.0f];
-        self.workshopModal.tableItems            = _listItem;
-        self.workshopModal.itemType              = @"";
-        self.workshopModal.selected              = @"";
-        self.workshopModal.tableView.delegate    = (id)self;
-        
-        self.workshopModal.preferredContentSize   = CGSizeMake(frame.size.width, frame.size.width);
-        [self.workshopModal.tableView reloadData];
-        
-        
-        UINavigationController* contentViewController = [[UINavigationController alloc] initWithRootViewController:self.workshopModal];
-        
-        self.popoverController = [[WYPopoverController alloc] initWithContentViewController:contentViewController];
-        
-        
-        [self.popoverController beginThemeUpdates];
-        self.popoverController.theme.arrowHeight        = 13;
-        self.popoverController.theme.arrowBase          = 25;
-        self.popoverController.theme.fillTopColor       = [[UIColor blackColor]colorWithAlphaComponent:0.8f];
-        self.popoverController.theme.fillBottomColor    = [[UIColor blackColor]colorWithAlphaComponent:0.8f];
-        [self.popoverController endThemeUpdates];
-        
-        self.popoverController.delegate                         = (id)self;
-        self.popoverController.passthroughViews                 = @[btn];
-        self.popoverController.popoverLayoutMargins             = UIEdgeInsetsMake(10, 10, 10, 10);
-        self.popoverController.wantsDefaultContentAppearance    = NO;
-        [self.popoverController presentPopoverFromRect:btn.bounds
-                                                inView:btn
-                              permittedArrowDirections:WYPopoverArrowDirectionUp | WYPopoverArrowDirectionDown
-                                              animated:YES
-                                               options:WYPopoverAnimationOptionFadeWithScale];
-    } else {
-        [self done:nil];
+    
+    if ([_listItem count] != 0) {
+        [self.view addSubview:self.workshopModal.view];
     }
+    
+//    if (self.popoverController == nil) {
+//
+//        UIView *btn             = (UIView *)sender;
+//        CGRect frame            = self.view.frame;
+////        frame.size.width        = self.view.frame.size.width;
+////        frame.size.height       = 200;
+//        
+//        
+//        UIStoryboard *mainStoryboard             = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//        self.workshopModal                       = [mainStoryboard instantiateViewControllerWithIdentifier:@"MBZFeedbackWorkshopListVC"];
+//        self.workshopModal.view.frame            = frame;
+////        self.workshopModal.view.backgroundColor  = [[UIColor blackColor] colorWithAlphaComponent:7.0f];
+//        self.workshopModal.tableItems            = _listItem;
+//        self.workshopModal.itemType              = @"";
+//        self.workshopModal.selected              = @"";
+//        self.workshopModal.tableView.delegate    = (id)self;
+//        
+//        self.workshopModal.preferredContentSize   = CGSizeMake(frame.size.width, frame.size.width);
+//        [self.workshopModal.tableView reloadData];
+        
+//        [self.view addSubview:self.workshopModal.view];
+        
+//        UINavigationController* contentViewController = [[UINavigationController alloc] initWithRootViewController:self.workshopModal];
+//        
+//        self.popoverController = [[WYPopoverController alloc] initWithContentViewController:contentViewController];
+//        
+//        
+//        [self.popoverController beginThemeUpdates];
+//        self.popoverController.theme.arrowHeight        = 13;
+//        self.popoverController.theme.arrowBase          = 25;
+//        self.popoverController.theme.fillTopColor       = [[UIColor blackColor]colorWithAlphaComponent:0.8f];
+//        self.popoverController.theme.fillBottomColor    = [[UIColor blackColor]colorWithAlphaComponent:0.8f];
+//        [self.popoverController endThemeUpdates];
+//        
+//        self.popoverController.delegate                         = (id)self;
+//        self.popoverController.passthroughViews                 = @[btn];
+//        self.popoverController.popoverLayoutMargins             = UIEdgeInsetsMake(10, 10, 10, 10);
+//        self.popoverController.wantsDefaultContentAppearance    = NO;
+//        [self.popoverController presentPopoverFromRect:btn.bounds
+//                                                inView:btn
+//                              permittedArrowDirections:WYPopoverArrowDirectionUp | WYPopoverArrowDirectionDown
+//                                              animated:YES
+//                                               options:WYPopoverAnimationOptionFadeWithScale];
+//    } else {
+//        [self done:nil];
+//    }
 }
 
 #pragma mark - Client API Call

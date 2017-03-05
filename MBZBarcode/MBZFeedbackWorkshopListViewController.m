@@ -68,6 +68,14 @@
     cell.cellText.text = zone.value;
     [cell.cellImage setHidden:YES];
     
+    cell.cellText.textColor = [UIColor colorWithHex:THEME_COLOR_GRAY];
+    
+    if (indexPath.row % 2) {
+        cell.contentView.backgroundColor = [UIColor colorWithHex:@"f8f8f8"];
+    } else {
+        cell.contentView.backgroundColor = [UIColor whiteColor];
+    }
+    
     return cell;
 }
 

@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 FOUNDATION_EXPORT NSString *const ZONE_LIST;
+FOUNDATION_EXPORT NSString *const SCANNED_LIST;
+FOUNDATION_EXPORT NSString *const TOTAL_SCANNED;
 
 @interface MBZCache : NSObject
 
