@@ -21,6 +21,7 @@ typedef void(^APIClientManagerFailureBlock)(NSError *error);
 - (void)sendScanned:(NSString *)value
                zone:(NSString *)zone
              action:(NSString *)action
+                key:(NSString *)key
             success:(APIClientManagerSuccessBlock)success
             failure:(APIClientManagerFailureBlock)failure;
 

@@ -14,6 +14,7 @@
 NSString *const ZONE_LIST                                    = @"com.mbz.zone.list.www";
 NSString *const SCANNED_LIST                                 = @"com.mbz.scanned.list.www";
 NSString *const TOTAL_SCANNED                                = @"com.mbz.total.scanned.list.www";
+NSString *const IN_QUEUE                                    = @"com.mbz.in.queue.list.www";
 
 static MBZCache *shared = nil;
 
@@ -81,6 +82,7 @@ static MBZCache *shared = nil;
     [[MBZCache shared] removeCachedObjectWithKey:ZONE_LIST];
     [[MBZCache shared] removeCachedObjectWithKey:SCANNED_LIST];
     [[MBZCache shared] removeCachedObjectWithKey:TOTAL_SCANNED];
+    [[MBZCache shared] removeCachedObjectWithKey:IN_QUEUE];
     
 }
 

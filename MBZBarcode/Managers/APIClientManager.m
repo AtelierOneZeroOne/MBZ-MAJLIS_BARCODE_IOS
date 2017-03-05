@@ -146,6 +146,7 @@ static NSString * const BOWParameterDateFormat = @"yyyy-MM-dd'T'HH:mm:ss'Z'";
 - (void)sendScanned:(NSString *)value
                zone:(NSString *)zone
              action:(NSString *)action
+                key:(NSString *)key
             success:(APIClientManagerSuccessBlock)success
             failure:(APIClientManagerFailureBlock)failure {
     

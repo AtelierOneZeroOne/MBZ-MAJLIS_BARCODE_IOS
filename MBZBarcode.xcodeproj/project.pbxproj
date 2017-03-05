@@ -79,6 +79,14 @@
 		C45A96991E6BF80600DAA02D /* Seravek-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C45A96821E6BF80600DAA02D /* Seravek-MediumItalic.otf */; };
 		C45A969A1E6BF80600DAA02D /* Seravek.otf in Resources */ = {isa = PBXBuildFile; fileRef = C45A96831E6BF80600DAA02D /* Seravek.otf */; };
 		C45A969B1E6BF80600DAA02D /* Seravek.otf in Resources */ = {isa = PBXBuildFile; fileRef = C45A96831E6BF80600DAA02D /* Seravek.otf */; };
+		C4766BCF1E6C28B900F65CF2 /* BarCode.m in Sources */ = {isa = PBXBuildFile; fileRef = C4766BCE1E6C28B900F65CF2 /* BarCode.m */; };
+		C4766BD01E6C28B900F65CF2 /* BarCode.m in Sources */ = {isa = PBXBuildFile; fileRef = C4766BCE1E6C28B900F65CF2 /* BarCode.m */; };
+		C4766BD41E6C370200F65CF2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C4766BD31E6C370200F65CF2 /* Reachability.m */; };
+		C4766BD51E6C370200F65CF2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C4766BD31E6C370200F65CF2 /* Reachability.m */; };
+		C4766BD91E6C3C4600F65CF2 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4766BD71E6C3C4600F65CF2 /* Fabric.framework */; };
+		C4766BDA1E6C3C4600F65CF2 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4766BD71E6C3C4600F65CF2 /* Fabric.framework */; };
+		C4766BDB1E6C3C4600F65CF2 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4766BD81E6C3C4600F65CF2 /* Crashlytics.framework */; };
+		C4766BDC1E6C3C4600F65CF2 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4766BD81E6C3C4600F65CF2 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +177,12 @@
 		C45A96811E6BF80600DAA02D /* Seravek-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Seravek-Medium.otf"; sourceTree = "<group>"; };
 		C45A96821E6BF80600DAA02D /* Seravek-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Seravek-MediumItalic.otf"; sourceTree = "<group>"; };
 		C45A96831E6BF80600DAA02D /* Seravek.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Seravek.otf; sourceTree = "<group>"; };
+		C4766BCD1E6C28B900F65CF2 /* BarCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BarCode.h; path = Objects/BarCode.h; sourceTree = "<group>"; };
+		C4766BCE1E6C28B900F65CF2 /* BarCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BarCode.m; path = Objects/BarCode.m; sourceTree = "<group>"; };
+		C4766BD21E6C370200F65CF2 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C4766BD31E6C370200F65CF2 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		C4766BD71E6C3C4600F65CF2 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		C4766BD81E6C3C4600F65CF2 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +191,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA26B78EAE51A28D5CAA6EC /* Pods_MBZBarcode.framework in Frameworks */,
+				C4766BDB1E6C3C4600F65CF2 /* Crashlytics.framework in Frameworks */,
+				C4766BD91E6C3C4600F65CF2 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +200,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4766BDC1E6C3C4600F65CF2 /* Crashlytics.framework in Frameworks */,
+				C4766BDA1E6C3C4600F65CF2 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +296,11 @@
 		C4325A191E5F01E6005748F2 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				C4766BD11E6C370200F65CF2 /* Reachability */,
 				C4325A1A1E5F0213005748F2 /* APIClientManager.h */,
 				C4325A1B1E5F0213005748F2 /* APIClientManager.m */,
+				C4766BD71E6C3C4600F65CF2 /* Fabric.framework */,
+				C4766BD81E6C3C4600F65CF2 /* Crashlytics.framework */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -330,6 +351,8 @@
 			children = (
 				C4325A511E5F0A06005748F2 /* Zones.h */,
 				C4325A521E5F0A06005748F2 /* Zones.m */,
+				C4766BCD1E6C28B900F65CF2 /* BarCode.h */,
+				C4766BCE1E6C28B900F65CF2 /* BarCode.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -384,6 +407,16 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		C4766BD11E6C370200F65CF2 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				C4766BD21E6C370200F65CF2 /* Reachability.h */,
+				C4766BD31E6C370200F65CF2 /* Reachability.m */,
+			);
+			name = Reachability;
+			path = Managers/Reachability;
+			sourceTree = "<group>";
+		};
 		D9C1F052A3F61FE19ADE42B4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +439,7 @@
 				C43259E11E5EEF71005748F2 /* Resources */,
 				F46F6333EC9377FAC191B931 /* [CP] Embed Pods Frameworks */,
 				C4286FBEE102DEF540305E30 /* [CP] Copy Pods Resources */,
+				C4766BD61E6C3C1C00F65CF2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -463,8 +497,8 @@
 				TargetAttributes = {
 					C43259E21E5EEF71005748F2 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = G37DG897U8;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 42Y678JU64;
+						ProvisioningStyle = Manual;
 					};
 					C43259FB1E5EEF71005748F2 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -584,6 +618,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MBZBarcode/Pods-MBZBarcode-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C4766BD61E6C3C1C00F65CF2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 0c2229de171a9f9c4234bf64802a19b08761da37 fac49f20a1e9d81a33edd62b53c37368b20d14c50c8defc451c3b8f3c18223f6";
+		};
 		F46F6333EC9377FAC191B931 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -612,6 +659,7 @@
 				C4325A581E5F0AD5005748F2 /* MBZCache.m in Sources */,
 				C43259EE1E5EEF71005748F2 /* ViewController.m in Sources */,
 				C4325A651E5F0EF7005748F2 /* MBZFeedbackWorkshopListViewController.m in Sources */,
+				C4766BCF1E6C28B900F65CF2 /* BarCode.m in Sources */,
 				C4325A531E5F0A06005748F2 /* Zones.m in Sources */,
 				C4325A1C1E5F0213005748F2 /* APIClientManager.m in Sources */,
 				C4325A441E5F03A1005748F2 /* UIButton+Format.m in Sources */,
@@ -622,6 +670,7 @@
 				C4325A381E5F03A1005748F2 /* NSDateFormatter+StaticInstance.m in Sources */,
 				C4325A3A1E5F03A1005748F2 /* NSError+Localization.m in Sources */,
 				C4325A461E5F03A1005748F2 /* UIColor+More.m in Sources */,
+				C4766BD41E6C370200F65CF2 /* Reachability.m in Sources */,
 				C4325A401E5F03A1005748F2 /* SCLAlertView+Convenience.m in Sources */,
 				C4325A4A1E5F03A1005748F2 /* UILabel+Format.m in Sources */,
 				C4325A421E5F03A1005748F2 /* UIAlertController+Convenience.m in Sources */,
@@ -634,6 +683,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4766BD01E6C28B900F65CF2 /* BarCode.m in Sources */,
 				C4325A4D1E5F03A1005748F2 /* UIView+Convenience.m in Sources */,
 				C4325A6A1E5F0F30005748F2 /* MBZTableViewCell.m in Sources */,
 				C4325A3D1E5F03A1005748F2 /* NSObject+Cast.m in Sources */,
@@ -647,6 +697,7 @@
 				C4325A591E5F0AD5005748F2 /* MBZCache.m in Sources */,
 				C4325A411E5F03A1005748F2 /* SCLAlertView+Convenience.m in Sources */,
 				C4325A011E5EEF71005748F2 /* MBZBarcodeTests.m in Sources */,
+				C4766BD51E6C370200F65CF2 /* Reachability.m in Sources */,
 				C4325A431E5F03A1005748F2 /* UIAlertController+Convenience.m in Sources */,
 				C4325A661E5F0EF7005748F2 /* MBZFeedbackWorkshopListViewController.m in Sources */,
 				C4325A4F1E5F03A1005748F2 /* UIViewController+Additions.m in Sources */,
@@ -794,14 +845,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = G37DG897U8;
+				DEVELOPMENT_TEAM = 42Y678JU64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MBZBarcode",
+				);
 				INFOPLIST_FILE = MBZBarcode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mbzmajlis.barcode.www;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enterprise.mbz.barcode.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "f4416bf7-f0e1-4495-bd8a-bd7e0c9bc022";
+				PROVISIONING_PROFILE_SPECIFIER = "MBZ Barcode - Development";
 			};
 			name = Debug;
 		};
@@ -810,15 +865,19 @@
 			baseConfigurationReference = 849422FEFA0335B2F40F90B4 /* Pods-MBZBarcode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = G37DG897U8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 42Y678JU64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MBZBarcode",
+				);
 				INFOPLIST_FILE = MBZBarcode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mbzmajlis.barcode.www;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enterprise.mbz.barcode.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "81fbd0bd-456c-45fc-a274-aad10e1cf893";
+				PROVISIONING_PROFILE_SPECIFIER = "MBZ Barcode - In House";
 			};
 			name = Release;
 		};
@@ -826,6 +885,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MBZBarcode",
+				);
 				INFOPLIST_FILE = MBZBarcodeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MBZMajlis.www.MBZBarcodeTests;
@@ -838,6 +901,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MBZBarcode",
+				);
 				INFOPLIST_FILE = MBZBarcodeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MBZMajlis.www.MBZBarcodeTests;

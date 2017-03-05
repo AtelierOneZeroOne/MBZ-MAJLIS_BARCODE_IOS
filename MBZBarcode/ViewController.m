@@ -15,6 +15,7 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <WYPopoverController/WYPopoverController.h>
 #import "SCLAlertView+Convenience.h"
+#import "Reachability.h"
 
 //Managers
 #import "APIClientManager.h"
@@ -24,12 +25,16 @@
 
 //Objects
 #import "Zones.h"
+#import "BarCode.h"
 
 //Utilities
 #import "MBZCache.h"
 
 //Categories
 #import "UIColor+More.h"
+#import "NSError+Localization.h"
+
+static NSString * const JSONResponseSerializerWithDataKey = @"JSONResponseSerializerWithDataKey";
 
 @interface ViewController ()
 
@@ -38,6 +43,7 @@
 @property (nonatomic, strong) TNRadioButtonGroup        *radioGroup;
 @property (strong, nonatomic) MBProgressHUD             *hud;
 @property WYPopoverController                           *popoverController;
+@property (strong, nonatomic) Reachability              *reachability;
 
 //Controller
 @property MBZFeedbackWorkshopListViewController         *workshopModal;
@@ -67,7 +73,8 @@
 @property int                      inQueueCounter;
 
 //Dynamic
-@property (nonatomic, strong) NSMutableDictionary       *listItemPending;
+@property (nonatomic, strong) NSMutableArray            *queueList;
+@property (nonatomic, strong) NSMutableDictionary       *queueListData;
 
 @end
 
@@ -77,11 +84,47 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.queueList      = [[NSMutableArray alloc] init];
+    self.queueListData  = [[NSMutableDictionary alloc] init];
     [self setScannedItems];
     self.totalScannedCounter = 0;
     self.inQueueCounter = 0;
     self.isStartScan = true;
     [self getItems];
+}
+
+- (void)checkNetworkStatus:(NSNotification *)notice {
+    
+    NetworkStatus internetStatus = [self.reachability currentReachabilityStatus];
+    
+    if(internetStatus == NotReachable)
+    {
+        SPLOG_DEBUG(@"The internet is down. So don't do anything");
+        return;
+    } else if((internetStatus == ReachableViaWiFi) || (internetStatus == ReachableViaWWAN)) {
+        
+        self.queueList = [[NSMutableArray alloc] initWithArray:[[MBZCache shared] getCachedObjectForKey:IN_QUEUE]];
+        
+        if ([self.queueList count] != 0){
+            [self sendScannedCode];
+        }
+        
+        return;
+    }
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(checkNetworkStatus:)
+                                                 name:kReachabilityChangedNotification object:nil];
+    
+    // Set up Reachability
+    self.reachability = [Reachability reachabilityForInternetConnection];
+    [self.reachability startNotifier];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -249,9 +292,13 @@
         }
         
         [self.startScan setTitle:@"STOP SCAN" forState:UIControlStateNormal];
-        self.isStartScan        = false;
-        self.barcodeValue.text  = @"";
+        self.isStartScan                = false;
+        self.barcodeValue.text          = @"";
         [self.scannedResult setHidden:YES];
+        self.uniqueCodes                = [[NSMutableArray alloc] init];
+        self.totalScannedText.text      = [NSString stringWithFormat:@"%i",(int)[self.uniqueCodes count]];
+        self.inQueueText.text           = [NSString stringWithFormat:@"%i",(int)[self.queueList count]];
+        [[MBZCache shared] setCachedObject:self.uniqueCodes forKey:SCANNED_LIST];
         
         NSError *error = nil;
         [self.scanner startScanningWithResultBlock:^(NSArray *codes) {
@@ -265,12 +312,27 @@
                     //                [self.scannedResult setHidden:NO];
                     
                     self.totalScannedCounter = self.totalScannedCounter + 1;
+                    NSString *setKey = [NSString stringWithFormat:@"%@%i",code.stringValue,self.totalScannedCounter];
+                    
+                    
+                    BarCode *barcode            = [[BarCode alloc] init];
+                    barcode.selectedAction      = self.selectedAction;
+                    barcode.scannedBarcode      = code.stringValue;
+                    barcode.selectedKeyZone     = self.selectedKeyZone;
+                    
+                    [self.queueList addObject:setKey];
+                    [self.queueListData setObject:barcode forKey:setKey];
+                    
+                    
                     self.totalScannedText.text = [NSString stringWithFormat:@"%i",(int)[self.uniqueCodes count]];
+                    self.inQueueText.text = [NSString stringWithFormat:@"%i",(int)[self.queueList count]];
                     [self.tableView reloadData];
+                    
                     [self scrollToLastTableViewCell];
                     [self sendScannedCode];
                     
                     [[MBZCache shared] setCachedObject:self.uniqueCodes forKey:SCANNED_LIST];
+                    [[MBZCache shared] setCachedObject:self.queueList forKey:IN_QUEUE];
                     
 #if DEBUG
                     AudioServicesPlaySystemSound(1103);
@@ -293,9 +355,19 @@
         }
 
     } else {
-        [self.startScan setTitle:@"START SCAN" forState:UIControlStateNormal];
-        self.isStartScan = true;
-        [self stopScanning];
+        
+        if ([self.queueList count] != 0) {
+            
+            [SCLAlertView showInfoWithTitle:nil
+                                    message:@"Some items are in queue, please connect to the internet."
+                               buttonTitles:@[@"OK"]
+                                   tapBlock:nil];
+            return;
+        } else {
+            [self.startScan setTitle:@"START SCAN" forState:UIControlStateNormal];
+            self.isStartScan = true;
+            [self stopScanning];
+        }
     }
         
     
@@ -454,17 +526,57 @@
 
 - (void)sendScannedCode
 {
-    [[APIClientManager sharedManager] sendScanned:self.scannedBarcode
-                                             zone:self.selectedKeyZone
-                                           action:self.selectedAction
-                                          success:^(NSDictionary *responseObject) {
-                                              SPLOG_DEBUG(@"Response for /Sent Scanned: %@", responseObject);
-                                              [self.hud hideAnimated:YES afterDelay:0.25f];
-                                              self.scannedBarcode = @"";
-                                          } failure:^(NSError *error) {
-                                              SPLOG_DEBUG(@"Response for /Failed Scanned : %@", error);
-                                              [self.hud hideAnimated:YES afterDelay:0.25f];
-                                          }];
+    
+    for ( int i = 0 ; i <= [self.queueList count] - 1 ; i++) {
+        
+        NSString *getkey = [self.queueList objectAtIndex:i];
+        BarCode *barcode = [self.queueListData objectForKey:getkey];
+        
+        SPLOG_DEBUG(@" - %@",barcode.scannedBarcode);
+        SPLOG_DEBUG(@" - %@",barcode.selectedKeyZone);
+        SPLOG_DEBUG(@" - %@",barcode.selectedAction);
+        
+        
+        [[APIClientManager sharedManager] sendScanned:barcode.scannedBarcode
+                                                 zone:barcode.selectedKeyZone
+                                               action:barcode.selectedAction
+                                                  key:getkey
+                                              success:^(NSDictionary *responseObject) {
+                                                  SPLOG_DEBUG(@"Response for /Sent Scanned: %@", responseObject);
+                                                  [self.hud hideAnimated:YES afterDelay:0.25f];
+                                                  self.scannedBarcode = @"";
+                                                  
+                                                  [self.queueList removeObject:getkey];
+                                                  [self.queueListData removeObjectForKey:getkey];
+                                                  
+                                                  [[MBZCache shared] setCachedObject:self.queueList forKey:IN_QUEUE];
+                                                  self.inQueueText.text = [NSString stringWithFormat:@"%i",(int)[self.queueList count]];
+                                              } failure:^(NSError *error) {
+                                                  SPLOG_DEBUG(@"Response for /Failed Scanned : %@", error);
+                                                  [self.hud hideAnimated:YES afterDelay:0.25f];
+                                                  
+                                                  NSString *errorMessage = nil;
+                                                  if (error.userInfo[JSONResponseSerializerWithDataKey][@"message"]) {
+                                                      errorMessage = error.userInfo[JSONResponseSerializerWithDataKey][@"message"];
+                                                  } else if (error.localizedCodeDescription) {
+                                                      errorMessage = error.localizedCodeDescription;
+                                                  } else {
+                                                      errorMessage = @"Something went wrong. Please try again later.";
+                                                  }
+                                                  NSMutableDictionary *userInfo = [error.userInfo mutableCopy];
+                                                  userInfo[NSLocalizedDescriptionKey] = errorMessage;
+                                                  
+                                                  if ([errorMessage isEqualToString:@"No internet connection."]) {
+                                                  } else {
+                                                      [self.queueList removeObject:getkey];
+                                                      [self.queueListData removeObjectForKey:getkey];
+                                                  }
+                                                  
+                                                  [[MBZCache shared] setCachedObject:self.queueList forKey:IN_QUEUE];
+                                                  self.inQueueText.text = [NSString stringWithFormat:@"%i",(int)[self.queueList count]];
+                                              }];
+
+    }
 }
 
 @end
